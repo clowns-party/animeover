@@ -40,8 +40,15 @@
 			"post": {
 				"operationId": "Create",
 				"responses": {
-					"204": {
-						"description": "No content"
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
 					}
 				},
 				"security": [],
@@ -52,8 +59,15 @@
 			"put": {
 				"operationId": "Update",
 				"responses": {
-					"204": {
-						"description": "No content"
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
 					}
 				},
 				"security": [],
@@ -71,8 +85,23 @@
 			"delete": {
 				"operationId": "Remove",
 				"responses": {
-					"204": {
-						"description": "No content"
+					"201": {
+						"description": "TEST!",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"deleted": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"deleted"
+									],
+									"type": "object"
+								}
+							}
+						}
 					}
 				},
 				"security": [],
