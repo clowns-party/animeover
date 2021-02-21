@@ -2,6 +2,9 @@ import * as express from "express";
 import * as cors from "cors";
 import * as bodyparser from "body-parser";
 
+import * as dotenv from "dotenv";
+dotenv.config()
+
 import { requestLoggerMiddleware } from "./middlewares/request.logger.middleware";
 import * as swaggerUi from "swagger-ui-express";
 import "./todo/todo.controller";
