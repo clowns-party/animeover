@@ -7,6 +7,8 @@ import {
   Put,
   Delete,
   SuccessResponse,
+  Path,
+  Query
 } from "tsoa";
 
 // Firebase
@@ -24,9 +26,9 @@ export class TodoController extends Controller {
     }
   }
 
-  @Post("/")
+  @Post("")
   public async create(
-    @BodyProp("description") description: string
+    @Query() description: string
   ): Promise<string> {
     try {
       this.setStatus(200);
