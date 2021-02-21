@@ -24,20 +24,23 @@ export class TodoController extends Controller {
   @Post("/")
   public async create(
     @BodyProp("description") description: string
-  ): Promise<void> {
-    console.log("post", description);
+  ): Promise<string> {
+    return description
   }
 
   @Put("/{id}")
   public async update(
     id: string,
     @BodyProp("description") description: string
-  ): Promise<void> {
-    console.log("update", description);
+  ): Promise<string> {
+    return description
   }
-
+  @SuccessResponse("201", "TEST!")
   @Delete("/{id}")
-  public async remove(id: string): Promise<void> {
-    console.log("delete!", id);
+  public async remove(id: string): Promise<{deleted: string}> {
+    this.setStatus(201);
+    return {
+      deleted: id
+    }
   }
 }

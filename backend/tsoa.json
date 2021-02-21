@@ -1,15 +1,15 @@
 {
 	"entryFile": "./src/app.ts",
 	"noImplicitAdditionalProperties": "throw-on-extras",
-	"controllerPathGlobs": ["src/**/*todo.controller.ts"],
+	"controllerPathGlobs": ["src/**/*controller.ts"],
 	"spec": {
-		"outputDirectory": ".",
+		"outputDirectory": "./src/routes",
 		"specVersion": 3,
-		"controllerPathGlobs": ["src/**/*todo.controller.ts"]
+		"controllerPathGlobs": ["src/**/*controller.ts"]
 	},
 	"routes": {
 		"basePath": "/",
 		"entryFile": "./src/app.ts",
-		"routesDir": "./src"
+		"routesDir": "./src/routes"
 	}
   }
