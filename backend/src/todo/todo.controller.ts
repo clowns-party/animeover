@@ -9,6 +9,9 @@ import {
   SuccessResponse,
 } from "tsoa";
 
+// Firebase
+import { firestoreDB } from "./../firebase";
+
 @Route("/todo")
 export class TodoController extends Controller {
   @Get("/")
@@ -25,7 +28,17 @@ export class TodoController extends Controller {
   public async create(
     @BodyProp("description") description: string
   ): Promise<string> {
-    return description
+    try {
+      this.setStatus(200);
+      await firestoreDB.collection("cities").doc("LA").set({
+        name: "test",
+        description,
+      });
+      return description;
+    } catch (error) {
+      this.setStatus(500);
+      console.error("Caught error", error);
+    }
   }
 
   @Put("/{id}")
@@ -33,14 +46,14 @@ export class TodoController extends Controller {
     id: string,
     @BodyProp("description") description: string
   ): Promise<string> {
-    return description
+    return description;
   }
   @SuccessResponse("201", "TEST!")
   @Delete("/{id}")
-  public async remove(id: string): Promise<{deleted: string}> {
+  public async remove(id: string): Promise<{ deleted: string }> {
     this.setStatus(201);
     return {
-      deleted: id
-    }
+      deleted: id,
+    };
   }
 }
