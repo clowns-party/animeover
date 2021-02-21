@@ -1,44 +1,25 @@
 import * as express from "express";
 import * as cors from "cors";
 import * as bodyparser from "body-parser";
+
 import { requestLoggerMiddleware } from "./request.logger.middleware";
+import * as swaggerUi from "swagger-ui-express";
+import "./todo.controller";
+
+import { RegisterRoutes } from "./routes";
 
 const app = express();
 app.use(cors());
 app.use(bodyparser.json());
+
 app.use(requestLoggerMiddleware);
-// TODO - Add more middleware
-app.get(
-  "/todo",
-  (req: express.Request, res: express.Response, next: express.NextFunction) => {
-    res.status(200);
-    res.json([{ id: 1, description: "Buy Bread" }]);
-  }
-);
-app.post(
-  "/todo",
-  (req: express.Request, res: express.Response, next: express.NextFunction) => {
-    console.info(`${JSON.stringify(req.body)}`);
-    res.status(200);
-    res.end();
-  }
-);
-app.put(
-  "/todo/:id",
-  (req: express.Request, res: express.Response, next: express.NextFunction) => {
-    console.info(`${JSON.stringify(req.body)}`);
-    console.info(`:id = ${req.params.id}`);
-    res.status(200);
-    res.end();
-  }
-);
-app.delete(
-  "/todo/:id",
-  (req: express.Request, res: express.Response, next: express.NextFunction) => {
-    console.info(`:id = ${req.params.id}`);
-    res.status(200);
-    res.end();
-  }
-);
+RegisterRoutes(app);
+
+try {
+  const swaggerDocument = require("../swagger.json");
+  app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+} catch (err) {
+  console.log("Unable to load swagger.json", err);
+}
 
 export { app };
