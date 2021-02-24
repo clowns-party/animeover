@@ -1,8 +1,14 @@
 {
-    "compilerOptions": {
-      "target": "esnext",
-      "moduleResolution": "node",
-      "experimentalDecorators": true,
-      "resolveJsonModule": true
-    }
-  }
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "outDir": "build",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"]
+}
