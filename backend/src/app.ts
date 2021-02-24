@@ -20,7 +20,7 @@ app.use(requestLoggerMiddleware);
 RegisterRoutes(app);
 
 try {
-  const swaggerDocument = require("./routes/swagger.json");
+  const swaggerDocument = require("../tsoa/swagger.json");
   app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 } catch (err) {
   console.log("Unable to load swagger.json", err);
