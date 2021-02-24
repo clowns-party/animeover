@@ -1,0 +1,5588 @@
+{
+  "data": [
+    {
+      "sources": ["https://myanimelist.net/anime/45106"],
+      "title": "!NVADE SHOW!",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": [],
+      "relations": ["https://myanimelist.net/anime/33573"],
+      "tags": ["music"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/10143",
+        "https://anilist.co/anime/102416",
+        "https://anime-planet.com/anime/chiaki-kuriyama-0",
+        "https://kitsu.io/anime/8925",
+        "https://myanimelist.net/anime/20707",
+        "https://notify.moe/anime/Ff1bpKmmR"
+      ],
+      "title": "\"0\"",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2013
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/54815.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/54815t.jpg",
+      "synonyms": [
+        "Chiaki Kuriyama - 0",
+        "Chiaki Kuriyama - Zero",
+        "Chiaki Kuriyama: \"0\"",
+        "Chiaki Kuriyama: 「0」",
+        "「0」",
+        "栗山 千明「0」"
+      ],
+      "relations": [],
+      "tags": ["female protagonist", "music"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/3689",
+        "https://kitsu.io/anime/9179",
+        "https://myanimelist.net/anime/25627",
+        "https://notify.moe/anime/eM1-pKmiR"
+      ],
+      "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1970
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/65151.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/65151t.jpg",
+      "synonyms": [
+        "\"いそっぷ\"のおはなしより 牛とかえる",
+        "\"いそっぷ\"のおはなしより 牛とかえる, よくばった犬",
+        "From Aesop\u0027s Tales: The Bull and the Frog / The Greedy Dog",
+        "From Aesop`s Tales: The Bull and the Frog / The Greedy Dog"
+      ],
+      "relations": [],
+      "tags": ["fantasy", "kids"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/7294",
+        "https://anilist.co/anime/7669",
+        "https://anime-planet.com/anime/bungaku-shoujo-kyou-no-oyatsu-hatsukoi",
+        "https://kitsu.io/anime/5078",
+        "https://myanimelist.net/anime/7669",
+        "https://notify.moe/anime/oTdkpKiig"
+      ],
+      "title": "\"Bungaku Shoujo\" Kyou no Oyatsu: Hatsukoi",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2009
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/79900.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/79900t.jpg",
+      "synonyms": [
+        "\"文学少女\"今日のおやつ ~はつ恋~",
+        "Book Girl OVA",
+        "Bungaku Shoujo OVA",
+        "Bungaku Shoujo: Kyou no Oyatsu - Hatsukoi",
+        "Literature Girl",
+        "Literature Girl OVA",
+        "Literature Girl: Today`s Snack - First Love",
+        "Буквоежка: Первая любовь",
+        "“文学少女”今日のおやつ 〜はつ恋〜",
+        "文学少女 今日のおやつ 〜はつ恋〜"
+      ],
+      "relations": [
+        "https://anidb.net/anime/6959",
+        "https://anidb.net/anime/7441",
+        "https://anilist.co/anime/6408",
+        "https://anime-planet.com/anime/bungaku-shoujo-memoire",
+        "https://anime-planet.com/anime/bungaku-shoujo-movie",
+        "https://kitsu.io/anime/4550",
+        "https://myanimelist.net/anime/6408",
+        "https://notify.moe/anime/UUie5KimR"
+      ],
+      "tags": [
+        "asia",
+        "based on a light novel",
+        "comedy",
+        "earth",
+        "fantasy",
+        "japan",
+        "library",
+        "novel",
+        "present",
+        "romance",
+        "school",
+        "school club",
+        "school clubs",
+        "school life",
+        "short movie",
+        "shoujo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/7441",
+        "https://anilist.co/anime/8481",
+        "https://anime-planet.com/anime/bungaku-shoujo-memoire",
+        "https://kitsu.io/anime/5352",
+        "https://myanimelist.net/anime/8481",
+        "https://notify.moe/anime/UBTmtKiiR"
+      ],
+      "title": "\"Bungaku Shoujo\" Memoire",
+      "type": "OVA",
+      "episodes": 3,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/26770.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/26770t.jpg",
+      "synonyms": [
+        "\"文学少女\" メモワール",
+        "Book Girl Memories",
+        "Book Girl: Memoire",
+        "Bungaku Shoujo Memoire I Yume-Miru Shoujo no Prelude",
+        "Bungaku Shoujo: Memoire",
+        "Bungaku Shoujo: Mémoire",
+        "II Sora-Mau Tenshi no Requiem",
+        "III Koi Suru Otome no Rhapsody",
+        "Knihomolka",
+        "Literature Girl: Memoire",
+        "Буквоежка: Воспоминания",
+        "Записки літературної панянки",
+        "“文学少女”メモワール",
+        "ぶんがくしょうじょめもわーる",
+        "文学少女 メモワール"
+      ],
+      "relations": [
+        "https://anidb.net/anime/6959",
+        "https://anidb.net/anime/7294",
+        "https://anilist.co/anime/6408",
+        "https://anime-planet.com/anime/bungaku-shoujo-kyou-no-oyatsu-hatsukoi",
+        "https://anime-planet.com/anime/bungaku-shoujo-movie",
+        "https://kitsu.io/anime/4550",
+        "https://myanimelist.net/anime/6408",
+        "https://notify.moe/anime/UUie5KimR"
+      ],
+      "tags": [
+        "angst",
+        "asia",
+        "based on a light novel",
+        "classic literature",
+        "comedy",
+        "coming of age",
+        "drama",
+        "earth",
+        "ensemble cast",
+        "episodic",
+        "female protagonist",
+        "japan",
+        "mystery",
+        "novel",
+        "present",
+        "primarily female cast",
+        "psychological",
+        "romance",
+        "school",
+        "school life",
+        "shoujo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/6959",
+        "https://anilist.co/anime/6408",
+        "https://anime-planet.com/anime/bungaku-shoujo-movie",
+        "https://kitsu.io/anime/4550",
+        "https://myanimelist.net/anime/6408",
+        "https://notify.moe/anime/UUie5KimR"
+      ],
+      "title": "\"Bungaku Shoujo\" Movie",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/8/81162.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/8/81162t.jpg",
+      "synonyms": [
+        "A Literary Girl",
+        "Book Girl",
+        "Bungaku Shoujo",
+        "Gekijouban Bungaku Shoujo",
+        "Literature Girl",
+        "Буквоежка",
+        "げきじょうばんぶんがくしょうじょ",
+        "劇場版 文学少女",
+        "劇場版\"文学少女\"",
+        "劇場版“文学少女”"
+      ],
+      "relations": [
+        "https://anidb.net/anime/7294",
+        "https://anidb.net/anime/7441",
+        "https://anilist.co/anime/7669",
+        "https://anilist.co/anime/8481",
+        "https://anime-planet.com/anime/bungaku-shoujo-kyou-no-oyatsu-hatsukoi",
+        "https://anime-planet.com/anime/bungaku-shoujo-memoire",
+        "https://kitsu.io/anime/5078",
+        "https://kitsu.io/anime/5352",
+        "https://myanimelist.net/anime/7669",
+        "https://myanimelist.net/anime/8481",
+        "https://notify.moe/anime/UBTmtKiiR",
+        "https://notify.moe/anime/oTdkpKiig"
+      ],
+      "tags": [
+        "asia",
+        "based on a light novel",
+        "classic literature",
+        "coming of age",
+        "drama",
+        "earth",
+        "japan",
+        "love polygon",
+        "love triangle",
+        "male protagonist",
+        "mystery",
+        "novel",
+        "present",
+        "psychological",
+        "romance",
+        "school",
+        "school club",
+        "school life",
+        "time skip",
+        "tragedy",
+        "yandere"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/calpis-hakkou-monogatari",
+        "https://kitsu.io/anime/41893",
+        "https://myanimelist.net/anime/38045",
+        "https://notify.moe/anime/NeI-pv0iR"
+      ],
+      "title": "\"Calpis\" Hakkou Monogatari",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2018
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1168/93236.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1168/93236t.jpg",
+      "synonyms": [
+        "\"Calpis\" Fermentation Story",
+        "Calpis: Hakkou Monogatari",
+        "「カルピス」発酵ものがたり"
+      ],
+      "relations": [],
+      "tags": ["food and beverage", "historical", "promotional"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/4317",
+        "https://anilist.co/anime/6076",
+        "https://anime-planet.com/anime/eiji",
+        "https://kitsu.io/anime/4416",
+        "https://myanimelist.net/anime/6076",
+        "https://notify.moe/anime/lcAq5Fmig"
+      ],
+      "title": "\"Eiji\"",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 1990
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/38319.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/38319t.jpg",
+      "synonyms": ["「エイジ」"],
+      "relations": [],
+      "tags": [
+        "based on a manga",
+        "boxing",
+        "comedy",
+        "drama",
+        "hand to hand combat",
+        "manga",
+        "shounen",
+        "sports"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12936",
+        "https://anime-planet.com/anime/eikou-naki-tensai-tachi-kara-no-monogatari",
+        "https://kitsu.io/anime/40654",
+        "https://myanimelist.net/anime/35025",
+        "https://notify.moe/anime/tZ-DhFmmR"
+      ],
+      "title": "\"Eikou Naki Tensai-tachi\" Kara no Monogatari",
+      "type": "TV",
+      "episodes": 2,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/84552.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/84552t.jpg",
+      "synonyms": [
+        "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
+        "\"栄光なき天才たち\"からの物語",
+        "Stories From \"Geniuses Without Glory\"",
+        "“栄光なき天才たち”からの物語"
+      ],
+      "relations": [],
+      "tags": [
+        "based on a manga",
+        "manga",
+        "running",
+        "seinen",
+        "sports",
+        "swimming",
+        "track and field"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12142",
+        "https://anilist.co/anime/21829",
+        "https://anime-planet.com/anime/eiyuu-kaitai",
+        "https://kitsu.io/anime/12654",
+        "https://myanimelist.net/anime/33363",
+        "https://notify.moe/anime/cLhmhFiiR"
+      ],
+      "title": "\"Eiyuu\" Kaitai",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/83694.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/83694t.jpg",
+      "synonyms": [
+        "\"Heroes\" Dismissed",
+        "Eiyu Kaitai",
+        "Eiyuu Kaitai",
+        "Heroes Retirement",
+        "「英雄」解体",
+        "英雄 解体"
+      ],
+      "relations": [],
+      "tags": [
+        "based on a light novel",
+        "comedy",
+        "drama",
+        "fantasy",
+        "isekai",
+        "novel",
+        "person in a strange world",
+        "reverse isekai",
+        "rpg",
+        "seinen",
+        "siblings",
+        "slice of life"
+      ]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/41057"],
+      "title": "\"Fragtime\" x \"Kine-Pass\"",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2019
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": ["「フラグライム」x「キネパス」"],
+      "relations": [
+        "https://myanimelist.net/anime/34763",
+        "https://myanimelist.net/anime/39545"
+      ],
+      "tags": [
+        "action",
+        "comedy",
+        "drama",
+        "ecchi",
+        "fantasy",
+        "historical",
+        "kids",
+        "magic",
+        "music",
+        "mystery",
+        "romance",
+        "school",
+        "seinen",
+        "shoujo",
+        "slice of life",
+        "sports",
+        "supernatural",
+        "thriller"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/hitman-bang-i-equals-fantasy"
+      ],
+      "title": "\"hitman\" bang: I\u003dFantasy",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2011
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/hitman-bang-i-equals-fantasy-15017.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/hitman-bang-i-equals-fantasy-15017.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["cg animation", "korean animation", "vocaloid"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/kinako-movie-x-mameshiba",
+        "https://kitsu.io/anime/41577",
+        "https://myanimelist.net/anime/35632"
+      ],
+      "title": "\"Kinako\" Movie x Mameshiba",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/85893.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/85893t.jpg",
+      "synonyms": [
+        "\"Kinako\" x Mameshiba Movie",
+        "Eiga \"Kinako\" x Mameshiba",
+        "Kinako Movie x Mameshiba",
+        "映画『きな子』×豆しば"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/mameshiba",
+        "https://myanimelist.net/anime/7261"
+      ],
+      "tags": ["based on a movie", "comedy", "crossover", "dogs", "parody"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/kiss-dekiru-gyoza-x-mameshiba-movie",
+        "https://kitsu.io/anime/41274",
+        "https://myanimelist.net/anime/37843",
+        "https://notify.moe/anime/ZmJVj6niR"
+      ],
+      "title": "\"Kiss Dekiru Gyoza\" x Mameshiba Movie",
+      "type": "Special",
+      "episodes": 2,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2018
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1168/92670.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1168/92670t.jpg",
+      "synonyms": [
+        "Kiss Dekiru Gyoza x Mameshiba Movie",
+        "映画『キスできる餃子』×豆しば"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/mameshiba",
+        "https://kitsu.io/anime/4918",
+        "https://myanimelist.net/anime/7261",
+        "https://notify.moe/anime/JpERpKiiR"
+      ],
+      "tags": [
+        "comedy",
+        "commercials",
+        "parody",
+        "promotional",
+        "short episodes"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/14586",
+        "https://anilist.co/anime/101905",
+        "https://anime-planet.com/anime/parade-de-satie",
+        "https://kitsu.io/anime/12943",
+        "https://myanimelist.net/anime/34595",
+        "https://notify.moe/anime/Kk-ZhKiiR"
+      ],
+      "title": "\"Parade\" de Satie",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1714/102585.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1714/102585t.jpg",
+      "synonyms": [
+        "Parade de Satie",
+        "Satie no \"Parade\"",
+        "Satie\u0027s \"Parade\"",
+        "Satie’s “Parade”",
+        "Satie’s “Parade”,",
+        "サティの「パラード」"
+      ],
+      "relations": [],
+      "tags": [
+        "abstract",
+        "action",
+        "classical music",
+        "comedy",
+        "dementia",
+        "drama",
+        "ecchi",
+        "fantasy",
+        "historical",
+        "kids",
+        "magic",
+        "music",
+        "mystery",
+        "romance",
+        "school",
+        "school life",
+        "seinen",
+        "shoujo",
+        "slice of life",
+        "sports",
+        "supernatural",
+        "surreal comedy",
+        "thriller"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/r100-x-mameshiba-original-manners",
+        "https://kitsu.io/anime/41829",
+        "https://myanimelist.net/anime/37626"
+      ],
+      "title": "\"R100\" x Mameshiba Original Manners",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2013
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1135/92193.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1135/92193t.jpg",
+      "synonyms": [
+        "R100 x Mameshiba Original Manners",
+        "映画『R100』×「豆しば」オリジナルマナ"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/mameshiba",
+        "https://myanimelist.net/anime/7261"
+      ],
+      "tags": ["based on a movie", "comedy", "crossover", "shorts"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/41090"],
+      "title": "\"Star\"t",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2019
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1108/105484.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1108/105484t.jpg",
+      "synonyms": ["\"STAR\"T", "HaNaMiNa", "Irodorimidori"],
+      "relations": [
+        "https://myanimelist.net/anime/40360",
+        "https://myanimelist.net/anime/41091"
+      ],
+      "tags": ["music"]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/113199",
+        "https://anime-planet.com/anime/tokyo",
+        "https://kitsu.io/anime/43145",
+        "https://myanimelist.net/anime/38748"
+      ],
+      "title": "\"Tokyo\"",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1109/96789.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1109/96789t.jpg",
+      "synonyms": ["Tokyo", "「とうきょう」- Tokyo", "とうきょう"],
+      "relations": [],
+      "tags": ["dementia", "psychological", "shorts"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/15157",
+        "https://anilist.co/anime/126275",
+        "https://anime-planet.com/anime/star-blazers-space-battleship-yamato-2202-movie",
+        "https://myanimelist.net/anime/40554",
+        "https://notify.moe/anime/UBsE9dKGg"
+      ],
+      "title": "\"Uchuu Senkan Yamato\" to Iu Jidai: Seireki 2202-nen no Sentaku",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1903/109427.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1903/109427t.jpg",
+      "synonyms": [
+        "Star Blazers: Space Battleship Yamato 2202",
+        "Star Blazers: Space Battleship Yamato 2202 Movie",
+        "Uchuu Senkan Yamato 2202: Ai no Senshi-tachi Soushuuhen",
+        "Uchuu Senkan Yamato 2202: Ai no Senshi-tachi Summary",
+        "「宇宙戦艦ヤマト」という時代 西暦2202年の選択",
+        "『宇宙戦艦ヤマト』という時代 西暦2202年の選択"
+      ],
+      "relations": [
+        "https://anidb.net/anime/12051",
+        "https://anilist.co/anime/112019",
+        "https://anilist.co/anime/21730",
+        "https://anime-planet.com/anime/star-blazers-space-battleship-yamato-2199",
+        "https://anime-planet.com/anime/star-blazers-space-battleship-yamato-2202",
+        "https://myanimelist.net/anime/12029",
+        "https://myanimelist.net/anime/1651",
+        "https://myanimelist.net/anime/33064",
+        "https://myanimelist.net/anime/40389",
+        "https://notify.moe/anime/-QZNpFmiR",
+        "https://notify.moe/anime/ae-6pKmig",
+        "https://notify.moe/anime/f-hWCdKMR",
+        "https://notify.moe/anime/lL6acFiig"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "drama",
+        "leijiverse",
+        "military",
+        "outer space",
+        "primarily adult cast",
+        "recap",
+        "sci fi",
+        "sci-fi",
+        "shounen",
+        "space",
+        "space opera"
+      ]
+    },
+    {
+      "sources": ["https://anilist.co/anime/128539"],
+      "title": "#Aqua Iro Palette",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2020
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b128539-7naVFEc0Glav.png",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b128539-7naVFEc0Glav.png",
+      "synonyms": [
+        "#あくあ色ぱれっと",
+        "Aqua Color Palette",
+        "Aquairo Palette"
+      ],
+      "relations": ["https://anilist.co/anime/118123"],
+      "tags": ["idol", "maids", "music", "romance"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/38603"],
+      "title": "#Compass",
+      "type": "ONA",
+      "episodes": 0,
+      "status": "CURRENTLY",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2018
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1392/95935.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1392/95935t.jpg",
+      "synonyms": ["#コンパス"],
+      "relations": [],
+      "tags": ["game"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/compass"],
+      "title": "#Compass",
+      "type": "Special",
+      "episodes": 10,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": null
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/compass-12106.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/compass-12106.jpg",
+      "synonyms": ["COMbat Providence AnalysiS System"],
+      "relations": [],
+      "tags": [
+        "based on a mobile game",
+        "cg animation",
+        "episodic",
+        "sci fi",
+        "short episodes"
+      ]
+    },
+    {
+      "sources": ["https://kitsu.io/anime/43395"],
+      "title": "\u0027Twas the Night Before Christmas",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1974
+      },
+      "picture": "https://media.kitsu.io/anime/poster_images/43395/small.jpg?1597690860",
+      "thumbnail": "https://media.kitsu.io/anime/poster_images/43395/tiny.jpg?1597690860",
+      "synonyms": [],
+      "relations": [],
+      "tags": [
+        "adventure",
+        "anime influenced",
+        "anthropomorphism",
+        "kids",
+        "magic"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/a-long-day-of-mr-calpaccio",
+        "https://kitsu.io/anime/41656",
+        "https://myanimelist.net/anime/36734"
+      ],
+      "title": "(a long day of) Mr. Calpaccio",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2005
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/5/88829.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/5/88829t.jpg",
+      "synonyms": [
+        "(ア・ロング・デイ・オブ)Mr.カルパッチョ",
+        "A long day of Mr. Calpaccio"
+      ],
+      "relations": [],
+      "tags": ["black and white", "dementia", "shorts"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/making-of-evangelion-another-impact"
+      ],
+      "title": "(Making of) Evangelion: Another Impact",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2015
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/making-of-evangelion-another-impact-7201.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/making-of-evangelion-another-impact-7201.jpg",
+      "synonyms": [
+        "Making of evangelion: Another Impact",
+        "Nihon Animator Mihonichi: Making of evangelion: Another Impact"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/evangelion-another-impact",
+        "https://anime-planet.com/anime/neon-genesis-evangelion"
+      ],
+      "tags": [
+        "cg animation",
+        "japan animator\u0027s exhibition",
+        "sci fi",
+        "shorts"
+      ]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/40658"],
+      "title": "** Kouhai",
+      "type": "OVA",
+      "episodes": 4,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1839/104009.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1839/104009t.jpg",
+      "synonyms": ["Assisted Mating", "Enjo Kouhai", "○○交配"],
+      "relations": [],
+      "tags": ["demons", "fantasy", "harem", "hentai", "magic"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/sasakure-uk-hello-planet",
+        "https://kitsu.io/anime/13452",
+        "https://notify.moe/anime/dKw7hKmig"
+      ],
+      "title": "*Hello, Planet.",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2012
+      },
+      "picture": "https://media.kitsu.io/anime/poster_images/13452/small.jpg?1493005730",
+      "thumbnail": "https://media.kitsu.io/anime/poster_images/13452/tiny.jpg?1493005730",
+      "synonyms": ["sasakure.UK: *Hello, Planet.", "＊ハロー、プラネット"],
+      "relations": [],
+      "tags": ["music", "vocaloid"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/luna-classroom"],
+      "title": "*Luna: classroom",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2017
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/luna-classroom-12018.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/luna-classroom-12018.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["vocaloid"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/luna-main-character"],
+      "title": "*Luna: Main Character",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2016
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/luna-main-character-14502.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/luna-main-character-14502.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["vocaloid"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/a-channel-specials"],
+      "title": "+A-Channel",
+      "type": "Special",
+      "episodes": 11,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2011
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/a-channel-specials-4094.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/a-channel-specials-4094.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/a-channel",
+        "https://anime-planet.com/anime/a-channel-nabe-wo-tabeyou",
+        "https://anime-planet.com/anime/a-channel-plus-smile"
+      ],
+      "tags": ["based on a manga", "comedy", "seinen", "slice of life"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5391",
+        "https://anilist.co/anime/2928",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://kitsu.io/anime/2652",
+        "https://myanimelist.net/anime/2928",
+        "https://notify.moe/anime/NCh85FiiR"
+      ],
+      "title": ".hack//G.U. Returner",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2007
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/23181.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/23181t.jpg",
+      "synonyms": [
+        ".HACK//G.U. RETURNER",
+        "dot hack gu returner",
+        "どっとはっくじーゆーりたーなー"
+      ],
+      "relations": [
+        "https://anidb.net/anime/5459",
+        "https://anilist.co/anime/3269",
+        "https://anilist.co/anime/48",
+        "https://anilist.co/anime/873",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/2895",
+        "https://kitsu.io/anime/30",
+        "https://kitsu.io/anime/773",
+        "https://myanimelist.net/anime/3269",
+        "https://myanimelist.net/anime/48",
+        "https://myanimelist.net/anime/873",
+        "https://notify.moe/anime/xpIt5Fiig",
+        "https://notify.moe/anime/z5OQcKiiR",
+        "https://notify.moe/anime/z9uA5Fiig"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "drama",
+        "fantasy",
+        "fantasy world",
+        "game",
+        "magic",
+        "mmorpg",
+        "new",
+        "rpg",
+        "sci-fi",
+        "science fiction",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5459",
+        "https://anilist.co/anime/3269",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://kitsu.io/anime/2895",
+        "https://myanimelist.net/anime/3269",
+        "https://notify.moe/anime/z5OQcKiiR"
+      ],
+      "title": ".hack//G.U. Trilogy",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2008
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/23083.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/23083t.jpg",
+      "synonyms": [
+        ".hack//G.U. TRILOGY",
+        ".hack//G.U. Трилогія",
+        "dot hack gu trilogy",
+        "gu trilogy",
+        "どっとはっくじーゆーとりろじー"
+      ],
+      "relations": [
+        "https://anidb.net/anime/4324",
+        "https://anidb.net/anime/5391",
+        "https://anilist.co/anime/110286",
+        "https://anilist.co/anime/2928",
+        "https://anilist.co/anime/4469",
+        "https://anilist.co/anime/873",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/2652",
+        "https://kitsu.io/anime/3625",
+        "https://kitsu.io/anime/773",
+        "https://myanimelist.net/anime/2928",
+        "https://myanimelist.net/anime/36646",
+        "https://myanimelist.net/anime/4469",
+        "https://myanimelist.net/anime/873",
+        "https://notify.moe/anime/-Tlu5KimR",
+        "https://notify.moe/anime/NCh85FiiR",
+        "https://notify.moe/anime/z9uA5Fiig"
+      ],
+      "tags": [
+        "action",
+        "cg animation",
+        "cyberpunk",
+        "fantasy",
+        "full cgi",
+        "game",
+        "mmorpg",
+        "new",
+        "rpg",
+        "sci-fi",
+        "science fiction",
+        "super power",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/hack-g-u-trilogy-parody"],
+      "title": ".hack//G.U. Trilogy Parody",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2008
+      },
+      "picture": "https://anime-planet.com/inc/img/blank_main.jpg",
+      "thumbnail": "https://anime-planet.com/inc/img/blank_main.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report"
+      ],
+      "tags": ["comedy", "mmorpg", "rpg", "virtual reality"]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/4469",
+        "https://kitsu.io/anime/3625",
+        "https://myanimelist.net/anime/4469",
+        "https://notify.moe/anime/-Tlu5KimR"
+      ],
+      "title": ".hack//G.U. Trilogy: Parody Mode",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2008
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/10/8661.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/10/8661t.jpg",
+      "synonyms": [
+        ".hack//G.U. TRILOGY",
+        ".hack//G.U. Trilogy",
+        "どっとはっくじーゆーとりろじー"
+      ],
+      "relations": [
+        "https://anilist.co/anime/3269",
+        "https://kitsu.io/anime/2895",
+        "https://myanimelist.net/anime/3269",
+        "https://notify.moe/anime/z5OQcKiiR"
+      ],
+      "tags": [
+        "comedy",
+        "fantasy",
+        "game",
+        "parody",
+        "sci-fi",
+        "science fiction",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/1135",
+        "https://anilist.co/anime/454",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://kitsu.io/anime/416",
+        "https://myanimelist.net/anime/454",
+        "https://notify.moe/anime/srnT5KmmR"
+      ],
+      "title": ".hack//Gift",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2003
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/23085.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/23085t.jpg",
+      "synonyms": [
+        ".hack//GIFT",
+        ".hack//gift",
+        "Hack//Gift",
+        "dot hack gift",
+        "gift"
+      ],
+      "relations": [
+        "https://anidb.net/anime/222",
+        "https://anidb.net/anime/447",
+        "https://anilist.co/anime/298",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/273",
+        "https://kitsu.io/anime/30",
+        "https://myanimelist.net/anime/298",
+        "https://myanimelist.net/anime/48",
+        "https://notify.moe/anime/EET25Fimg",
+        "https://notify.moe/anime/xpIt5Fiig"
+      ],
+      "tags": [
+        "chibi",
+        "comedy",
+        "fantasy",
+        "fantasy world",
+        "future",
+        "game",
+        "magic",
+        "mmorpg",
+        "new",
+        "nudity",
+        "parody",
+        "rpg",
+        "seinen",
+        "shorts",
+        "slapstick",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/1143",
+        "https://kitsu.io/anime/1024",
+        "https://myanimelist.net/anime/1143",
+        "https://notify.moe/anime/u6zb5Fmig"
+      ],
+      "title": ".hack//Intermezzo",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2003
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/66499.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/66499t.jpg",
+      "synonyms": [".hack//Another Story", ".hack//SIGN Episode 27"],
+      "relations": [
+        "https://anilist.co/anime/48",
+        "https://kitsu.io/anime/30",
+        "https://myanimelist.net/anime/48",
+        "https://notify.moe/anime/xpIt5Fiig"
+      ],
+      "tags": [
+        "adventure",
+        "fantasy",
+        "game",
+        "magic",
+        "mystery",
+        "sci-fi",
+        "science fiction",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/222",
+        "https://anilist.co/anime/299",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://kitsu.io/anime/274",
+        "https://myanimelist.net/anime/299",
+        "https://notify.moe/anime/PXo2cKimR"
+      ],
+      "title": ".hack//Liminality",
+      "type": "OVA",
+      "episodes": 4,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2002
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/23079.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/23079t.jpg",
+      "synonyms": [
+        ".hack Liminality",
+        ".hack//LIMINALITY",
+        ".hack∕∕Liminality",
+        ".хак//Лиминалити",
+        "H/L",
+        "Hack OVA",
+        "HackLim",
+        "HackOVA",
+        "dot hack liminality",
+        "dotHack∕∕Liminality",
+        "hack//Liminality",
+        "どっとはっくりみなりてぃ"
+      ],
+      "relations": [
+        "https://anidb.net/anime/1135",
+        "https://anidb.net/anime/24",
+        "https://anidb.net/anime/447",
+        "https://anilist.co/anime/298",
+        "https://anilist.co/anime/48",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/30",
+        "https://myanimelist.net/anime/48",
+        "https://notify.moe/anime/xpIt5Fiig"
+      ],
+      "tags": [
+        "asia",
+        "detective",
+        "earth",
+        "future",
+        "game",
+        "isekai",
+        "japan",
+        "mystery",
+        "new",
+        "original work",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "video games",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/7883",
+        "https://anilist.co/anime/9332",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://kitsu.io/anime/5680",
+        "https://myanimelist.net/anime/9332",
+        "https://notify.moe/anime/FEXWtKmmR"
+      ],
+      "title": ".hack//Quantum",
+      "type": "OVA",
+      "episodes": 3,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2011
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/5/28371.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/5/28371t.jpg",
+      "synonyms": [
+        ".hack//Lượng tử",
+        "dot hack Quantum",
+        "هک//کوانتوم.",
+        "どっとはっくくわんたむ",
+        "ドットハック クワンタム"
+      ],
+      "relations": [
+        "https://anidb.net/anime/24",
+        "https://anidb.net/anime/8606",
+        "https://anilist.co/anime/10390",
+        "https://anilist.co/anime/110286",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/273",
+        "https://kitsu.io/anime/30",
+        "https://kitsu.io/anime/6161",
+        "https://kitsu.io/anime/773",
+        "https://myanimelist.net/anime/10390",
+        "https://myanimelist.net/anime/298",
+        "https://myanimelist.net/anime/48",
+        "https://myanimelist.net/anime/873",
+        "https://notify.moe/anime/EET25Fimg",
+        "https://notify.moe/anime/r9q7tFmiR",
+        "https://notify.moe/anime/xpIt5Fiig",
+        "https://notify.moe/anime/z9uA5Fiig"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "artificial intelligence",
+        "conspiracy",
+        "dungeon",
+        "fantasy",
+        "fantasy world",
+        "game",
+        "magic",
+        "mmorpg",
+        "mystery",
+        "new",
+        "plot continuity",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "super power",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/10390",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://kitsu.io/anime/6161",
+        "https://myanimelist.net/anime/10390",
+        "https://notify.moe/anime/r9q7tFmiR"
+      ],
+      "title": ".hack//Quantum: Sore ike! Bokura no Chimuchimu-chan!!",
+      "type": "Special",
+      "episodes": 3,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2011
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/29050.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/29050t.jpg",
+      "synonyms": [
+        ".hack//Quantum Specials",
+        ".hack//Quantum 映像特典 それいけ！ぼくらのチムチムちゃん！！",
+        ".hack//Quantum: Go",
+        ".hack//Quantum: Go, Our Chim Chims!!"
+      ],
+      "relations": [
+        "https://anilist.co/anime/9332",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/5680",
+        "https://myanimelist.net/anime/9332",
+        "https://notify.moe/anime/FEXWtKmmR"
+      ],
+      "tags": ["comedy", "game", "virtual reality"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/4324",
+        "https://anilist.co/anime/873",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://kitsu.io/anime/773",
+        "https://myanimelist.net/anime/873",
+        "https://notify.moe/anime/z9uA5Fiig"
+      ],
+      "title": ".hack//Roots",
+      "type": "TV",
+      "episodes": 26,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2006
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/13050.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/13050t.jpg",
+      "synonyms": [
+        ".hack// Початок",
+        ".hack//roots",
+        "dot Hack Roots",
+        "hack roots",
+        "hack//Roots",
+        "roots",
+        "نقطة اختراق//جذور",
+        "どっとはっくるーつ"
+      ],
+      "relations": [
+        "https://anidb.net/anime/24",
+        "https://anidb.net/anime/5459",
+        "https://anilist.co/anime/110286",
+        "https://anilist.co/anime/298",
+        "https://anilist.co/anime/3269",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/2652",
+        "https://kitsu.io/anime/273",
+        "https://kitsu.io/anime/2895",
+        "https://kitsu.io/anime/30",
+        "https://kitsu.io/anime/5680",
+        "https://myanimelist.net/anime/298",
+        "https://myanimelist.net/anime/3269",
+        "https://myanimelist.net/anime/48",
+        "https://myanimelist.net/anime/9332",
+        "https://notify.moe/anime/EET25Fimg",
+        "https://notify.moe/anime/FEXWtKmmR",
+        "https://notify.moe/anime/NCh85FiiR",
+        "https://notify.moe/anime/xpIt5Fiig",
+        "https://notify.moe/anime/z5OQcKiiR"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "drama",
+        "fantasy",
+        "fantasy world",
+        "game",
+        "isekai",
+        "kemonomimi",
+        "mmorpg",
+        "nekomimi",
+        "new",
+        "plot continuity",
+        "rpg",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "super power",
+        "swordplay",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/24",
+        "https://anilist.co/anime/48",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://kitsu.io/anime/30",
+        "https://myanimelist.net/anime/48",
+        "https://notify.moe/anime/xpIt5Fiig"
+      ],
+      "title": ".hack//Sign",
+      "type": "TV",
+      "episodes": 26,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2002
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1443/94665.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1443/94665t.jpg",
+      "synonyms": [
+        ".hack//SIGN",
+        "dot hack",
+        "dot hack sign",
+        "hack",
+        "hack sign",
+        "hack//SIGN",
+        "hackSIGN",
+        "sign",
+        "Хак",
+        "Хак//Симбол",
+        "どっとはっくさいん"
+      ],
+      "relations": [
+        "https://anidb.net/anime/222",
+        "https://anidb.net/anime/4324",
+        "https://anidb.net/anime/7883",
+        "https://anilist.co/anime/110286",
+        "https://anilist.co/anime/1143",
+        "https://anilist.co/anime/1487",
+        "https://anilist.co/anime/2928",
+        "https://anilist.co/anime/299",
+        "https://anilist.co/anime/454",
+        "https://anilist.co/anime/873",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/1024",
+        "https://kitsu.io/anime/1333",
+        "https://kitsu.io/anime/2652",
+        "https://kitsu.io/anime/273",
+        "https://kitsu.io/anime/274",
+        "https://kitsu.io/anime/416",
+        "https://kitsu.io/anime/5680",
+        "https://kitsu.io/anime/6502",
+        "https://kitsu.io/anime/773",
+        "https://myanimelist.net/anime/11375",
+        "https://myanimelist.net/anime/1143",
+        "https://myanimelist.net/anime/1487",
+        "https://myanimelist.net/anime/298",
+        "https://myanimelist.net/anime/299",
+        "https://myanimelist.net/anime/454",
+        "https://myanimelist.net/anime/873",
+        "https://myanimelist.net/anime/9332",
+        "https://notify.moe/anime/AZFa5Kmig",
+        "https://notify.moe/anime/EET25Fimg",
+        "https://notify.moe/anime/FEXWtKmmR",
+        "https://notify.moe/anime/NCh85FiiR",
+        "https://notify.moe/anime/PXo2cKimR",
+        "https://notify.moe/anime/kIhSpKimg",
+        "https://notify.moe/anime/srnT5KmmR",
+        "https://notify.moe/anime/u6zb5Fmig",
+        "https://notify.moe/anime/z9uA5Fiig"
+      ],
+      "tags": [
+        "adventure",
+        "alternative present",
+        "amnesia",
+        "anti-hero",
+        "cgi",
+        "dissociative identities",
+        "ensemble cast",
+        "fantasy",
+        "fantasy world",
+        "game",
+        "gender bending",
+        "hacking",
+        "isekai",
+        "magic",
+        "mmorpg",
+        "mystery",
+        "new",
+        "person in a strange world",
+        "rpg",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "super power",
+        "tragedy",
+        "trapped in a video game",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/hack-sign-intermezzo"],
+      "title": ".hack//SIGN - Intermezzo",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2003
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/hack-sign-intermezzo-631.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/hack-sign-intermezzo-631.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report"
+      ],
+      "tags": ["dungeon", "mmorpg", "rpg", "virtual reality"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/hack-sign-unison"],
+      "title": ".hack//SIGN - Unison",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2003
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/hack-sign-unison-632.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/hack-sign-unison-632.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report"
+      ],
+      "tags": ["mmorpg", "rpg", "virtual reality"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/447",
+        "https://anilist.co/anime/298",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://kitsu.io/anime/273",
+        "https://myanimelist.net/anime/298",
+        "https://notify.moe/anime/EET25Fimg"
+      ],
+      "title": ".hack//Tasogare no Udewa Densetsu",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2003
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/78321.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/78321t.jpg",
+      "synonyms": [
+        ".hack//A Lenda do Bracelete do Crepúsculo",
+        ".hack//Bransoleta Zmierzchu",
+        ".hack//DUSK",
+        ".hack//Legend Of The Twilight",
+        ".hack//Legend of the Twilight",
+        ".hack//Legend of the Twilight Bracelet",
+        ".hack//Udeden",
+        ".hack//黄昏の腕輪伝説",
+        ".хак//Легенда Сумеречного Браслета",
+        ".хак//Легенда о сумеречном браслете",
+        "Hack Udeden",
+        "dot hack dusk",
+        "hack lotb",
+        "hack tud",
+        "hackDUSK",
+        "どっとはっくたそがれのうでわでんせつ"
+      ],
+      "relations": [
+        "https://anidb.net/anime/1135",
+        "https://anidb.net/anime/222",
+        "https://anilist.co/anime/110286",
+        "https://anilist.co/anime/1994",
+        "https://anilist.co/anime/299",
+        "https://anilist.co/anime/454",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/1795",
+        "https://kitsu.io/anime/30",
+        "https://kitsu.io/anime/416",
+        "https://kitsu.io/anime/5680",
+        "https://kitsu.io/anime/773",
+        "https://myanimelist.net/anime/1994",
+        "https://myanimelist.net/anime/454",
+        "https://myanimelist.net/anime/48",
+        "https://myanimelist.net/anime/873",
+        "https://myanimelist.net/anime/9332",
+        "https://notify.moe/anime/FEXWtKmmR",
+        "https://notify.moe/anime/NKDYcFimg",
+        "https://notify.moe/anime/srnT5KmmR",
+        "https://notify.moe/anime/xpIt5Fiig",
+        "https://notify.moe/anime/z9uA5Fiig"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "comedy",
+        "fantasy",
+        "game",
+        "magic",
+        "mmorpg",
+        "new",
+        "rpg",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "shounen",
+        "siblings",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/1994",
+        "https://kitsu.io/anime/1795",
+        "https://myanimelist.net/anime/1994",
+        "https://notify.moe/anime/NKDYcFimg"
+      ],
+      "title": ".hack//Tasogare no Udewa Densetsu: Offline de Aimashou",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2003
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/44554.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/44554t.jpg",
+      "synonyms": [
+        ".hack//DUSK Special",
+        ".hack//Legend of the Twilight Offline Meeting Special",
+        ".hack//Tasogare no Udewa Densetsu - Offline de Aimashou",
+        ".hack//Tasogare no Udewa Densetsu Special",
+        ".hack//黄昏の腕輪伝説 オフラインで会いましょう"
+      ],
+      "relations": [
+        "https://anilist.co/anime/298",
+        "https://kitsu.io/anime/273",
+        "https://myanimelist.net/anime/298",
+        "https://notify.moe/anime/EET25Fimg"
+      ],
+      "tags": [
+        "adventure",
+        "comedy",
+        "fantasy",
+        "game",
+        "sci-fi",
+        "science fiction",
+        "virtual reality"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/8606",
+        "https://anilist.co/anime/11375",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://kitsu.io/anime/6502",
+        "https://myanimelist.net/anime/11375",
+        "https://notify.moe/anime/kIhSpKimg"
+      ],
+      "title": ".hack//The Movie: Sekai no Mukou ni",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2012
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/35633.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/35633t.jpg",
+      "synonyms": [
+        ".hack // The Movie",
+        ".hack//Beyond the World",
+        ".hack//Sekai no Mukou ni",
+        ".hack//The Movie",
+        ".hack//The Movie セカイの向こうに",
+        ".hack//Versus: The Thanatos Report",
+        ".злам// Поза «World`-ом»",
+        "Злам - Поза Світом",
+        "ドット ハック",
+        "ドット ハック セカイの向こうに",
+        "ドットハック セカイの向こうに"
+      ],
+      "relations": [
+        "https://anidb.net/anime/7883",
+        "https://anilist.co/anime/15219",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/30",
+        "https://kitsu.io/anime/7232",
+        "https://myanimelist.net/anime/15219",
+        "https://myanimelist.net/anime/48",
+        "https://notify.moe/anime/jAUdtKmig",
+        "https://notify.moe/anime/xpIt5Fiig"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "asia",
+        "cg animation",
+        "disaster",
+        "earth",
+        "fantasy",
+        "full cgi",
+        "future",
+        "game",
+        "japan",
+        "magic",
+        "mmorpg",
+        "mystery",
+        "rpg",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/1487",
+        "https://kitsu.io/anime/1333",
+        "https://myanimelist.net/anime/1487",
+        "https://notify.moe/anime/AZFa5Kmig"
+      ],
+      "title": ".hack//Unison",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2003
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/23078.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/23078t.jpg",
+      "synonyms": [".hack//SIGN Episode 28"],
+      "relations": [
+        "https://anilist.co/anime/48",
+        "https://kitsu.io/anime/30",
+        "https://myanimelist.net/anime/48",
+        "https://notify.moe/anime/xpIt5Fiig"
+      ],
+      "tags": [
+        "adventure",
+        "comedy",
+        "fantasy",
+        "game",
+        "magic",
+        "sci-fi",
+        "science fiction",
+        "video games",
+        "virtual reality",
+        "virtual world"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/15219",
+        "https://anime-planet.com/anime/hack-versus-the-thanatos-report",
+        "https://kitsu.io/anime/7232",
+        "https://myanimelist.net/anime/15219",
+        "https://notify.moe/anime/jAUdtKmig"
+      ],
+      "title": ".hack//Versus: The Thanatos Report",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2012
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/10/42325.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/10/42325t.jpg",
+      "synonyms": [
+        ".hack//Versus OVA",
+        ".hack//Versus Special",
+        ".hack//Versus タナトスレポート"
+      ],
+      "relations": [
+        "https://anilist.co/anime/11375",
+        "https://anime-planet.com/anime/hack-g-u-returner",
+        "https://anime-planet.com/anime/hack-g-u-trilogy",
+        "https://anime-planet.com/anime/hack-g-u-trilogy-parody",
+        "https://anime-planet.com/anime/hack-gift",
+        "https://anime-planet.com/anime/hack-legend-of-the-twilight",
+        "https://anime-planet.com/anime/hack-liminality",
+        "https://anime-planet.com/anime/hack-quantum",
+        "https://anime-planet.com/anime/hack-quantum-go-our-chim-chims",
+        "https://anime-planet.com/anime/hack-roots",
+        "https://anime-planet.com/anime/hack-sign",
+        "https://anime-planet.com/anime/hack-sign-intermezzo",
+        "https://anime-planet.com/anime/hack-sign-unison",
+        "https://anime-planet.com/anime/hack-the-movie",
+        "https://kitsu.io/anime/6502",
+        "https://myanimelist.net/anime/11375",
+        "https://notify.moe/anime/kIhSpKimg"
+      ],
+      "tags": [
+        "action",
+        "full cgi",
+        "game",
+        "sci-fi",
+        "science fiction",
+        "video games",
+        "virtual reality"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/109194",
+        "https://myanimelist.net/anime/47653"
+      ],
+      "title": "0 Hao Sushe",
+      "type": "ONA",
+      "episodes": 14,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2018
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": ["0号宿舍", "Ling Hao Sushe"],
+      "relations": [],
+      "tags": ["comedy", "fantasy"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5121",
+        "https://anilist.co/anime/12763",
+        "https://anime-planet.com/anime/zero-sen-hayato",
+        "https://kitsu.io/anime/6806",
+        "https://myanimelist.net/anime/12763",
+        "https://notify.moe/anime/V7XNpFmmR"
+      ],
+      "title": "0-sen Hayato",
+      "type": "TV",
+      "episodes": 38,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1964
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/35847.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/35847t.jpg",
+      "synonyms": ["0戦はやと", "Zero-sen Hayato"],
+      "relations": [
+        "https://anime-planet.com/anime/zero-sen-hayato-pilot",
+        "https://kitsu.io/anime/12585",
+        "https://myanimelist.net/anime/33978",
+        "https://notify.moe/anime/0-7i2Fmmg"
+      ],
+      "tags": [
+        "based on a manga",
+        "half-length episodes",
+        "historical",
+        "military",
+        "war",
+        "world war 2"
+      ]
+    },
+    {
+      "sources": [
+        "https://kitsu.io/anime/12585",
+        "https://myanimelist.net/anime/33978",
+        "https://notify.moe/anime/0-7i2Fmmg"
+      ],
+      "title": "0-sen Hayato Pilot",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1985
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/81775.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/81775t.jpg",
+      "synonyms": [
+        "0-sen Hayato Episode 0",
+        "0-sen Hayato: Kishuu",
+        "0戦はやと 奇襲",
+        "Zero-sen Hayato Episode 0",
+        "Zero-sen Hayato Pilot",
+        "Zero-sen Hayato: Kishuu"
+      ],
+      "relations": [
+        "https://kitsu.io/anime/6806",
+        "https://myanimelist.net/anime/12763",
+        "https://notify.moe/anime/V7XNpFmmR"
+      ],
+      "tags": ["historical", "military"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11392",
+        "https://anilist.co/anime/102065",
+        "https://anime-planet.com/anime/001",
+        "https://kitsu.io/anime/10459",
+        "https://myanimelist.net/anime/29978",
+        "https://notify.moe/anime/QcE8tKiiR"
+      ],
+      "title": "001",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2013
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/71882.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/71882t.jpg",
+      "synonyms": ["One"],
+      "relations": [],
+      "tags": [
+        "black and white",
+        "cars",
+        "comedy",
+        "new",
+        "no dialogue",
+        "short episodes",
+        "shorts"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/8699",
+        "https://anilist.co/anime/11755",
+        "https://anime-planet.com/anime/009-re-cyborg",
+        "https://kitsu.io/anime/6588",
+        "https://myanimelist.net/anime/11755",
+        "https://notify.moe/anime/nX_ItFiiR"
+      ],
+      "title": "009 Re:Cyborg",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2012
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/9/40189.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/9/40189t.jpg",
+      "synonyms": ["009 RE:CYBORG", "ぜろぜろないん り・さいぼーぐ"],
+      "relations": [
+        "https://anidb.net/anime/1214",
+        "https://anidb.net/anime/12277",
+        "https://anidb.net/anime/1527",
+        "https://anidb.net/anime/7994",
+        "https://anilist.co/anime/1678",
+        "https://anilist.co/anime/4690",
+        "https://anilist.co/anime/8394",
+        "https://anime-planet.com/anime/009-re-cyborg-seishain-cyborg-003",
+        "https://anime-planet.com/anime/009-re-cyborg-x-zip",
+        "https://anime-planet.com/anime/cyborg-009-1966",
+        "https://anime-planet.com/anime/cyborg-009-1968",
+        "https://anime-planet.com/anime/cyborg-009-1979",
+        "https://anime-planet.com/anime/cyborg-009-kaijuu-sensou",
+        "https://anime-planet.com/anime/cyborg-009-legend-of-the-super-galaxy",
+        "https://anime-planet.com/anime/cyborg-009-the-cyborg-soldier",
+        "https://anime-planet.com/anime/cyborg-009-the-reopening",
+        "https://anime-planet.com/anime/pepsi-nex-x-009-re-cyborg",
+        "https://kitsu.io/anime/12326",
+        "https://kitsu.io/anime/12397",
+        "https://kitsu.io/anime/12410",
+        "https://kitsu.io/anime/12543",
+        "https://kitsu.io/anime/1508",
+        "https://kitsu.io/anime/3741",
+        "https://kitsu.io/anime/7868",
+        "https://myanimelist.net/anime/1678",
+        "https://myanimelist.net/anime/32736",
+        "https://myanimelist.net/anime/32737",
+        "https://myanimelist.net/anime/33163",
+        "https://myanimelist.net/anime/33685",
+        "https://myanimelist.net/anime/4690",
+        "https://myanimelist.net/anime/8394",
+        "https://notify.moe/anime/5hFk2FiiR",
+        "https://notify.moe/anime/8gWB5KimR",
+        "https://notify.moe/anime/FnzzhKmiR",
+        "https://notify.moe/anime/P_DkhFimg",
+        "https://notify.moe/anime/ZKnr5KiiR",
+        "https://notify.moe/anime/jgezhKmiR",
+        "https://notify.moe/anime/wG_ptKimR"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "angel",
+        "based on a manga",
+        "cg animation",
+        "cyborg",
+        "cyborgs",
+        "disaster",
+        "drama",
+        "earth",
+        "gunfights",
+        "human enhancement",
+        "manga",
+        "mecha",
+        "middle east",
+        "robots",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "shounen",
+        "super power",
+        "superheroes",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/009-re-cyborg-x-zip",
+        "https://kitsu.io/anime/12326",
+        "https://myanimelist.net/anime/32737",
+        "https://notify.moe/anime/FnzzhKmiR"
+      ],
+      "title": "009 Re:Cyborg x Zip",
+      "type": "ONA",
+      "episodes": 10,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2012
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/78556.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/78556t.jpg",
+      "synonyms": ["サイボーグ009 × 日テレ「ZIP!」"],
+      "relations": [
+        "https://anime-planet.com/anime/009-re-cyborg",
+        "https://anime-planet.com/anime/009-re-cyborg-seishain-cyborg-003",
+        "https://kitsu.io/anime/6588",
+        "https://myanimelist.net/anime/11755",
+        "https://notify.moe/anime/nX_ItFiiR"
+      ],
+      "tags": [
+        "cg animation",
+        "comedy",
+        "crossover",
+        "promotional",
+        "short episodes",
+        "super power"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/009-re-cyborg-seishain-cyborg-003"
+      ],
+      "title": "009 Re:Cyborg: Seishain Cyborg 003",
+      "type": "Special",
+      "episodes": 2,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2012
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/009-re-cyborg-seishain-cyborg-003-10979.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/009-re-cyborg-seishain-cyborg-003-10979.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/009-re-cyborg",
+        "https://anime-planet.com/anime/009-re-cyborg-x-zip"
+      ],
+      "tags": [
+        "cg animation",
+        "commercials",
+        "cyborgs",
+        "promotional",
+        "sci fi",
+        "short episodes",
+        "superpowers",
+        "work life"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/4637",
+        "https://anilist.co/anime/1583",
+        "https://anime-planet.com/anime/009-1",
+        "https://kitsu.io/anime/1423",
+        "https://myanimelist.net/anime/1583",
+        "https://notify.moe/anime/57Ua5KmmR"
+      ],
+      "title": "009-1",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2006
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/19998.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/19998t.jpg",
+      "synonyms": [
+        "Zero Zero Nine One",
+        "ぜろぜろないんわん",
+        "ゼロゼロナインワン",
+        "霹雳娇娃009-1"
+      ],
+      "relations": [
+        "https://anidb.net/anime/1527",
+        "https://anilist.co/anime/3234",
+        "https://anime-planet.com/anime/009-1-rb",
+        "https://kitsu.io/anime/2876",
+        "https://myanimelist.net/anime/3234",
+        "https://notify.moe/anime/VHHwcFiig"
+      ],
+      "tags": [
+        "action",
+        "assassins",
+        "based on a manga",
+        "conspiracy",
+        "cyberpunk",
+        "cyborg",
+        "cyborgs",
+        "drama",
+        "earth",
+        "ecchi",
+        "episodic",
+        "espionage",
+        "female protagonist",
+        "manga",
+        "mecha",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/3234",
+        "https://anime-planet.com/anime/009-1-rb",
+        "https://kitsu.io/anime/2876",
+        "https://myanimelist.net/anime/3234",
+        "https://notify.moe/anime/VHHwcFiig"
+      ],
+      "title": "009-1: R\u0026B",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2007
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/23353.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/23353t.jpg",
+      "synonyms": [
+        "009-1 Special",
+        "009-1: Episode 9.5",
+        "009-1: Extra Mission - R\u0026B",
+        "Mission:Extra:「R\u0026B」",
+        "Zero Zero Nine One Special"
+      ],
+      "relations": [
+        "https://anilist.co/anime/1583",
+        "https://anime-planet.com/anime/009-1",
+        "https://kitsu.io/anime/1423",
+        "https://myanimelist.net/anime/1583",
+        "https://notify.moe/anime/57Ua5KmmR"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "based on a manga",
+        "cyborgs",
+        "drama",
+        "ecchi",
+        "espionage",
+        "female protagonist",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11391",
+        "https://anilist.co/anime/99948",
+        "https://anime-planet.com/anime/00-08",
+        "https://kitsu.io/anime/10157",
+        "https://myanimelist.net/anime/28761",
+        "https://notify.moe/anime/PMAypFmmg"
+      ],
+      "title": "00:08",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2014
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/69727.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/69727t.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": [
+        "abstract",
+        "dementia",
+        "new",
+        "no dialogue",
+        "psychological",
+        "short movie",
+        "shorts"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/6239",
+        "https://anilist.co/anime/5525",
+        "https://anime-planet.com/anime/07-ghost",
+        "https://kitsu.io/anime/4135",
+        "https://myanimelist.net/anime/5525",
+        "https://notify.moe/anime/Rgxj5KmmR"
+      ],
+      "title": "07-Ghost",
+      "type": "TV",
+      "episodes": 25,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2009
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/22605.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/22605t.jpg",
+      "synonyms": [
+        "07 Ghost",
+        "07 vaiduokliai",
+        "07-GHOST",
+        "07-Hayalet",
+        "07-روح",
+        "7 Ghosts",
+        "Septyni vaiduokliai",
+        "Seven Ghost",
+        "Seven Ghosts",
+        "Seventh Ghost",
+        "The Seven Ghosts",
+        "Седемте призрака",
+        "Седьмой Дух",
+        "Семь Душ",
+        "せぶんごーすと",
+        "セブンゴースト"
+      ],
+      "relations": [],
+      "tags": [
+        "action",
+        "amnesia",
+        "based on a manga",
+        "bishounen",
+        "demon",
+        "demons",
+        "drama",
+        "fantasy",
+        "fantasy world",
+        "josei",
+        "magic",
+        "manga",
+        "military",
+        "plot continuity",
+        "primarily male cast",
+        "super power",
+        "supernatural",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/3978",
+        "https://anilist.co/anime/2730",
+        "https://anime-planet.com/anime/1-2-paradise",
+        "https://kitsu.io/anime/2490",
+        "https://myanimelist.net/anime/2730",
+        "https://notify.moe/anime/gaXycKiiR"
+      ],
+      "title": "1+2\u003dParadise",
+      "type": "OVA",
+      "episodes": 2,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1990
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/3679.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/3679t.jpg",
+      "synonyms": [
+        "1+2\u003dパラダイス",
+        "Ichi tasu Ni wa Paradise",
+        "いちたすにはパラダイス",
+        "１＋２＝パラダイス"
+      ],
+      "relations": [],
+      "tags": [
+        "based on a manga",
+        "childhood friends",
+        "childhood promise",
+        "circus",
+        "cohabitation",
+        "comedy",
+        "ecchi",
+        "gynophobia",
+        "harem",
+        "large breasts",
+        "love polygon",
+        "manga",
+        "nudity",
+        "pantsu",
+        "panty shots",
+        "romance",
+        "seinen",
+        "shounen",
+        "twins"
+      ]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/1-2-3-4"],
+      "title": "1,2,3,4,",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2012
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/1-2-3-4-6915.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/1-2-3-4-6915.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["abstract", "no dialogue", "non-human protagonists", "shorts"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/2769",
+        "https://anilist.co/anime/6060",
+        "https://anime-planet.com/anime/christmas-in-january",
+        "https://kitsu.io/anime/4402",
+        "https://myanimelist.net/anime/6060",
+        "https://notify.moe/anime/na2q5FmmR"
+      ],
+      "title": "1-gatsu ni wa Christmas",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 1991
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/46845.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/46845t.jpg",
+      "synonyms": [
+        "1月にはChristmas",
+        "Christmas in January",
+        "Ichigatsu ni wa Christmas",
+        "一月にはChristmas"
+      ],
+      "relations": [],
+      "tags": [
+        "angst",
+        "asia",
+        "christmas",
+        "drama",
+        "earth",
+        "hikikomori",
+        "japan",
+        "love triangle",
+        "manga",
+        "present",
+        "primarily adult cast",
+        "romance",
+        "shoujo",
+        "slice of life",
+        "tragedy",
+        "tsundere"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/1-ri-botchi-no-ookami-to-7-hiki-no-ko-yagi",
+        "https://kitsu.io/anime/13015",
+        "https://myanimelist.net/anime/34190",
+        "https://notify.moe/anime/L6uW2Fimg"
+      ],
+      "title": "1-ri Botchi no Ookami to 7-hiki no Ko Yagi",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1994
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/82212.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/82212t.jpg",
+      "synonyms": ["１人ぼっちの狼と７ひきの子やぎ"],
+      "relations": [],
+      "tags": [
+        "animal protagonists",
+        "anthropomorphic",
+        "based on a fairy tale",
+        "family friendly",
+        "fantasy",
+        "kids",
+        "non-human protagonists"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/102528",
+        "https://anime-planet.com/anime/1-100-rice-planting",
+        "https://kitsu.io/anime/14222",
+        "https://myanimelist.net/anime/36745",
+        "https://notify.moe/anime/mckD2Fmig"
+      ],
+      "title": "1/100 Rice Planting",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/88866.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/88866t.jpg",
+      "synonyms": ["1/100 RICE Planting"],
+      "relations": [],
+      "tags": [
+        "agriculture",
+        "countryside",
+        "shorts",
+        "slice of life",
+        "stop motion",
+        "stop motion animation"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/103464",
+        "https://anime-planet.com/anime/1-100-shibuya-crossing",
+        "https://kitsu.io/anime/14231",
+        "https://myanimelist.net/anime/36746",
+        "https://notify.moe/anime/dWiDhKimg"
+      ],
+      "title": "1/100 Shibuya Crossing",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2015
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/88867.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/88867t.jpg",
+      "synonyms": ["1/100 SHIBUYA Crossing"],
+      "relations": [],
+      "tags": [
+        "shorts",
+        "slice of life",
+        "stop motion",
+        "stop motion animation"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/103463",
+        "https://anime-planet.com/anime/1-100-train-station",
+        "https://kitsu.io/anime/14232",
+        "https://myanimelist.net/anime/36747",
+        "https://notify.moe/anime/AIiv2KimR"
+      ],
+      "title": "1/100 Train Station",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/88868.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/88868t.jpg",
+      "synonyms": ["1/100 TRAIN Station"],
+      "relations": [],
+      "tags": [
+        "shorts",
+        "slice of life",
+        "stop motion",
+        "stop motion animation",
+        "trains"
+      ]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/10-tokyo-warriors"],
+      "title": "10 Tokyo Warriors",
+      "type": "OVA",
+      "episodes": 6,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": null
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/10-tokyo-warriors-2664.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/10-tokyo-warriors-2664.jpg",
+      "synonyms": ["Tokyo Juushouden"],
+      "relations": [],
+      "tags": ["action", "supernatural"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/15455",
+        "https://anilist.co/anime/116740",
+        "https://myanimelist.net/anime/41484",
+        "https://myanimelist.net/anime/41741"
+      ],
+      "title": "100 Nichi Go ni Shinu Wani",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "UPCOMING",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": [
+        "100 Nichikan Ikita Wani",
+        "100 day Crocodile",
+        "100-nichi Go ni Shinu Wani",
+        "100nichigo ni Shinu Wani",
+        "100日後に死ぬワニ",
+        "100日間生きたワニ",
+        "Hyaku-nichi Go ni Shinu WaniThe Crocodile Who Dies in 100 Days",
+        "Hyakunichigo ni Shinu Wani",
+        "The Crocodile Who Dies in 100 Days",
+        "This Croc Will Die in 100 Days"
+      ],
+      "relations": [],
+      "tags": [
+        "animals",
+        "comedy",
+        "drama",
+        "seinen",
+        "slice of life",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5308",
+        "https://anilist.co/anime/7374",
+        "https://kitsu.io/anime/4954",
+        "https://myanimelist.net/anime/7374",
+        "https://notify.moe/anime/Q0_RtFmmg"
+      ],
+      "title": "100%",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 1990
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/17650.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/17650t.jpg",
+      "synonyms": [
+        "100%[A Hundred Percents]",
+        "A Hundred Percents",
+        "１００％"
+      ],
+      "relations": [],
+      "tags": ["drama"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/13560",
+        "https://anime-planet.com/anime/100-pascal-sensei",
+        "https://kitsu.io/anime/13412",
+        "https://myanimelist.net/anime/35447",
+        "https://notify.moe/anime/vBY7hFmig"
+      ],
+      "title": "100% Pascal-sensei",
+      "type": "ONA",
+      "episodes": 6,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/85447.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/85447t.jpg",
+      "synonyms": ["100% Teacher Pascal", "100%パスカル先生"],
+      "relations": [
+        "https://anidb.net/anime/12410",
+        "https://anime-planet.com/anime/100-pascal-sensei-2017",
+        "https://kitsu.io/anime/13433",
+        "https://myanimelist.net/anime/34052",
+        "https://myanimelist.net/anime/35745",
+        "https://notify.moe/anime/WIs7hKmig"
+      ],
+      "tags": [
+        "based on a manga",
+        "comedy",
+        "family friendly",
+        "school life",
+        "short episodes"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12410",
+        "https://anilist.co/anime/97638",
+        "https://anime-planet.com/anime/100-pascal-sensei-2017",
+        "https://kitsu.io/anime/13433",
+        "https://myanimelist.net/anime/34052",
+        "https://notify.moe/anime/WIs7hKmig"
+      ],
+      "title": "100% Pascal-sensei (TV)",
+      "type": "TV",
+      "episodes": 36,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/10/86858.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/10/86858t.jpg",
+      "synonyms": [
+        "100% Pascal-sensei",
+        "100% Pascal-sensei (2017)",
+        "100% Pasukaru-sensei",
+        "100% Teacher Pascal",
+        "100% Teacher Pascal (2017)",
+        "100%パスカル先生",
+        "100%パスカル先生 (2017)",
+        "100%パスカル先生 (TV)",
+        "100%帕斯卡老师"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/100-pascal-sensei",
+        "https://anime-planet.com/anime/40-shuunen-da-yo-coro-coro-all-star-shougakkou",
+        "https://kitsu.io/anime/13412",
+        "https://myanimelist.net/anime/35447",
+        "https://myanimelist.net/anime/35745",
+        "https://notify.moe/anime/vBY7hFmig"
+      ],
+      "tags": [
+        "based on a manga",
+        "comedy",
+        "family friendly",
+        "half-length episodes",
+        "kids",
+        "kodomo",
+        "male protagonist",
+        "meta",
+        "primarily child cast",
+        "school",
+        "school life",
+        "short episodes",
+        "surreal comedy",
+        "teacher"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/121960",
+        "https://anime-planet.com/anime/wwf-100-renewable-energy",
+        "https://kitsu.io/anime/42707",
+        "https://myanimelist.net/anime/39208"
+      ],
+      "title": "100% Renewable Energy",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2012
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1626/98877.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1626/98877t.jpg",
+      "synonyms": ["WWF 100% Renewable Energy"],
+      "relations": [],
+      "tags": [
+        "earth",
+        "educational",
+        "environmental",
+        "music",
+        "promotional",
+        "shorts"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/15415",
+        "https://anilist.co/anime/116242",
+        "https://anime-planet.com/anime/im-standing-on-a-million-lives",
+        "https://kitsu.io/anime/43367",
+        "https://myanimelist.net/anime/41380",
+        "https://notify.moe/anime/HA7U15uZg"
+      ],
+      "title": "100-man no Inochi no Ue ni Ore wa Tatteiru",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1825/108800.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1825/108800t.jpg",
+      "synonyms": [
+        "100-man no Inochi no Ue ni Ore wa Tatte Iru",
+        "100万の命の上に俺は立っている",
+        "I\u0027m Standing on a Million Lives",
+        "I\u0027m standing on 1,000,000 lives.",
+        "I`m Standing on 1,000,000 Lives",
+        "I`m Standing on a Million Lives",
+        "Я стою на миллионах трупов",
+        "أنا أقف على مليون حياة",
+        "我立於百萬生命之上",
+        "나는 100만 명의 목숨 위에 서 있다"
+      ],
+      "relations": [
+        "https://anidb.net/anime/15930",
+        "https://anilist.co/anime/127366",
+        "https://anime-planet.com/anime/im-standing-on-a-million-lives-2nd-season",
+        "https://kitsu.io/anime/43883",
+        "https://myanimelist.net/anime/44881",
+        "https://notify.moe/anime/EIjvrCJGR"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "alternate universe",
+        "anti-hero",
+        "based on a manga",
+        "comedy",
+        "coming of age",
+        "dark fantasy",
+        "drama",
+        "ensemble cast",
+        "fantasy",
+        "fantasy world",
+        "game",
+        "harem",
+        "isekai",
+        "magic",
+        "monsters",
+        "otaku culture",
+        "person in a strange world",
+        "philosophy",
+        "primarily female cast",
+        "romance",
+        "rpg",
+        "school",
+        "shounen",
+        "survival",
+        "tragedy",
+        "video games"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/15930",
+        "https://anilist.co/anime/127366",
+        "https://anime-planet.com/anime/im-standing-on-a-million-lives-2nd-season",
+        "https://kitsu.io/anime/43883",
+        "https://myanimelist.net/anime/44881",
+        "https://notify.moe/anime/EIjvrCJGR"
+      ],
+      "title": "100-man no Inochi no Ue ni Ore wa Tatteiru 2nd Season",
+      "type": "TV",
+      "episodes": 0,
+      "status": "UPCOMING",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1027/110788.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1027/110788t.jpg",
+      "synonyms": [
+        "100-man no Inochi no Ue ni Ore wa Tatte Iru (2021)",
+        "100-man no Inochi no Ue ni Ore wa Tatte Iru 2nd Season",
+        "100-man no Inochi no Ue ni Ore wa Tatteiru 2",
+        "100万の命の上に俺は立っている",
+        "100万の命の上に俺は立っている (2021)",
+        "100万の命の上に俺は立っている 2",
+        "100万の命の上に俺は立っている2",
+        "I\u0027m Standing on a Million Lives 2nd Season",
+        "I\u0027m Standing on a Million Lives Season 2",
+        "I\u0027m standing on 1,000,000 lives.",
+        "I\u0027m standing on 1,000,000 lives. 2",
+        "I\u0027m standing on 1,000,000 lives. Season 2",
+        "I`m Standing on a Million Lives (2021)"
+      ],
+      "relations": [
+        "https://anidb.net/anime/15415",
+        "https://anilist.co/anime/116242",
+        "https://anime-planet.com/anime/im-standing-on-a-million-lives",
+        "https://kitsu.io/anime/43367",
+        "https://myanimelist.net/anime/41380",
+        "https://notify.moe/anime/HA7U15uZg"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "based on a manga",
+        "comedy",
+        "drama",
+        "fantasy",
+        "fantasy world",
+        "game",
+        "harem",
+        "isekai",
+        "magic",
+        "person in a strange world",
+        "romance",
+        "rpg",
+        "shounen"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/2991",
+        "https://anilist.co/anime/5133",
+        "https://anime-planet.com/anime/one-million-year-trip-bander-book",
+        "https://kitsu.io/anime/3943",
+        "https://myanimelist.net/anime/5133",
+        "https://notify.moe/anime/ib99cKmmg"
+      ],
+      "title": "100-man-nen Chikyuu no Tabi: Bander Book",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 1978
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/56777.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/56777t.jpg",
+      "synonyms": [
+        "100万年地球の旅 バンダーブック",
+        "100万年地球の旅バンダーブック",
+        "24 Hour TV Specials",
+        "Bandar Book - 1 Milion Year Earth Jorney",
+        "Bandar Book - Hyakumannen Chikyu no Tabi",
+        "Bandar Book: 1 Milion Year Earth Jorney",
+        "Bandar Book: Hyakumannen Chikyuu no Tabi",
+        "Bander Book",
+        "Hyakumannen Chikyuu no Tabi Bandar Book",
+        "Hyakumannen Chikyuu no Tabi Bander Book",
+        "Hyakumannen Chikyuu no Tabi: Bander Book",
+        "Le Avventure Di Bander",
+        "Le prince du soleil",
+        "One Million-Year Trip: Bander Book",
+        "One-Million Year Trip: Bander Book"
+      ],
+      "relations": [
+        "https://anidb.net/anime/1440",
+        "https://anidb.net/anime/3193"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "alien",
+        "aliens",
+        "animals",
+        "comedy",
+        "crossover",
+        "future",
+        "male protagonist",
+        "outer space",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "space",
+        "time manipulation"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/100-nichi-go-ni-shinu-wani-movie"
+      ],
+      "title": "100-nichi Go ni Shinu Wani Movie",
+      "type": "Movie",
+      "episodes": 0,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2021
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/100-nichi-go-ni-shinu-wani-movie-14659.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/100-nichi-go-ni-shinu-wani-movie-14659.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": [
+        "animal protagonists",
+        "anthropomorphic",
+        "based on a manga",
+        "non-human protagonists"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/764",
+        "https://anilist.co/anime/1549",
+        "https://anime-planet.com/anime/queen-millennia-movie",
+        "https://kitsu.io/anime/1390",
+        "https://myanimelist.net/anime/1549",
+        "https://notify.moe/anime/bex-5KiiR"
+      ],
+      "title": "1000-nen Joou: Queen Millennia",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1982
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1/2398.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1/2398t.jpg",
+      "synonyms": [
+        "1000 Nen Joou: Queen Millennia",
+        "1000-nen Joou",
+        "1000-nen Joou Movie",
+        "1000年女王 Queen Millennia",
+        "Princesse Millenium",
+        "Queen Millennia Movie",
+        "Sen-nen Joou",
+        "Sennen Joou",
+        "Королева тысячелетия (фильм)"
+      ],
+      "relations": [
+        "https://anidb.net/anime/1534",
+        "https://anidb.net/anime/366",
+        "https://anilist.co/anime/1548",
+        "https://anime-planet.com/anime/queen-millennia",
+        "https://kitsu.io/anime/1341",
+        "https://kitsu.io/anime/1389",
+        "https://myanimelist.net/anime/1495",
+        "https://myanimelist.net/anime/1548",
+        "https://notify.moe/anime/1uba5FmiR",
+        "https://notify.moe/anime/3G5a5Fmig"
+      ],
+      "tags": [
+        "adventure",
+        "based on a manga",
+        "drama",
+        "fantasy",
+        "leijiverse",
+        "post apocalypse",
+        "post-apocalyptic",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "seinen",
+        "space",
+        "space opera",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5499",
+        "https://anilist.co/anime/3914",
+        "https://anime-planet.com/anime/1001-nights",
+        "https://kitsu.io/anime/3345",
+        "https://myanimelist.net/anime/3914",
+        "https://notify.moe/anime/iiu_cFmiR"
+      ],
+      "title": "1001 Nights",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 1999
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/7032.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/7032t.jpg",
+      "synonyms": [
+        "1001 Nights~ワン・サウザンド・ワン・ナイツ~",
+        "A Thousand and One Nights (1998)",
+        "One Thousand and One Arabian Nights (1998)",
+        "One Thousand and One Nights",
+        "Yoshitaka Amano: 1001 Nights",
+        "Тысяча и одна ночь Ёситаки Амано",
+        "ألف ليلة وليلة",
+        "一千零一夜"
+      ],
+      "relations": [],
+      "tags": [
+        "abstract",
+        "crime",
+        "demon",
+        "demons",
+        "dream world",
+        "fairy tale",
+        "fantasy",
+        "foreign",
+        "historical",
+        "manga",
+        "middle east",
+        "middle eastern",
+        "no dialogue",
+        "nudity",
+        "original work",
+        "past",
+        "romance",
+        "royalty",
+        "seinen"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/1869",
+        "https://anilist.co/anime/1901",
+        "https://anime-planet.com/anime/they-were-eleven",
+        "https://kitsu.io/anime/1711",
+        "https://myanimelist.net/anime/1901",
+        "https://notify.moe/anime/_9jBcKmmg"
+      ],
+      "title": "11-nin Iru!",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 1986
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1771/96658.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1771/96658t.jpg",
+      "synonyms": [
+        "11 Nin Iru",
+        "11 Nin Iru!",
+        "11人いる!",
+        "11인이 있다",
+        "Juuichinin Iru!",
+        "Siamo in undici!",
+        "They Were 11",
+        "They Were Eleven",
+        "They Were Eleven!",
+        "Zvijezda Odisej",
+        "tw11",
+        "¿Quién es el 11º pasajero?",
+        "Их было одиннадцать",
+        "Те бяха единадесет!"
+      ],
+      "relations": [],
+      "tags": [
+        "action",
+        "adventure",
+        "agender",
+        "alien",
+        "aliens",
+        "based on a manga",
+        "cyborg",
+        "drama",
+        "ensemble cast",
+        "future",
+        "gender bending",
+        "humanoid alien",
+        "manga",
+        "mecha",
+        "mystery",
+        "outer space",
+        "psychological",
+        "romance",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "shipboard",
+        "shoujo",
+        "space",
+        "survival"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/112038",
+        "https://anime-planet.com/anime/112-sabsections-of-skyline",
+        "https://kitsu.io/anime/42761",
+        "https://myanimelist.net/anime/39286"
+      ],
+      "title": "112 Sabsections of Skyline",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2007
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1651/99098.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1651/99098t.jpg",
+      "synonyms": ["112 Sabsections Of Skyline"],
+      "relations": [],
+      "tags": ["birds", "music", "no dialogue", "shorts"]
+    },
+    {
+      "sources": ["https://anilist.co/anime/121678"],
+      "title": "11:08",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2012
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx121678-AYRae94xujKE.png",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx121678-AYRae94xujKE.png",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["drawing", "school", "slice of life"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/6751",
+        "https://anilist.co/anime/6682",
+        "https://anime-planet.com/anime/11eyes",
+        "https://kitsu.io/anime/4662",
+        "https://myanimelist.net/anime/6682",
+        "https://notify.moe/anime/trb6cKimR"
+      ],
+      "title": "11eyes",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2009
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/73520.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/73520t.jpg",
+      "synonyms": [
+        "11 Eyes",
+        "11 akių",
+        "11 глаз",
+        "11 چشم",
+        "11eyes -Tsumi to Batsu to Aganai no Shoujo-",
+        "11eyes -罪與罰與贖的少女-",
+        "11eyes イレブンアイズ",
+        "11eyes: Tsumi to Batsu to Aganai no Shoujo",
+        "أحد عشر عيناً",
+        "いれぶんあいず",
+        "イレブンアイズ",
+        "罪与罚与赎的少女"
+      ],
+      "relations": [
+        "https://anilist.co/anime/110465",
+        "https://anilist.co/anime/7739",
+        "https://anime-planet.com/anime/11eyes-picture-drama",
+        "https://anime-planet.com/anime/11eyes-special",
+        "https://kitsu.io/anime/5102",
+        "https://kitsu.io/anime/8495",
+        "https://myanimelist.net/anime/20557",
+        "https://myanimelist.net/anime/7739",
+        "https://notify.moe/anime/2CpzpKimg",
+        "https://notify.moe/anime/Pcx0tFmmg"
+      ],
+      "tags": [
+        "action",
+        "angst",
+        "based on a visual novel",
+        "based on an eroge",
+        "contemporary fantasy",
+        "demons",
+        "ecchi",
+        "ensemble cast",
+        "erotic game",
+        "fantasy",
+        "female student",
+        "gore",
+        "magic",
+        "male protagonist",
+        "memory manipulation",
+        "revenge",
+        "seinen",
+        "stereotypes",
+        "super power",
+        "supernatural",
+        "superpowers",
+        "survival",
+        "swordplay",
+        "tragedy",
+        "visual novel",
+        "witch",
+        "yandere"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/110465",
+        "https://anime-planet.com/anime/11eyes-picture-drama",
+        "https://kitsu.io/anime/8495",
+        "https://myanimelist.net/anime/20557",
+        "https://notify.moe/anime/Pcx0tFmmg"
+      ],
+      "title": "11eyes Picture Drama",
+      "type": "Special",
+      "episodes": 13,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/54569.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/54569t.jpg",
+      "synonyms": ["11eyes 映像特典"],
+      "relations": [
+        "https://anilist.co/anime/6682",
+        "https://anime-planet.com/anime/11eyes",
+        "https://anime-planet.com/anime/11eyes-special",
+        "https://kitsu.io/anime/4662",
+        "https://myanimelist.net/anime/6682",
+        "https://notify.moe/anime/trb6cKimR"
+      ],
+      "tags": ["comedy", "picture drama"]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/7739",
+        "https://anime-planet.com/anime/11eyes-special",
+        "https://kitsu.io/anime/5102",
+        "https://myanimelist.net/anime/7739",
+        "https://notify.moe/anime/2CpzpKimg"
+      ],
+      "title": "11eyes: Momoiro Genmutan",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/22784.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/22784t.jpg",
+      "synonyms": [
+        "11eyes -Tsumi to Batsu to Aganai no Shoujo- Episode 13",
+        "11eyes -Tsumi to Batsu to Aganai no Shoujo- OVA",
+        "11eyes Episode 13",
+        "11eyes OVA",
+        "11eyes Special",
+        "11eyes 桃色幻夢譚 ～rö zsaszí n é jszaka",
+        "イレブンアイズ OVA"
+      ],
+      "relations": [
+        "https://anilist.co/anime/6682",
+        "https://anime-planet.com/anime/11eyes",
+        "https://anime-planet.com/anime/11eyes-picture-drama",
+        "https://kitsu.io/anime/4662",
+        "https://kitsu.io/anime/8495",
+        "https://myanimelist.net/anime/20557",
+        "https://myanimelist.net/anime/6682",
+        "https://notify.moe/anime/Pcx0tFmmg",
+        "https://notify.moe/anime/trb6cKimR"
+      ],
+      "tags": [
+        "based on a visual novel",
+        "based on an eroge",
+        "comedy",
+        "ecchi",
+        "fantasy",
+        "seinen",
+        "super power",
+        "supernatural",
+        "superpowers"
+      ]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/43912"],
+      "title": "12 Zhi Wenzi He 5 Geren",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": null
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": ["12只蚊子和5个人"],
+      "relations": [],
+      "tags": ["kids"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11302",
+        "https://anilist.co/anime/99211",
+        "https://anime-planet.com/anime/12-gatsu-no-uta",
+        "https://kitsu.io/anime/10365",
+        "https://myanimelist.net/anime/29411",
+        "https://notify.moe/anime/9MO8pFmiR"
+      ],
+      "title": "12-gatsu no Uta",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1971
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/70691.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/70691t.jpg",
+      "synonyms": ["12月のうた", "December Song", "Juunigatsu no Uta"],
+      "relations": [],
+      "tags": ["kids", "music", "shorts"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/12-sai",
+        "https://kitsu.io/anime/8481",
+        "https://myanimelist.net/anime/23579",
+        "https://notify.moe/anime/1BAApFiiR"
+      ],
+      "title": "12-sai.",
+      "type": "OVA",
+      "episodes": 8,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2014
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/61783.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/61783t.jpg",
+      "synonyms": ["12-Sai.", "12歳。", "Age 12", "Juuni-sai."],
+      "relations": [
+        "https://anime-planet.com/anime/12-sai-2nd-season",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki-2",
+        "https://kitsu.io/anime/11309",
+        "https://kitsu.io/anime/11782",
+        "https://myanimelist.net/anime/31319",
+        "https://myanimelist.net/anime/32601",
+        "https://notify.moe/anime/1uN9pKimR",
+        "https://notify.moe/anime/JWa3tKmig"
+      ],
+      "tags": [
+        "asia",
+        "based on a manga",
+        "earth",
+        "friendship",
+        "japan",
+        "middle school",
+        "present",
+        "romance",
+        "school",
+        "school life",
+        "shoujo",
+        "unrequited love"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/10584",
+        "https://anilist.co/anime/20716"
+      ],
+      "title": "12-sai.",
+      "type": "OVA",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2014
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20716.jpg",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/20716.jpg",
+      "synonyms": [
+        "12 Ans.",
+        "12-Sai.",
+        "12さい.",
+        "12歳.",
+        "12歳。",
+        "Age 12."
+      ],
+      "relations": [
+        "https://anidb.net/anime/11899",
+        "https://anilist.co/anime/21609"
+      ],
+      "tags": [
+        "half-length episodes",
+        "manga",
+        "middle school",
+        "romance",
+        "school",
+        "school life",
+        "shoujo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/12-sai-2nd-season",
+        "https://kitsu.io/anime/11309",
+        "https://myanimelist.net/anime/31319",
+        "https://notify.moe/anime/1uN9pKimR"
+      ],
+      "title": "12-sai. 2nd Season",
+      "type": "OVA",
+      "episodes": 4,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2015
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/13/76326.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/13/76326t.jpg",
+      "synonyms": [
+        "12-Sai. 2nd Season",
+        "12-sai. 2",
+        "12歳。第2期",
+        "Age 12 Second Season",
+        "Juuni-sai. 2nd Season"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/12-sai",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki-2",
+        "https://kitsu.io/anime/11782",
+        "https://kitsu.io/anime/8481",
+        "https://myanimelist.net/anime/23579",
+        "https://myanimelist.net/anime/32601",
+        "https://notify.moe/anime/1BAApFiiR",
+        "https://notify.moe/anime/JWa3tKmig"
+      ],
+      "tags": [
+        "based on a manga",
+        "friendship",
+        "romance",
+        "school",
+        "school life",
+        "shoujo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11899",
+        "https://anilist.co/anime/21609",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki",
+        "https://kitsu.io/anime/11782",
+        "https://myanimelist.net/anime/32601",
+        "https://notify.moe/anime/JWa3tKmig"
+      ],
+      "title": "12-sai.: Chicchana Mune no Tokimeki",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/78391.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/78391t.jpg",
+      "synonyms": [
+        "12-Sai. Chicchana Mune no Tokimeki",
+        "12-Sai: Chiccha na Mune no Tokimeki",
+        "12-sai.: Chiccha na Mune no Tokimeki",
+        "12岁。小小的胸口心跳加速",
+        "12歳. ~ちっちゃなムネのトキメキ~",
+        "12歳。～ちっちゃなムネのトキメキ～",
+        "Age 12",
+        "Age 12.",
+        "Juuni-sai.",
+        "じゅうにさいちっちゃなむねのときめき"
+      ],
+      "relations": [
+        "https://anidb.net/anime/10584",
+        "https://anidb.net/anime/12198",
+        "https://anilist.co/anime/20716",
+        "https://anilist.co/anime/21839",
+        "https://anime-planet.com/anime/12-sai",
+        "https://anime-planet.com/anime/12-sai-2nd-season",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki-2",
+        "https://kitsu.io/anime/11309",
+        "https://kitsu.io/anime/12270",
+        "https://kitsu.io/anime/8481",
+        "https://myanimelist.net/anime/23579",
+        "https://myanimelist.net/anime/31319",
+        "https://myanimelist.net/anime/33419",
+        "https://notify.moe/anime/1BAApFiiR",
+        "https://notify.moe/anime/1uN9pKimR",
+        "https://notify.moe/anime/rE8ghFiiR"
+      ],
+      "tags": [
+        "asia",
+        "based on a manga",
+        "coming of age",
+        "earth",
+        "elementary school",
+        "female protagonist",
+        "friendship",
+        "japan",
+        "manga",
+        "present",
+        "primarily child cast",
+        "romance",
+        "school",
+        "school life",
+        "shoujo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12198",
+        "https://anilist.co/anime/21839",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki-2",
+        "https://kitsu.io/anime/12270",
+        "https://myanimelist.net/anime/33419",
+        "https://notify.moe/anime/rE8ghFiiR"
+      ],
+      "title": "12-sai.: Chicchana Mune no Tokimeki 2nd Season",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/10/80312.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/10/80312t.jpg",
+      "synonyms": [
+        "12-Sai. Chicchana Mune no Tokimeki (2016)",
+        "12-Sai. Chicchana Mune no Tokimeki 2nd Season",
+        "12-Sai: Chiccha na Mune no Tokimeki 2",
+        "12-sai.: Chiccha na Mune no Tokimeki 2",
+        "12-sai.: Chicchana Mune no Tokimeki 2",
+        "12岁。小小的胸口心跳加速 第二季",
+        "12歳. ~ちっちゃなムネのトキメキ~ (2016)",
+        "12歳。～ちっちゃなムネのトキメキ～",
+        "12歳。～ちっちゃなムネのトキメキ～ 2",
+        "Age 12.",
+        "Juuni-sai.",
+        "じゅうにさいちっちゃなむねのときめき"
+      ],
+      "relations": [
+        "https://anidb.net/anime/11899",
+        "https://anilist.co/anime/21609",
+        "https://anime-planet.com/anime/12-sai",
+        "https://anime-planet.com/anime/12-sai-2nd-season",
+        "https://anime-planet.com/anime/12-sai-chiccha-na-mune-no-tokimeki",
+        "https://kitsu.io/anime/11782",
+        "https://myanimelist.net/anime/32601",
+        "https://notify.moe/anime/JWa3tKmig"
+      ],
+      "tags": [
+        "based on a manga",
+        "female protagonist",
+        "friendship",
+        "manga",
+        "primarily child cast",
+        "romance",
+        "school",
+        "school life",
+        "shoujo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/123",
+        "https://kitsu.io/anime/41719",
+        "https://myanimelist.net/anime/37065"
+      ],
+      "title": "123",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2004
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/10/89907.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/10/89907t.jpg",
+      "synonyms": [
+        "Minna no Uta",
+        "Minna no Uta: 123",
+        "One Two Three",
+        "１２３（ワン ツー スリー）"
+      ],
+      "relations": [],
+      "tags": ["family friendly", "kids", "minna no uta", "music"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/5762"],
+      "title": "15 Bishoujo Hyouryuuki",
+      "type": "OVA",
+      "episodes": 3,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2009
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/13/31333.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/13/31333t.jpg",
+      "synonyms": ["15美少女漂流記", "The Story of 15 Beautiful Girls Adrift"],
+      "relations": [],
+      "tags": ["comedy", "harem", "hentai"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/9629",
+        "https://anilist.co/anime/18305",
+        "https://anime-planet.com/anime/15-sonyeon-uju-pyoryugi",
+        "https://kitsu.io/anime/8818",
+        "https://myanimelist.net/anime/18305",
+        "https://notify.moe/anime/8tZbtKimR"
+      ],
+      "title": "15 Sonyeon Uju Pyoryugi",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1980
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/13/49071.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/13/49071t.jpg",
+      "synonyms": [
+        "15 Children Space Adventure",
+        "15소년 우주 표류기",
+        "Fifteen Children Space Adventure"
+      ],
+      "relations": [],
+      "tags": [
+        "action",
+        "korean animation",
+        "outer space",
+        "sci-fi",
+        "science fiction",
+        "shounen",
+        "space"
+      ]
+    },
+    {
+      "sources": ["https://anilist.co/anime/115402"],
+      "title": "15 Step",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2008
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx115402-b58HmZu4TMsi.png",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx115402-b58HmZu4TMsi.png",
+      "synonyms": [],
+      "relations": [],
+      "tags": []
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/15-years-old-starting-today-well-be-living-together"
+      ],
+      "title": "15 Years Old: Starting Today We\u0027ll Be Living Together",
+      "type": "Special",
+      "episodes": 30,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2018
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/15-years-old-starting-today-well-be-living-together-11189.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/15-years-old-starting-today-well-be-living-together-11189.jpg",
+      "synonyms": ["15-sai, Kyou kara Dousei Hajimemasu."],
+      "relations": [],
+      "tags": ["based on a manga", "romance", "short episodes", "shoujo"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/14129",
+        "https://anilist.co/anime/103886",
+        "https://kitsu.io/anime/41478",
+        "https://myanimelist.net/anime/38019",
+        "https://notify.moe/anime/4Ofr83dmg"
+      ],
+      "title": "15-sai, Kyou kara Dousei Hajimemasu.",
+      "type": "ONA",
+      "episodes": 30,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2018
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1516/93211.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1516/93211t.jpg",
+      "synonyms": ["15歳, 今日から同棲はじめます."],
+      "relations": [],
+      "tags": [
+        "comedy",
+        "drama",
+        "romance",
+        "school",
+        "short episodes",
+        "shoujo",
+        "slice of life"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12576",
+        "https://anilist.co/anime/98512",
+        "https://anime-planet.com/anime/18-if",
+        "https://kitsu.io/anime/13281",
+        "https://myanimelist.net/anime/35248",
+        "https://notify.moe/anime/2tG72KmmR"
+      ],
+      "title": "18if",
+      "type": "TV",
+      "episodes": 13,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/86743.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/86743t.jpg",
+      "synonyms": ["18 If", "18：与你相连的拼图游戏", "에이틴 이프"],
+      "relations": [],
+      "tags": [
+        "adventure",
+        "alternate universe",
+        "amnesia",
+        "based on a mobile game",
+        "bullying",
+        "crossdressing",
+        "drama",
+        "dream world",
+        "ensemble cast",
+        "episodic",
+        "fantasy",
+        "game",
+        "gods",
+        "harem",
+        "idol",
+        "isekai",
+        "male protagonist",
+        "mystery",
+        "supernatural",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/1980yen-takoyaki-story"],
+      "title": "1980YEN: Takoyaki Story",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2018
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/1980yen-takoyaki-story-12700.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/1980yen-takoyaki-story-12700.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["abstract", "food and beverage"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11393",
+        "https://anilist.co/anime/102987",
+        "https://kitsu.io/anime/10747",
+        "https://myanimelist.net/anime/30234",
+        "https://notify.moe/anime/rirQpKiiR"
+      ],
+      "title": "1989",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2009
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/4/72346.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/4/72346t.jpg",
+      "synonyms": ["1989 the Pillows", "1989 the pillows"],
+      "relations": [],
+      "tags": ["music", "space"]
+    },
+    {
+      "sources": ["https://anilist.co/anime/111942"],
+      "title": "1year",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2015
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b111942-IuPDiC64su5p.jpg",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b111942-IuPDiC64su5p.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": []
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/dalljub-step-club-2",
+        "https://kitsu.io/anime/42834",
+        "https://myanimelist.net/anime/38756"
+      ],
+      "title": "2",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1937/96856.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1937/96856t.jpg",
+      "synonyms": ["DALLJUB STEP CLUB: \"2\"", "Dalljub Step Club"],
+      "relations": [],
+      "tags": ["boxing", "cg animation", "dancing", "military", "music"]
+    },
+    {
+      "sources": ["https://anilist.co/anime/128397"],
+      "title": "2.43 Mini Anime",
+      "type": "ONA",
+      "episodes": 8,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128397-uOWDGizrOZit.png",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128397-uOWDGizrOZit.png",
+      "synonyms": ["2.43ミニアニメ"],
+      "relations": ["https://anilist.co/anime/113231"],
+      "tags": ["chibi", "slice of life", "sports"]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/128527",
+        "https://myanimelist.net/anime/46003",
+        "https://notify.moe/anime/tMhdAWfGR"
+      ],
+      "title": "2.43 Mini Anime: Fukui-ben Kouza",
+      "type": "ONA",
+      "episodes": 0,
+      "status": "CURRENTLY",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1300/111150.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1300/111150t.jpg",
+      "synonyms": ["2.43ミニアニメ 福井弁講座"],
+      "relations": [
+        "https://anilist.co/anime/113231",
+        "https://myanimelist.net/anime/40679",
+        "https://notify.moe/anime/ydDu5JZMR"
+      ],
+      "tags": ["comedy", "slice of life", "sports"]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/128526",
+        "https://myanimelist.net/anime/46004",
+        "https://notify.moe/anime/QJmTAWfGg"
+      ],
+      "title": "2.43 Mini Anime: Inside Story",
+      "type": "ONA",
+      "episodes": 10,
+      "status": "CURRENTLY",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1280/111151.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1280/111151t.jpg",
+      "synonyms": ["2.43ミニアニメ inside story"],
+      "relations": [
+        "https://anilist.co/anime/113231",
+        "https://myanimelist.net/anime/40679",
+        "https://notify.moe/anime/ydDu5JZMR"
+      ],
+      "tags": ["comedy", "slice of life", "sports"]
+    },
+    {
+      "sources": [
+        "https://myanimelist.net/anime/45585",
+        "https://notify.moe/anime/wYAw0ZBGg"
+      ],
+      "title": "2.43 Mini Anime: Volleyball Kouza",
+      "type": "ONA",
+      "episodes": 10,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1194/111069.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1194/111069t.jpg",
+      "synonyms": [
+        "「2.43　清陰高校男子バレー部」ミニアニメ　バレーボール講座編"
+      ],
+      "relations": [
+        "https://myanimelist.net/anime/40679",
+        "https://notify.moe/anime/ydDu5JZMR"
+      ],
+      "tags": ["school", "sports"]
+    },
+    {
+      "sources": ["https://anilist.co/anime/128398"],
+      "title": "2.43 Mini Anime: Volleyball Kouza-hen",
+      "type": "ONA",
+      "episodes": 10,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128398-ZEfGugGybTTl.png",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128398-ZEfGugGybTTl.png",
+      "synonyms": ["2.43ミニアニメ バレーボール講座編"],
+      "relations": ["https://anilist.co/anime/113231"],
+      "tags": ["chibi", "slice of life", "sports"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza"
+      ],
+      "title": "2.43: Seiin High School Boys Volleyball Team - Fukui-ben Kouza",
+      "type": "ONA",
+      "episodes": 6,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2021
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza-16183.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza-16183.jpg",
+      "synonyms": ["2.43: Seiin Koukou Danshi Volley-bu - Fukui-ben Kouza"],
+      "relations": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-inside-story",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-mini-anime",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen"
+      ],
+      "tags": [
+        "based on a light novel",
+        "chibi",
+        "educational",
+        "short episodes"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-inside-story"
+      ],
+      "title": "2.43: Seiin High School Boys Volleyball Team - Inside Story",
+      "type": "ONA",
+      "episodes": 5,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2021
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/243-seiin-high-school-boys-volleyball-team-inside-story-16288.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/243-seiin-high-school-boys-volleyball-team-inside-story-16288.jpg",
+      "synonyms": ["2.43: Seiin Koukou Danshi Volley-bu - Inside Story"],
+      "relations": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-mini-anime",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen"
+      ],
+      "tags": ["based on a light novel", "chibi", "short episodes"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen"
+      ],
+      "title": "2.43: Seiin High School Boys Volleyball Team - Volleyball Kouza-hen",
+      "type": "ONA",
+      "episodes": 10,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen-16124.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen-16124.jpg",
+      "synonyms": [
+        "2.43: Seiin Koukou Danshi Volley-bu - Volleyball Kouza-hen"
+      ],
+      "relations": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-inside-story",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-mini-anime"
+      ],
+      "tags": [
+        "based on a light novel",
+        "chibi",
+        "educational",
+        "short episodes",
+        "sports",
+        "volleyball"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-mini-anime"
+      ],
+      "title": "2.43: Seiin High School Boys Volleyball Team Mini Anime",
+      "type": "ONA",
+      "episodes": 8,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/243-seiin-high-school-boys-volleyball-team-mini-anime-15957.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/243-seiin-high-school-boys-volleyball-team-mini-anime-15957.jpg",
+      "synonyms": ["2.43: Seiin Koukou Danshi Volley-bu Mini Anime"],
+      "relations": [
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-inside-story",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen"
+      ],
+      "tags": [
+        "based on a light novel",
+        "chibi",
+        "short episodes",
+        "sports",
+        "volleyball"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/15257",
+        "https://anilist.co/anime/113231",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team",
+        "https://kitsu.io/anime/43464",
+        "https://myanimelist.net/anime/40679",
+        "https://notify.moe/anime/ydDu5JZMR"
+      ],
+      "title": "2.43: Seiin Koukou Danshi Volley-bu",
+      "type": "TV",
+      "episodes": 12,
+      "status": "CURRENTLY",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1596/108096.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1596/108096t.jpg",
+      "synonyms": [
+        "2.43 Seiin Volley Bu",
+        "2.43 清陰高校男子バレー部",
+        "2.43: Seiin High School Boys Volleyball Club",
+        "2.43: Seiin High School Boys Volleyball Team",
+        "2.43: Seiin High School Boys\u0027 Volleyball Club",
+        "2.43: Seiin High School Boys` Volleyball Club",
+        "2.43: Seiin Koukou Danshi Volley Bu",
+        "Seiin Koukou Danshi Volley Bu"
+      ],
+      "relations": [
+        "https://anilist.co/anime/128397",
+        "https://anilist.co/anime/128398",
+        "https://anilist.co/anime/128526",
+        "https://anilist.co/anime/128527",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-fukui-ben-kouza",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-inside-story",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-mini-anime",
+        "https://anime-planet.com/anime/243-seiin-high-school-boys-volleyball-team-volleyball-kouza-hen",
+        "https://kitsu.io/anime/44065",
+        "https://myanimelist.net/anime/45585",
+        "https://myanimelist.net/anime/46000",
+        "https://myanimelist.net/anime/46003",
+        "https://myanimelist.net/anime/46004",
+        "https://notify.moe/anime/QJmTAWfGg",
+        "https://notify.moe/anime/T6JfAZBMR",
+        "https://notify.moe/anime/tMhdAWfGR",
+        "https://notify.moe/anime/wYAw0ZBGg"
+      ],
+      "tags": [
+        "based on a light novel",
+        "childhood friends",
+        "coming of age",
+        "drama",
+        "josei",
+        "male protagonist",
+        "noitamina",
+        "novel",
+        "primarily male cast",
+        "school",
+        "school club",
+        "school clubs",
+        "school life",
+        "slice of life",
+        "sports",
+        "time skip",
+        "tournaments",
+        "volleyball"
+      ]
+    },
+    {
+      "sources": [
+        "https://kitsu.io/anime/44065",
+        "https://myanimelist.net/anime/46000",
+        "https://notify.moe/anime/T6JfAZBMR"
+      ],
+      "title": "2.43: Seiin Koukou Danshi Volley-bu Mini Anime",
+      "type": "ONA",
+      "episodes": 8,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1521/111149.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1521/111149t.jpg",
+      "synonyms": [
+        "2.43 清陰高校男子バレー部 ミニアニメ",
+        "2.43: Seiin High School Boys Volleyball Team Mini Anime"
+      ],
+      "relations": [
+        "https://kitsu.io/anime/43464",
+        "https://myanimelist.net/anime/40679",
+        "https://notify.moe/anime/ydDu5JZMR"
+      ],
+      "tags": [
+        "comedy",
+        "slice of life",
+        "sports",
+        "super deformed",
+        "volleyball"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11394",
+        "https://anime-planet.com/anime/20-dai-no-heya-hen",
+        "https://kitsu.io/anime/10236",
+        "https://myanimelist.net/anime/29347",
+        "https://notify.moe/anime/d1QytFiig"
+      ],
+      "title": "20-dai no Heya-hen",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2015
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/81169.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/81169t.jpg",
+      "synonyms": [
+        "20-dai no Heya Hen",
+        "Rooms for Twentysomethings",
+        "マイナビ賃貸 20代の部屋編"
+      ],
+      "relations": [],
+      "tags": ["apartment life", "commercials", "promotional", "slice of life"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12813",
+        "https://anilist.co/anime/116708",
+        "https://anime-planet.com/anime/2002-nen-baachan-ondo",
+        "https://kitsu.io/anime/11522",
+        "https://myanimelist.net/anime/31874",
+        "https://notify.moe/anime/r22jpKiiR"
+      ],
+      "title": "2002-nen Halmeoni Ondo",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2002
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/76750.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/76750t.jpg",
+      "synonyms": [
+        "2002-nen Baachan Ondo",
+        "2002-nen Harmoni Ondo",
+        "2002年ばあちゃん(ハルモニ)音頭",
+        "2002年ばあちゃん[ハルモニ]音頭",
+        "2002年ばあちゃん（ハルモニ）音頭",
+        "Minna no Uta",
+        "Minna no Uta: 2002-nen Baachan Ondo"
+      ],
+      "relations": [],
+      "tags": ["kids", "minna no uta", "music", "soccer", "sports"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11398",
+        "https://anilist.co/anime/104092",
+        "https://anime-planet.com/anime/2005-nen-uchuu-no-tabi",
+        "https://kitsu.io/anime/10040",
+        "https://myanimelist.net/anime/28339",
+        "https://notify.moe/anime/bJCPtFmig"
+      ],
+      "title": "2005-nen Uchuu no Tabi",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2005
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/81170.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/81170t.jpg",
+      "synonyms": ["2005 Space Odyssey", "2005年宇宙の旅"],
+      "relations": [],
+      "tags": [
+        "dementia",
+        "new",
+        "sci-fi",
+        "science fiction",
+        "short movie",
+        "shorts",
+        "space"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12218",
+        "https://anilist.co/anime/104344",
+        "https://anime-planet.com/anime/the-telephones-2010",
+        "https://kitsu.io/anime/12066",
+        "https://myanimelist.net/anime/32813",
+        "https://notify.moe/anime/J8u6pFmig"
+      ],
+      "title": "2010",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/78672.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/78672t.jpg",
+      "synonyms": ["The Telephones - 2010", "The Telephones: 2010"],
+      "relations": [],
+      "tags": ["abstract", "music"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/47363"],
+      "title": "2012 Ka Ku Chunwan Zhi Long Xing Tianxia",
+      "type": "TV",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": null
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": ["2012卡酷春晚之龙行天下"],
+      "relations": [],
+      "tags": ["kids"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/47210"],
+      "title": "2015 Chunjie Dongman Da Lianhuan",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": null
+      },
+      "picture": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "thumbnail": "https://cdn.myanimelist.net/images/qm_50.gif",
+      "synonyms": ["2015春节动漫大联欢"],
+      "relations": [],
+      "tags": ["adventure"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/9707",
+        "https://anilist.co/anime/16696",
+        "https://anime-planet.com/anime/2020-nyeon-ujuui-wonder-kiddy",
+        "https://kitsu.io/anime/7493",
+        "https://myanimelist.net/anime/16696",
+        "https://notify.moe/anime/o8eKtFimR"
+      ],
+      "title": "2020 Nyeon Ujuui Wonder Kiddy",
+      "type": "TV",
+      "episodes": 13,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1989
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/77252.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/77252t.jpg",
+      "synonyms": [
+        "2020 Nyeon Ujuui Wondeo Kidi",
+        "2020 Space Wonder Kiddy",
+        "2020 Wonder Kiddy",
+        "2020-nen Uchuu no Wonder Kiddy",
+        "2020-nen Wonder Kiddy",
+        "2020년 우주의 원더키디"
+      ],
+      "relations": [],
+      "tags": [
+        "korean animation",
+        "outer space",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "space"
+      ]
+    },
+    {
+      "sources": ["https://kitsu.io/anime/44059"],
+      "title": "20:55",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2020
+      },
+      "picture": "https://media.kitsu.io/anime/poster_images/44059/small.jpg?1612750497",
+      "thumbnail": "https://media.kitsu.io/anime/poster_images/44059/tiny.jpg?1612750497",
+      "synonyms": ["20時55分"],
+      "relations": [],
+      "tags": ["idol", "music"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/20min-walk-from-nishi-ogikubo-station"
+      ],
+      "title": "20min Walk From Nishi-Ogikubo Station",
+      "type": "ONA",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2014
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/20min-walk-from-nishi-ogikubo-station-6858.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/20min-walk-from-nishi-ogikubo-station-6858.jpg",
+      "synonyms": [
+        "Nihon Animator Mihonichi: 20min Walk From Nishi-Ogikubo Station, 2 Bedrooms, Living Room, Dining Room, Kitchen, 2mos Deposit, No Pets Allowed"
+      ],
+      "relations": [],
+      "tags": [
+        "insects",
+        "japan animator\u0027s exhibition",
+        "no dialogue",
+        "shorts"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/4922",
+        "https://anilist.co/anime/5628",
+        "https://anime-planet.com/anime/21-emon",
+        "https://kitsu.io/anime/4209",
+        "https://myanimelist.net/anime/5628",
+        "https://notify.moe/anime/MbYC5Fmig"
+      ],
+      "title": "21 Emon",
+      "type": "TV",
+      "episodes": 39,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 1991
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/11/69883.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/11/69883t.jpg",
+      "synonyms": ["21 エモン", "21-emon", "21emon", "21エモン"],
+      "relations": [
+        "https://anidb.net/anime/4943",
+        "https://anidb.net/anime/5323",
+        "https://anilist.co/anime/6073",
+        "https://anilist.co/anime/6074",
+        "https://anime-planet.com/anime/21-emon-uchuu-e-irasshai",
+        "https://kitsu.io/anime/4413",
+        "https://kitsu.io/anime/4414",
+        "https://myanimelist.net/anime/6073",
+        "https://myanimelist.net/anime/6074",
+        "https://notify.moe/anime/HnAq5Fiig",
+        "https://notify.moe/anime/NzAq5KmiR"
+      ],
+      "tags": [
+        "based on a manga",
+        "comedy",
+        "family friendly",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "shounen",
+        "space"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5323",
+        "https://anilist.co/anime/6073",
+        "https://anime-planet.com/anime/21-emon-uchuu-e-irasshai",
+        "https://kitsu.io/anime/4413",
+        "https://myanimelist.net/anime/6073",
+        "https://notify.moe/anime/NzAq5KmiR"
+      ],
+      "title": "21 Emon Uchuu e Irasshai!",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 1981
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1969/96654.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1969/96654t.jpg",
+      "synonyms": [
+        "21 Emon: Uchuu e Irasshai!",
+        "21 Emon: Welcome to the Space!!",
+        "21エモン 宇宙へいらっしゃい!",
+        "２１エモン　宇宙へいらっしゃい！"
+      ],
+      "relations": [
+        "https://anidb.net/anime/4922",
+        "https://anilist.co/anime/5628",
+        "https://anime-planet.com/anime/21-emon",
+        "https://kitsu.io/anime/4209",
+        "https://myanimelist.net/anime/5628",
+        "https://notify.moe/anime/MbYC5Fmig"
+      ],
+      "tags": [
+        "action",
+        "adventure",
+        "comedy",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "space"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/4943",
+        "https://anilist.co/anime/6074",
+        "https://anime-planet.com/anime/21-emon-uchuu-ike-hadashi-no-princess",
+        "https://kitsu.io/anime/4414",
+        "https://myanimelist.net/anime/6074",
+        "https://notify.moe/anime/HnAq5Fiig"
+      ],
+      "title": "21 Emon Uchuu ike! Hadashi no Princess",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1992
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/13/13278.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/13/13278t.jpg",
+      "synonyms": [
+        "21 Emon: Sora Ike! Hadashi no Princess",
+        "21 Emon: To Space! The Barefoot Princess",
+        "21-Emon: To Space! The Barefoot Princess",
+        "21エモン 宇宙[そら]いけ! 裸足のプリンセス",
+        "21エモン 宇宙いけ! 裸足のプリンセス",
+        "２１エモン 宇宙いけ！裸足のプリンセス"
+      ],
+      "relations": [
+        "https://anidb.net/anime/4922",
+        "https://anilist.co/anime/5628",
+        "https://kitsu.io/anime/4209",
+        "https://myanimelist.net/anime/5628",
+        "https://notify.moe/anime/MbYC5Fmig"
+      ],
+      "tags": [
+        "based on a manga",
+        "comedy",
+        "family friendly",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "shounen",
+        "space"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/4965",
+        "https://anilist.co/anime/10139",
+        "https://anime-planet.com/anime/21-seiki-manga-hajimete-monogatari",
+        "https://kitsu.io/anime/6053",
+        "https://myanimelist.net/anime/10139",
+        "https://notify.moe/anime/j_hntFimg"
+      ],
+      "title": "21 Seiki Manga Hajimete Monogatari",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2001
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/10/27942.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/10/27942t.jpg",
+      "synonyms": ["21世紀まんがはじめて物語", "２１世紀まんがはじめて物語"],
+      "relations": [
+        "https://anidb.net/anime/4709",
+        "https://anidb.net/anime/4952",
+        "https://anidb.net/anime/4962",
+        "https://anidb.net/anime/6300",
+        "https://anilist.co/anime/10138",
+        "https://anime-planet.com/anime/manga-doushite-monogatari",
+        "https://anime-planet.com/anime/manga-doushite-monogatari-ova",
+        "https://anime-planet.com/anime/manga-hajimete-monogatari",
+        "https://anime-planet.com/anime/manga-hajimete-monogatari-ova",
+        "https://anime-planet.com/anime/manga-hajimete-omoshiro-juku",
+        "https://anime-planet.com/anime/manga-hajimete-omoshiro-juku-ova",
+        "https://anime-planet.com/anime/manga-naruhodo-monogatari",
+        "https://anime-planet.com/anime/manga-naruhodo-monogatari-ova",
+        "https://anime-planet.com/anime/shin-manga-naruhodo-monogatari",
+        "https://kitsu.io/anime/6052",
+        "https://myanimelist.net/anime/10138",
+        "https://notify.moe/anime/Iy2ntFmmg"
+      ],
+      "tags": [
+        "adventure",
+        "comedy",
+        "family friendly",
+        "kids",
+        "sci fi",
+        "sci-fi",
+        "science fiction",
+        "time travel"
+      ]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/21-seiki-wa-minna-ga-shuyaku",
+        "https://kitsu.io/anime/41549",
+        "https://myanimelist.net/anime/35242"
+      ],
+      "title": "21 Seiki wa Minna ga Shuyaku",
+      "type": "OVA",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2001
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/84892.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/84892t.jpg",
+      "synonyms": ["21世紀はみんなが主役"],
+      "relations": [],
+      "tags": ["drama", "educational"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/2863"],
+      "title": "21-ji no Onna: Newscaster Katsuragi Miki",
+      "type": "OVA",
+      "episodes": 3,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2001
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/5/31331.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/5/31331t.jpg",
+      "synonyms": [
+        "21時の女～ニュースキャスター桂木美紀～",
+        "9 o\u0027clock Woman",
+        "Nine O\u0027clock Woman"
+      ],
+      "relations": [],
+      "tags": ["hentai"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/13299",
+        "https://anilist.co/anime/99807",
+        "https://anime-planet.com/anime/22-7",
+        "https://kitsu.io/anime/42456",
+        "https://myanimelist.net/anime/40148",
+        "https://notify.moe/anime/L1OeO5vZR"
+      ],
+      "title": "22/7",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1485/108385.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1485/108385t.jpg",
+      "synonyms": [
+        "22/7 (Nanabun no Nijyuuni)",
+        "22/7 (nanabun no nijyuuni)",
+        "22/7 （ナナブンノニジュウニ）",
+        "Ano Hi no Kanojo-tachi",
+        "Nanabun no Nijuuni",
+        "Nanabun no Nijyuuni",
+        "The Diary of Our Days",
+        "nanabun no nijyuuni",
+        "あの日の彼女たち",
+        "ナナブンノニジュウニ"
+      ],
+      "relations": [
+        "https://anidb.net/anime/13399",
+        "https://anidb.net/anime/15209",
+        "https://anidb.net/anime/15210",
+        "https://anidb.net/anime/15211",
+        "https://anilist.co/anime/101775",
+        "https://anilist.co/anime/101776",
+        "https://anilist.co/anime/101777",
+        "https://anilist.co/anime/104611",
+        "https://anilist.co/anime/110787",
+        "https://anilist.co/anime/114249",
+        "https://anilist.co/anime/121888",
+        "https://anime-planet.com/anime/22-7-8-plus-3",
+        "https://anime-planet.com/anime/22-7-ano-hi-no-kanojo-tachi",
+        "https://anime-planet.com/anime/22-7-boku-wa-sonzai-shiteinakatta",
+        "https://anime-planet.com/anime/22-7-nani-mo-shite-agerarenai",
+        "https://anime-planet.com/anime/22-7-rikai-sha",
+        "https://anime-planet.com/anime/22-7-shampoo-no-nioi-ga-shita",
+        "https://kitsu.io/anime/41485",
+        "https://kitsu.io/anime/43285",
+        "https://myanimelist.net/anime/36191",
+        "https://myanimelist.net/anime/37406",
+        "https://myanimelist.net/anime/37589",
+        "https://myanimelist.net/anime/38051",
+        "https://myanimelist.net/anime/40924",
+        "https://notify.moe/anime/74NYu3dmg",
+        "https://notify.moe/anime/APhTXkQZR",
+        "https://notify.moe/anime/I0bFpD0ig",
+        "https://notify.moe/anime/O8OV93OmR",
+        "https://notify.moe/anime/PZtd2Kimg"
+      ],
+      "tags": [
+        "card battle",
+        "drama",
+        "female protagonist",
+        "idol",
+        "idols",
+        "music",
+        "musical",
+        "mystery",
+        "performance",
+        "primarily female cast",
+        "showbiz",
+        "slice of life",
+        "the arts",
+        "yuri"
+      ]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/114249",
+        "https://anime-planet.com/anime/22-7-8-plus-3",
+        "https://kitsu.io/anime/43285",
+        "https://myanimelist.net/anime/40924",
+        "https://notify.moe/anime/APhTXkQZR"
+      ],
+      "title": "22/7: 8＋3\u003d?",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2020
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1259/109909.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1259/109909t.jpg",
+      "synonyms": [
+        "22/7 Episode 13",
+        "22/7 OVA",
+        "22/7 Special",
+        "22/7: 8+3\u003d?",
+        "22/7: 8＋3＝？",
+        "Nanabun no Nijyuuni Episode 13"
+      ],
+      "relations": [
+        "https://anilist.co/anime/121888",
+        "https://anilist.co/anime/99807",
+        "https://anime-planet.com/anime/22-7",
+        "https://kitsu.io/anime/42456",
+        "https://myanimelist.net/anime/40148",
+        "https://notify.moe/anime/L1OeO5vZR"
+      ],
+      "tags": [
+        "cute girls doing cute things",
+        "idol",
+        "idols",
+        "music",
+        "primarily female cast",
+        "showbiz",
+        "slice of life"
+      ]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/22-7-ano-hi-no-kanojo-tachi"],
+      "title": "22/7: Ano Hi no Kanojo-tachi",
+      "type": "ONA",
+      "episodes": 8,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2018
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/22-7-ano-hi-no-kanojo-tachi-9992.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/22-7-ano-hi-no-kanojo-tachi-9992.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/22-7",
+        "https://anime-planet.com/anime/22-7-boku-wa-sonzai-shiteinakatta",
+        "https://anime-planet.com/anime/22-7-nani-mo-shite-agerarenai",
+        "https://anime-planet.com/anime/22-7-rikai-sha",
+        "https://anime-planet.com/anime/22-7-shampoo-no-nioi-ga-shita"
+      ],
+      "tags": ["idols", "short episodes", "slice of life"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/22-7-boku-wa-sonzai-shiteinakatta"
+      ],
+      "title": "22/7: Boku wa Sonzai Shiteinakatta",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2017
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/22-7-boku-wa-sonzai-shiteinakatta-9128.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/22-7-boku-wa-sonzai-shiteinakatta-9128.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/22-7",
+        "https://anime-planet.com/anime/22-7-ano-hi-no-kanojo-tachi",
+        "https://anime-planet.com/anime/22-7-nani-mo-shite-agerarenai",
+        "https://anime-planet.com/anime/22-7-rikai-sha",
+        "https://anime-planet.com/anime/22-7-shampoo-no-nioi-ga-shita"
+      ],
+      "tags": ["cg animation", "idols"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/22-7-nani-mo-shite-agerarenai"
+      ],
+      "title": "22/7: Nani mo Shite Agerarenai",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2019
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/22-7-nani-mo-shite-agerarenai-13997.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/22-7-nani-mo-shite-agerarenai-13997.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/22-7",
+        "https://anime-planet.com/anime/22-7-ano-hi-no-kanojo-tachi",
+        "https://anime-planet.com/anime/22-7-boku-wa-sonzai-shiteinakatta",
+        "https://anime-planet.com/anime/22-7-rikai-sha",
+        "https://anime-planet.com/anime/22-7-shampoo-no-nioi-ga-shita"
+      ],
+      "tags": ["idols"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/22-7-rikai-sha"],
+      "title": "22/7: Rikai-sha",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2018
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/22-7-rikai-sha-11407.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/22-7-rikai-sha-11407.jpg",
+      "synonyms": [],
+      "relations": [
+        "https://anime-planet.com/anime/22-7",
+        "https://anime-planet.com/anime/22-7-ano-hi-no-kanojo-tachi",
+        "https://anime-planet.com/anime/22-7-boku-wa-sonzai-shiteinakatta",
+        "https://anime-planet.com/anime/22-7-nani-mo-shite-agerarenai",
+        "https://anime-planet.com/anime/22-7-shampoo-no-nioi-ga-shita"
+      ],
+      "tags": ["cg animation", "idols"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/47426"],
+      "title": "23-ji no Saga Meshi Anime",
+      "type": "ONA",
+      "episodes": 10,
+      "status": "CURRENTLY",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2021
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1384/111726.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1384/111726t.jpg",
+      "synonyms": ["23時の佐賀飯アニメ"],
+      "relations": [],
+      "tags": ["slice of life"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/23-exe-feel-so-good"],
+      "title": "23.exe: Feel so good",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2018
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/23-exe-feel-so-good-15163.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/23-exe-feel-so-good-15163.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["adventure", "chibi", "fantasy", "urban fantasy", "vocaloid"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/23-exe-m1ku"],
+      "title": "23.exe: M1KU",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2017
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/23-exe-m1ku-15165.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/23-exe-m1ku-15165.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["chibi", "vocaloid"]
+    },
+    {
+      "sources": ["https://anime-planet.com/anime/23-exe-ochatime"],
+      "title": "23.exe: ochatime",
+      "type": "Special",
+      "episodes": 1,
+      "status": "UNKNOWN",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2020
+      },
+      "picture": "https://anime-planet.com/images/anime/covers/23-exe-ochatime-15164.jpg",
+      "thumbnail": "https://anime-planet.com/images/anime/covers/thumbs/23-exe-ochatime-15164.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["vocaloid"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/15527"],
+      "title": "24H",
+      "type": "Special",
+      "episodes": 9,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 2010
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1114/98952.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1114/98952t.jpg",
+      "synonyms": [
+        "Damn What Ringtone",
+        "Die Very Hard",
+        "Hanabeam",
+        "Lan Lan feat. Leyona \u0026 Mitsuyoshi Azuma",
+        "Mr. Beer Surf Demolition Mix feat. Demolition Man",
+        "Robot Nametake",
+        "UFO feat. UA",
+        "Wake Up feat. Chinza Dopeness",
+        "Work It!!! feat. Spinna B-ILL"
+      ],
+      "relations": ["https://myanimelist.net/anime/39786"],
+      "tags": ["music"]
+    },
+    {
+      "sources": [
+        "https://anime-planet.com/anime/25-sai-no-joshikousei",
+        "https://kitsu.io/anime/14094",
+        "https://myanimelist.net/anime/36840",
+        "https://notify.moe/anime/Th1H2KimR"
+      ],
+      "title": "25-sai no Joshikousei",
+      "type": "TV",
+      "episodes": 12,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 2018
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/12/89091.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/12/89091t.jpg",
+      "synonyms": [
+        "25-Year-Old High School Girl",
+        "25-Year-Old High School Girl, I Wouldn’t Do This with a Kid",
+        "25-sai no Joshikousei: Kodomo ni wa Oshierarenai Koto Shite Yaru yo",
+        "25歳の女子高生",
+        "The 25 Year Old High School Girl",
+        "２５歳の女子高生～子供には教えられないことシてやるよ"
+      ],
+      "relations": [],
+      "tags": [
+        "adult couples",
+        "based on a manga",
+        "ecchi",
+        "hentai",
+        "josei",
+        "mature romance",
+        "romance",
+        "school",
+        "school life",
+        "short episodes",
+        "smut"
+      ]
+    },
+    {
+      "sources": ["https://anilist.co/anime/127797"],
+      "title": "27th",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "UNDEFINED",
+        "year": 2020
+      },
+      "picture": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127797-Ll3XOUZqAP0L.jpg",
+      "thumbnail": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx127797-Ll3XOUZqAP0L.jpg",
+      "synonyms": [],
+      "relations": [],
+      "tags": ["achromatic", "music"]
+    },
+    {
+      "sources": ["https://myanimelist.net/anime/2864"],
+      "title": "2x1",
+      "type": "OVA",
+      "episodes": 2,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "WINTER",
+        "year": 1998
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/2/36711.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/2/36711t.jpg",
+      "synonyms": ["Four Play", "Ni Kakeru Ichi"],
+      "relations": [],
+      "tags": ["hentai"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/5334",
+        "https://anilist.co/anime/12589",
+        "https://kitsu.io/anime/6770",
+        "https://myanimelist.net/anime/12589",
+        "https://notify.moe/anime/gQYHpFmig"
+      ],
+      "title": "3 Choume no Tama: Onegai! Momo-chan wo Sagashite!!",
+      "type": "Movie",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 1993
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/7/35279.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/7/35279t.jpg",
+      "synonyms": [
+        "3 Choume no Tama: Onegai! Momo-chan o Sagashite!!",
+        "3-Choume no Tama: Onegai! Momo-chan o Sagashite!!",
+        "3丁目のタマ おねがい! モモちゃんを捜して!!",
+        "Tama and Friends movie",
+        "Tama and Friends: Please! Search for Momo-chan!!"
+      ],
+      "relations": [
+        "https://anidb.net/anime/4678",
+        "https://anilist.co/anime/2467",
+        "https://anilist.co/anime/87478",
+        "https://kitsu.io/anime/12653",
+        "https://kitsu.io/anime/2241",
+        "https://myanimelist.net/anime/2467",
+        "https://myanimelist.net/anime/32663",
+        "https://notify.moe/anime/YLuE5Kiig",
+        "https://notify.moe/anime/bJ2m2KiiR"
+      ],
+      "tags": ["adventure", "kids"]
+    },
+    {
+      "sources": [
+        "https://anilist.co/anime/2467",
+        "https://anime-planet.com/anime/tama-of-the-3rd-district-have-you-seen-my-tama",
+        "https://kitsu.io/anime/2241",
+        "https://myanimelist.net/anime/2467",
+        "https://notify.moe/anime/YLuE5Kiig"
+      ],
+      "title": "3 Choume no Tama: Uchi no Tama Shirimasen ka?",
+      "type": "TV",
+      "episodes": 36,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 1988
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/9/74055.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/9/74055t.jpg",
+      "synonyms": [
+        "3 Choume no Tama Uchi no Tama Shirimasenka?",
+        "3 Choume no Tama: Uchi no Tama Shirimasenka?",
+        "3丁目のタマ うちのタマ知りませんか?",
+        "3丁目のタマ　うちのタマ知りませんか?",
+        "San Choume no Tama Uchi no Tama Shirimasenka?",
+        "Sanchome no Tama: Uchi no Tama Shirimasenka?",
+        "TAMA of the 3rd District -Have You Seen My TAMA?",
+        "TAMA of the 3rd District: Have You Seen My TAMA?",
+        "Tama \u0026 Friends",
+        "Tama and Friends",
+        "Teo and Friends",
+        "Teo and friends"
+      ],
+      "relations": [
+        "https://anilist.co/anime/109964",
+        "https://anilist.co/anime/12589",
+        "https://anilist.co/anime/87478",
+        "https://anime-planet.com/anime/tama-and-friends-uchi-no-tama-shirimasenka",
+        "https://anime-planet.com/anime/uchitama-have-you-seen-my-tama",
+        "https://kitsu.io/anime/12653",
+        "https://kitsu.io/anime/6770",
+        "https://myanimelist.net/anime/12589",
+        "https://myanimelist.net/anime/32663",
+        "https://notify.moe/anime/bJ2m2KiiR",
+        "https://notify.moe/anime/gQYHpFmig"
+      ],
+      "tags": [
+        "adventure",
+        "animal protagonists",
+        "animals",
+        "cats",
+        "dogs",
+        "episodic",
+        "non-human protagonists"
+      ]
+    },
+    {
+      "sources": [
+        "https://kitsu.io/anime/41836",
+        "https://myanimelist.net/anime/37666"
+      ],
+      "title": "3-bu de Wakaru Koizumi Yakumo no Kaidan",
+      "type": "ONA",
+      "episodes": 7,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 2014
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/1781/91681.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/1781/91681t.jpg",
+      "synonyms": [
+        "Eagle Talon",
+        "Himitsukessha Taka no Tsume",
+        "The Frogman Show",
+        "３分で分かる小泉八雲の怪談"
+      ],
+      "relations": [
+        "https://myanimelist.net/anime/35140",
+        "https://myanimelist.net/anime/35141",
+        "https://myanimelist.net/anime/35142",
+        "https://myanimelist.net/anime/35143",
+        "https://myanimelist.net/anime/37665",
+        "https://myanimelist.net/anime/37667"
+      ],
+      "tags": ["historical", "horror", "parody", "supernatural"]
+    },
+    {
+      "sources": ["https://anidb.net/anime/12416"],
+      "title": "3-Choume no Tama: Uchi no Tama Shirimasenka?",
+      "type": "Special",
+      "episodes": 3,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SUMMER",
+        "year": 1993
+      },
+      "picture": "https://cdn.anidb.net/images/main/191388.jpg",
+      "thumbnail": "https://cdn.anidb.net/images/main/191388.jpg-thumb.jpg",
+      "synonyms": [
+        "3 Choume no Tama: Uchi no Tama Shirimasenka?",
+        "3丁目のタマ うちのタマ知りませんか?"
+      ],
+      "relations": [
+        "https://anidb.net/anime/12415",
+        "https://anidb.net/anime/4678"
+      ],
+      "tags": ["game"]
+    },
+    {
+      "sources": ["https://anidb.net/anime/4678"],
+      "title": "3-Choume no Tama: Uchi no Tama Shirimasenka? (1994)",
+      "type": "TV",
+      "episodes": 26,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "SPRING",
+        "year": 1994
+      },
+      "picture": "https://cdn.anidb.net/images/main/190039.jpg",
+      "thumbnail": "https://cdn.anidb.net/images/main/190039.jpg-thumb.jpg",
+      "synonyms": [
+        "3 Choume no Tama: Uchi no Tama Shirimasenka? (1994)",
+        "3丁目のタマ うちのタマ知りませんか? (1994)",
+        "Tama and Friends",
+        "Tama et ses amis",
+        "Tama of Third Street: Have You Seen My Tama?",
+        "Tama of the 3rd District: Have You Seen My Tama?",
+        "تاما والأصدقاء"
+      ],
+      "relations": [
+        "https://anidb.net/anime/11909",
+        "https://anidb.net/anime/12416",
+        "https://anidb.net/anime/5334"
+      ],
+      "tags": ["game"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12729",
+        "https://anime-planet.com/anime/3-d-heaven",
+        "https://kitsu.io/anime/9105",
+        "https://myanimelist.net/anime/24783",
+        "https://notify.moe/anime/_b4-tKmmR"
+      ],
+      "title": "3-D Heaven",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 1988
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/5/63727.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/5/63727t.jpg",
+      "synonyms": [
+        "3-D Tengoku",
+        "3-D天国",
+        "3D Tengoku",
+        "Minna no Uta",
+        "Minna no Uta: 3-D Heaven",
+        "３-Ｄ天国",
+        "３―Ｄ天国（ヘブン）"
+      ],
+      "relations": [],
+      "tags": ["family friendly", "kids", "minna no uta", "music"]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11606",
+        "https://anilist.co/anime/21366",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion",
+        "https://kitsu.io/anime/11380",
+        "https://myanimelist.net/anime/31646",
+        "https://notify.moe/anime/9qLrpFmiR"
+      ],
+      "title": "3-gatsu no Lion",
+      "type": "TV",
+      "episodes": 22,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2016
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/6/82898.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/6/82898t.jpg",
+      "synonyms": [
+        "3月のライオン",
+        "3月的狮子",
+        "3月的獅子",
+        "3월의 라이온",
+        "March Comes In Like a Lion",
+        "March Comes in like a Lion",
+        "March comes in like a lion",
+        "Sangatsu no Lion",
+        "Un marzo da leoni",
+        "sangatsu (2016)",
+        "Март месец връхлита като лъв",
+        "Март месец те връхлита като лъв",
+        "Мартовский лев",
+        "מרץ מגיע כאריה",
+        "شهر مارس يحل كالأسد",
+        "さんがつのらいおん",
+        "３月のライオン"
+      ],
+      "relations": [
+        "https://anidb.net/anime/11395",
+        "https://anidb.net/anime/12994",
+        "https://anilist.co/anime/102293",
+        "https://anilist.co/anime/21587",
+        "https://anilist.co/anime/98478",
+        "https://anime-planet.com/anime/3-gatsu-no-lion-meets-bump-of-chicken",
+        "https://anime-planet.com/anime/bump-of-chicken-answer",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-2nd-season",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-cm-lion-x-hachiclo",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-recap",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-ugoku-nya-shogi",
+        "https://kitsu.io/anime/10063",
+        "https://kitsu.io/anime/13074",
+        "https://kitsu.io/anime/13198",
+        "https://kitsu.io/anime/13401",
+        "https://kitsu.io/anime/42944",
+        "https://myanimelist.net/anime/28789",
+        "https://myanimelist.net/anime/34611",
+        "https://myanimelist.net/anime/34647",
+        "https://myanimelist.net/anime/35180",
+        "https://myanimelist.net/anime/38154",
+        "https://notify.moe/anime/DrBM2Fmig",
+        "https://notify.moe/anime/RDzstFmmg",
+        "https://notify.moe/anime/d2MMhFiiR",
+        "https://notify.moe/anime/zSBnhFimg"
+      ],
+      "tags": [
+        "age gap",
+        "asia",
+        "based on a manga",
+        "board games",
+        "bullying",
+        "coming of age",
+        "drama",
+        "earth",
+        "family life",
+        "food",
+        "game",
+        "japan",
+        "lifestyle change",
+        "loneliness",
+        "male protagonist",
+        "manga",
+        "melancholy",
+        "mental illness",
+        "orphans",
+        "philosophy",
+        "present",
+        "primarily adult cast",
+        "psychological",
+        "rehabilitation",
+        "seinen",
+        "shogi",
+        "slice of life",
+        "sports",
+        "tokyo"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/12994",
+        "https://anilist.co/anime/98478",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-2nd-season",
+        "https://kitsu.io/anime/13401",
+        "https://myanimelist.net/anime/35180",
+        "https://notify.moe/anime/zSBnhFimg"
+      ],
+      "title": "3-gatsu no Lion 2nd Season",
+      "type": "TV",
+      "episodes": 22,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2017
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/3/88469.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/3/88469t.jpg",
+      "synonyms": [
+        "3-gatsu no Lion (2017)",
+        "3-gatsu no Lion 2",
+        "3-gatsu no Lion S2",
+        "3月のライオン (2017)",
+        "3月のライオン 第2シリーズ",
+        "3月的狮子 第二季",
+        "3月的獅子 第二季",
+        "3월의 라이온 2기",
+        "March Comes In Like A Lion 2nd Season",
+        "March Comes In Like a Lion (2017)",
+        "March Comes in like a Lion 2nd Season",
+        "March comes in like a lion Season 2",
+        "Sangatsu no Lion (2017)",
+        "Sangatsu no Lion 2",
+        "Sangatsu no Lion 2nd Season",
+        "Sangatsu no Lion S2",
+        "Sangatsu no Lion Second Season",
+        "Мартовский лев 2",
+        "מרץ מגיע כאריה עונה 2",
+        "さんがつのらいおん",
+        "３月のライオン 2"
+      ],
+      "relations": [
+        "https://anidb.net/anime/11606",
+        "https://anilist.co/anime/118037",
+        "https://anilist.co/anime/21366",
+        "https://anime-planet.com/anime/3-gatsu-no-lion-meets-bump-of-chicken",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-recap",
+        "https://kitsu.io/anime/11380",
+        "https://myanimelist.net/anime/31646",
+        "https://myanimelist.net/anime/38864",
+        "https://notify.moe/anime/9qLrpFmiR"
+      ],
+      "tags": [
+        "asia",
+        "based on a manga",
+        "board games",
+        "bullying",
+        "coming of age",
+        "drama",
+        "family life",
+        "food",
+        "game",
+        "japan",
+        "male protagonist",
+        "manga",
+        "melancholy",
+        "middle school",
+        "orphans",
+        "philosophy",
+        "primarily adult cast",
+        "psychological",
+        "rehabilitation",
+        "school",
+        "school club",
+        "school life",
+        "seinen",
+        "shogi",
+        "slice of life",
+        "sports",
+        "tokyo",
+        "tragedy"
+      ]
+    },
+    {
+      "sources": [
+        "https://anidb.net/anime/11395",
+        "https://anilist.co/anime/21587",
+        "https://anime-planet.com/anime/3-gatsu-no-lion-meets-bump-of-chicken",
+        "https://kitsu.io/anime/10063",
+        "https://myanimelist.net/anime/28789",
+        "https://notify.moe/anime/RDzstFmmg"
+      ],
+      "title": "3-gatsu no Lion meets Bump of Chicken",
+      "type": "Special",
+      "episodes": 1,
+      "status": "FINISHED",
+      "animeSeason": {
+        "season": "FALL",
+        "year": 2014
+      },
+      "picture": "https://cdn.myanimelist.net/images/anime/13/69921.jpg",
+      "thumbnail": "https://cdn.myanimelist.net/images/anime/13/69921t.jpg",
+      "synonyms": [
+        "3月のライオン meets BUMP OF CHICKEN",
+        "Lion of March meets Bump of Chicken",
+        "March Comes in Like a Lion meets Bump of Chicken",
+        "March Comes in like a Lion meets Bump of Chicken",
+        "March comes in like a lion meets Bump of Chicken",
+        "Sangatsu no Lion meets Bump of Chicken"
+      ],
+      "relations": [
+        "https://anidb.net/anime/11606",
+        "https://anilist.co/anime/21366",
+        "https://anime-planet.com/anime/bump-of-chicken-answer",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-2nd-season",
+        "https://anime-planet.com/anime/march-comes-in-like-a-lion-recap",
+        "https://kitsu.io/anime/11380",
+        "https://kitsu.io/anime/13198",
+        "https://myanimelist.net/anime/31646",
+        "https://myanimelist.net/anime/34611",
+        "https://notify.moe/anime/9qLrpFmiR",
+        "https://notify.moe/anime/DrBM2Fmig"
+      ],
+      "tags": [
+        "based on a manga",
+        "coming of age",
+        "drama",
+        "male protagonist",
+        "manga",
+        "music",
+        "orphans",
+        "seinen"
+      ]
+    }
+  ]
+}

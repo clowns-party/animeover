@@ -8,18 +8,19 @@ import {
   Delete,
   SuccessResponse,
   Path,
-  Query
+  Query,
 } from "tsoa";
 
 // Firebase
 import { firestoreDB } from "./../firebase";
 
+// Utils
 @Route("/todo")
 export class TodoController extends Controller {
   @Get("/")
-  public async getAll(): Promise<any[]> {
+  public async getAll(): Promise<any> {
     try {
-      return ["some item!"];
+      return ['test'];
     } catch (err) {
       this.setStatus(500);
       console.error("Caught error", err);
@@ -27,15 +28,10 @@ export class TodoController extends Controller {
   }
 
   @Post("")
-  public async create(
-    @Query() description: string
-  ): Promise<string> {
+  public async create(@Query() description: string): Promise<string> {
     try {
       this.setStatus(200);
-      await firestoreDB.collection("cities").doc("LA").set({
-        name: "test",
-        description,
-      });
+      // await createCollection();
       return description;
     } catch (error) {
       this.setStatus(500);
