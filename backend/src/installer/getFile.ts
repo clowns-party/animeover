@@ -1,7 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
-import { AnimeList } from "./types/AnimeList";
+import { AnimeList } from "../types/defaults";
 
 export const getFile = async (): Promise<AnimeList> => {
   return new Promise((resolve, reject) => {
