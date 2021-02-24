@@ -5,7 +5,11 @@ import axios from "axios";
 
 function App() {
   const call = () => {
-    axios.get("http://localhost:3000/todo").then((data) => {
+    axios.get("https://animeover-api.herokuapp.com/todo", {
+      params: {
+        limit: 3
+      }
+    }).then((data) => {
       console.log(data);
     });
   };
