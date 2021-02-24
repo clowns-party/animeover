@@ -1,3 +1,4 @@
+import { _createDBCollection } from "./../installer/createCollection";
 import {
   Route,
   Get,
@@ -8,6 +9,7 @@ import {
   Delete,
   SuccessResponse,
   Path,
+  Body,
   Query,
 } from "tsoa";
 
@@ -18,9 +20,17 @@ import { firestoreDB } from "./../firebase";
 @Route("/todo")
 export class TodoController extends Controller {
   @Get("/")
-  public async getAll(): Promise<any> {
+  public async getAll(@Query() limit?: number): Promise<any> {
+    const citiesRef = firestoreDB.collection("animedb");
+    const snapshot = limit
+      ? await citiesRef.limit(limit).get()
+      : await citiesRef.get();
+    const docs = [];
+    snapshot.forEach((doc) => {
+      docs.push(doc.data());
+    });
     try {
-      return ['test'];
+      return docs;
     } catch (err) {
       this.setStatus(500);
       console.error("Caught error", err);
@@ -31,7 +41,7 @@ export class TodoController extends Controller {
   public async create(@Query() description: string): Promise<string> {
     try {
       this.setStatus(200);
-      // await createCollection();
+      // await _createDBCollection();
       return description;
     } catch (error) {
       this.setStatus(500);

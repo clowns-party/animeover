@@ -22,6 +22,7 @@ export function RegisterRoutes(app: express.Router) {
         app.get('/todo',
             function (request: any, response: any, next: any) {
             const args = {
+                    limit: {"in":"query","name":"limit","dataType":"double"},
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
