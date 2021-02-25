@@ -1,15 +1,15 @@
 {
-	"entryFile": "./src/app.ts",
-	"noImplicitAdditionalProperties": "throw-on-extras",
-	"controllerPathGlobs": ["src/**/*controller.ts"],
-	"spec": {
-		"outputDirectory": "./tsoa",
-		"specVersion": 3,
-		"controllerPathGlobs": ["src/**/*controller.ts"]
-	},
-	"routes": {
-		"basePath": "/",
-		"entryFile": "./src/app.ts",
-		"routesDir": "./src/routes"
-	}
+  "entryFile": "./src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/**/*controller.ts"],
+  "spec": {
+    "outputDirectory": "./tsoa",
+    "specVersion": 3,
+    "controllerPathGlobs": ["src/**/*controller.ts"]
+  },
+  "routes": {
+    "basePath": "/",
+    "entryFile": "./src/app.ts",
+    "routesDir": "./src/routes"
   }
+}
