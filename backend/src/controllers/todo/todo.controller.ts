@@ -1,4 +1,3 @@
-import { _createDBCollection } from "./../installer/createCollection";
 import {
   Route,
   Get,
@@ -14,7 +13,7 @@ import {
 } from "tsoa";
 
 // Firebase
-import { firestoreDB } from "./../firebase";
+import { firestoreDB } from "../../firebase";
 
 // Utils
 @Route("/todo")

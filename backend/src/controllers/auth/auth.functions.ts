@@ -1,6 +1,5 @@
 // Firebase
-import { firebaseAuth } from "./../firebase";
-import { User } from "./../firebase/index";
+import { User, firebaseAuth } from './../../firebase/index';
 
 export const FirebaseSignUp = (email, password): Promise<User> => {
   return new Promise((resolve, reject) => {
