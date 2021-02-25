@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -x ts-node src/main.ts",
-    "start": "npm run generate && node ./build/main.js",
+    "start": "node ./build/main.js",
     "generate": "tsoa swagger && tsoa routes",
     "swagger-gen": "tsoa swagger",
     "routes-gen": "tsoa routes",
@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@firebase/app-types": "^0.6.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

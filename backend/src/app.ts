@@ -9,6 +9,7 @@ import { requestLoggerMiddleware } from "./middlewares/request.logger.middleware
 import * as swaggerUi from "swagger-ui-express";
 // Controllers
 import "./todo/todo.controller";
+import "./auth/auth.controller";
 
 import { RegisterRoutes } from "./routes/routes";
 
@@ -25,5 +26,6 @@ try {
 } catch (err) {
   console.log("Unable to load swagger.json", err);
 }
+
 
 export { app };
