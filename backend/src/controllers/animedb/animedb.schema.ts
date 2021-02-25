@@ -1,6 +1,4 @@
-export interface AnimeList {
-  data: Array<AnimeItem>;
-}
+export type AnimeList = Array<AnimeItem>;
 
 export interface AnimeItem {
   _id: string;

@@ -8,7 +8,7 @@ dotenv.config();
 import { requestLoggerMiddleware } from "./middlewares/request.logger.middleware";
 import * as swaggerUi from "swagger-ui-express";
 // Controllers
-import "./controllers/todo/todo.controller";
+import "./controllers/animedb/animedb.controller";
 import "./controllers/auth/auth.controller";
 
 import { RegisterRoutes } from "./routes/routes";

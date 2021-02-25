@@ -6,6 +6,94 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
+			"AnimeItem": {
+				"properties": {
+					"_id": {
+						"type": "string"
+					},
+					"sources": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"title": {
+						"type": "string"
+					},
+					"type": {
+						"type": "string"
+					},
+					"episodes": {
+						"type": "number",
+						"format": "double"
+					},
+					"status": {
+						"type": "string"
+					},
+					"animeSeason": {
+						"properties": {
+							"year": {
+								"type": "number",
+								"format": "double"
+							},
+							"season": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"year",
+							"season"
+						],
+						"type": "object"
+					},
+					"picture": {
+						"type": "string"
+					},
+					"thumbnail": {
+						"type": "string"
+					},
+					"synonyms": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"relations": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"tags": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"_id",
+					"sources",
+					"title",
+					"type",
+					"episodes",
+					"status",
+					"animeSeason",
+					"picture",
+					"thumbnail",
+					"synonyms",
+					"relations",
+					"tags"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"AnimeList": {
+				"items": {
+					"$ref": "#/components/schemas/AnimeItem"
+				},
+				"type": "array"
+			},
 			"UserSchema": {
 				"properties": {
 					"uid": {
@@ -77,6 +165,35 @@
 	},
 	"openapi": "3.0.0",
 	"paths": {
+		"/animedb": {
+			"get": {
+				"operationId": "GetAll",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/AnimeList"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "limit",
+						"required": false,
+						"schema": {
+							"format": "double",
+							"type": "number"
+						}
+					}
+				]
+			}
+		},
 		"/auth/signup": {
 			"post": {
 				"operationId": "Signup",
@@ -173,121 +290,6 @@
 					{
 						"in": "query",
 						"name": "password",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
-					}
-				]
-			}
-		},
-		"/todo": {
-			"get": {
-				"operationId": "GetAll",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {}
-							}
-						}
-					}
-				},
-				"security": [],
-				"parameters": [
-					{
-						"in": "query",
-						"name": "limit",
-						"required": false,
-						"schema": {
-							"format": "double",
-							"type": "number"
-						}
-					}
-				]
-			},
-			"post": {
-				"operationId": "Create",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "string"
-								}
-							}
-						}
-					}
-				},
-				"security": [],
-				"parameters": [
-					{
-						"in": "query",
-						"name": "description",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
-					}
-				]
-			}
-		},
-		"/todo/{id}": {
-			"put": {
-				"operationId": "Update",
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "string"
-								}
-							}
-						}
-					}
-				},
-				"security": [],
-				"parameters": [
-					{
-						"in": "path",
-						"name": "id",
-						"required": true,
-						"schema": {
-							"type": "string"
-						}
-					}
-				]
-			},
-			"delete": {
-				"operationId": "Remove",
-				"responses": {
-					"201": {
-						"description": "TEST!",
-						"content": {
-							"application/json": {
-								"schema": {
-									"properties": {
-										"deleted": {
-											"type": "string"
-										}
-									},
-									"required": [
-										"deleted"
-									],
-									"type": "object"
-								}
-							}
-						}
-					}
-				},
-				"security": [],
-				"parameters": [
-					{
-						"in": "path",
-						"name": "id",
 						"required": true,
 						"schema": {
 							"type": "string"
