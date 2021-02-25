@@ -107,6 +107,59 @@
 						}
 					}
 				},
+				"description": "User registration by email and password",
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "email",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "password",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/auth": {
+			"post": {
+				"operationId": "Signin",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"anyOf": [
+										{
+											"$ref": "#/components/schemas/UserSchema"
+										},
+										{
+											"$ref": "#/components/schemas/ErrorSchema"
+										}
+									]
+								},
+								"examples": {
+									"Example 1": {
+										"value": {
+											"email": "test@gmail.com",
+											"password": "pas34Wo"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"description": "Authorization of the user by email and password",
 				"security": [],
 				"parameters": [
 					{
