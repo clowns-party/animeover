@@ -4,3 +4,4 @@ node_modules/
 .env.local
 .env.staging
 build/
+keys/firebase/admin.json

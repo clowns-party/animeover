@@ -2,5 +2,5 @@
     "events": {
       "restart": "npm run generate"
     },
-    "ignore": ["routes/*","tsoa/*","build/*"]
+    "ignore": ["routes/*","tsoa/*","build/*", "keys/*"]
   }

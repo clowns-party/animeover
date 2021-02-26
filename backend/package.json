@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -x ts-node src/main.ts",
-    "start": "node ./build/main.js",
+    "dev": "npm run fb:init && nodemon -x ts-node src/main.ts",
+    "start": "npm run fb:init && node ./build/main.js",
     "generate": "tsoa swagger && tsoa routes",
-    "swagger-gen": "tsoa swagger",
-    "routes-gen": "tsoa routes",
-    "build": "tsc --build",
+    "fb:init": "node ./keys/firebase/init.js",
+    "build": "npm run fb:init && tsc --build",
     "heroku-postbuild": "npm run build"
   },
   "author": "",

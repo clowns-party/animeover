@@ -61,9 +61,30 @@ export class AuthController extends Controller {
   public async signin(
     @Query() email: string,
     @Query() password: string
-  ): Promise<UserSchema | ErrorSchema> {
+  ): Promise<{ user: UserSchema; token: string } | ErrorSchema> {
     try {
-      const user = new AuthService().signin(email, password);
+      const { user, token } = await new AuthService().signin(email, password);
+      if (user && token) {
+        this.setStatus(201);
+        return {
+          user,
+          token,
+        };
+      } else {
+        this.setStatus(500);
+      }
+    } catch (error) {
+      this.setStatus(400);
+      return error;
+    }
+  }
+  @Example({
+    token: "sOmE.wOrDs-_TOken-By-SIGNiN-mEtHod",
+  })
+  @Post("/me")
+  public async me(@Query() token: string): Promise<UserSchema | ErrorSchema> {
+    try {
+      const user = await new AuthService().me(token);
       if (user) {
         this.setStatus(201);
         return user;

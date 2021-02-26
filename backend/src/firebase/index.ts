@@ -1,12 +1,18 @@
 // This import loads the firebase namespace along with all its type information.
 import firebase from "firebase/app";
-
+import * as admin from "firebase-admin";
 // These imports load individual services into the firebase namespace.
 import "firebase/auth";
 import "firebase/database";
 import "firebase/firestore";
 import "firebase/auth";
-// Переделать на класс
+//ADMIN-FB
+const serviceAccount = require("./../../keys/firebase/admin.json");
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://animeover-737d6-default-rtdb.firebaseio.com",
+});
+//FB
 export const fb = firebase.initializeApp({
   apiKey: process.env.FB_APIKEY,
   authDomain: process.env.FB_AUTHDOMAIN,
@@ -20,6 +26,7 @@ export const fb = firebase.initializeApp({
 export const firebaseDB = fb.database();
 export const firestoreDB = fb.firestore();
 export const firebaseAuth = fb.auth();
+export const AdminFBAuth = admin.auth();
 
 // Types
 export type User = firebase.User;

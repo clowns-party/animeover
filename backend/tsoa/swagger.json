@@ -257,7 +257,19 @@
 								"schema": {
 									"anyOf": [
 										{
-											"$ref": "#/components/schemas/UserSchema"
+											"properties": {
+												"token": {
+													"type": "string"
+												},
+												"user": {
+													"$ref": "#/components/schemas/UserSchema"
+												}
+											},
+											"required": [
+												"token",
+												"user"
+											],
+											"type": "object"
 										},
 										{
 											"$ref": "#/components/schemas/ErrorSchema"
@@ -290,6 +302,48 @@
 					{
 						"in": "query",
 						"name": "password",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/auth/me": {
+			"post": {
+				"operationId": "Me",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"anyOf": [
+										{
+											"$ref": "#/components/schemas/UserSchema"
+										},
+										{
+											"$ref": "#/components/schemas/ErrorSchema"
+										}
+									]
+								},
+								"examples": {
+									"Example 1": {
+										"value": {
+											"token": "sOmE.wOrDs-_TOken-By-SIGNiN-mEtHod"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "token",
 						"required": true,
 						"schema": {
 							"type": "string"
