@@ -3,13 +3,8 @@ import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { useDispatch } from "react-redux";
 import { fetchAsync } from "./action";
 
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
-const tailLayout = {
-  wrapperCol: { offset: 8, span: 16 },
-};
+const layout = {};
+const tailLayout = {};
 
 export const AuthForm: FC = () => {
   const dispatch = useDispatch();
@@ -34,8 +29,8 @@ export const AuthForm: FC = () => {
           onFinishFailed={onFinishFailed}
         >
           <Form.Item
-            label="Username"
-            name="username"
+            label="email"
+            name="email"
             rules={[{ required: true, message: "Please input your username!" }]}
           >
             <Input />
