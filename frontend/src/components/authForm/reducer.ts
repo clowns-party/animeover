@@ -14,7 +14,7 @@ export type AuthState = {
   data: User | null;
   formData?: AuthFormData;
   isFetching: boolean;
-  error: false | ErrorHttpAction;
+  error: ErrorHttpAction | false;
 };
 
 const initialState: AuthState = {
@@ -42,7 +42,7 @@ export const AuthReducer = (
     case AUTH_STOP_FETCHING:
       return {
         ...state,
-        isFetching: false
+        isFetching: false,
       };
     case AUTH_SET_FETCHING_ERROR:
       return {

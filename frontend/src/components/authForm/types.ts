@@ -44,7 +44,6 @@ export type AuthSetAction = {
 export const AUTH_SET_FETCHING_ERROR = "AUTH_SET_FETCHING_ERROR";
 export type AuthSetError = {
   type: typeof AUTH_SET_FETCHING_ERROR;
-  error: true;
   payload: ErrorHttpAction;
 };
 

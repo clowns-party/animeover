@@ -36,7 +36,6 @@ export function setFetchingError(payload: ErrorHttpAction): AuthSetError {
   return {
     type: AUTH_SET_FETCHING_ERROR,
     payload,
-    error: true,
   };
 }
 
