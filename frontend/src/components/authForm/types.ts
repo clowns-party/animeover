@@ -10,20 +10,20 @@ export interface UserSchema {
 }
 
 export type User = {
-  token: string
-  user: UserSchema
-}
+  token: string;
+  user: UserSchema;
+};
 
 export type AuthFormData = {
-  email: string
-  password: string
-  repassword: string
-}
+  email: string;
+  password: string;
+  repassword: string;
+};
 
 export type ErrorHttpAction = {
   message: string;
   code: string;
-}
+};
 // Sync
 export const AUTH_START_FETCHING = "AUTH_START_FETCHING";
 type AuthStartFechingAction = {
@@ -53,7 +53,7 @@ export type AuthSetError = {
 export const AUTH_FETCH_ASYNC = "AUTH_FETCH_ASYNC";
 export type AuthFecthAsync = {
   type: typeof AUTH_FETCH_ASYNC;
-  payload: AuthFormData
+  payload: AuthFormData;
 };
 
 export type AuthActionTypes =
@@ -61,4 +61,4 @@ export type AuthActionTypes =
   | AuthStopFechingAction
   | AuthFecthAsync
   | AuthSetError
-  | AuthSetAction
+  | AuthSetAction;

@@ -5,7 +5,7 @@ import { combineReducers } from "redux";
 import { AuthReducer as auth } from "../components/authForm/reducer";
 
 export const rootReducer = combineReducers({
-  auth
+  auth,
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

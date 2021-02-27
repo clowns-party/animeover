@@ -7,12 +7,12 @@ import {
   AUTH_START_FETCHING,
   AUTH_STOP_FETCHING,
   AuthActionTypes,
-  AuthFormData
+  AuthFormData,
 } from "./types";
 
 export type AuthState = {
   data: User | null;
-  formData: AuthFormData
+  formData: AuthFormData;
   isFetching: boolean;
   error: false | ErrorHttpAction;
 };
@@ -20,9 +20,9 @@ export type AuthState = {
 const initialState: AuthState = {
   data: null,
   formData: {
-    email: '',
-    password: '',
-    repassword: ''
+    email: "",
+    password: "",
+    repassword: "",
   },
   isFetching: false,
   error: false,
@@ -60,8 +60,8 @@ export const AuthReducer = (
       };
     case AUTH_FETCH_ASYNC:
       return {
-        ...state
-      }
+        ...state,
+      };
     default:
       // проверяем используются ли все экшены
       // eslint-disable-next-line no-case-declarations

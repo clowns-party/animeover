@@ -1,7 +1,7 @@
-//core
-import React, { useEffect } from "react";
-import axios from "axios";
+// core
+import React from "react";
 import { AuthForm } from "./components/authForm/authForm";
+import "antd/dist/antd.css";
 
 function App() {
   return (

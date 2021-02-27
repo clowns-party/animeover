@@ -1,4 +1,4 @@
-import axios  from 'axios';
+import axios from "axios";
 
 export function* authWorker(payload: any): Generator {
   const call = () => {
@@ -7,14 +7,14 @@ export function* authWorker(payload: any): Generator {
         params: {
           token: "token",
           email: "",
-          password: ""
+          password: "",
         },
       })
       .then((data) => {
         console.log(data);
       });
   };
-  //https://animeover-api.herokuapp.com/auth
+  // https://animeover-api.herokuapp.com/auth
   console.log(payload);
-
+  yield new Promise((resolve) => resolve("test"));
 }

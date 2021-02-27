@@ -9,7 +9,7 @@ import {
   AuthActionTypes,
   AuthFormData,
   AuthSetError,
-  AuthFecthAsync
+  AuthFecthAsync,
 } from "./types";
 
 // Sync
@@ -32,9 +32,7 @@ export function set(payload: User): AuthActionTypes {
   };
 }
 
-export function setFetchingError(
-  payload: ErrorHttpAction
-): AuthSetError {
+export function setFetchingError(payload: ErrorHttpAction): AuthSetError {
   return {
     type: AUTH_SET_FETCHING_ERROR,
     payload,
@@ -46,6 +44,6 @@ export function setFetchingError(
 export function fetchAsync(payload: AuthFormData): AuthFecthAsync {
   return {
     type: AUTH_FETCH_ASYNC,
-    payload
+    payload,
   };
 }
