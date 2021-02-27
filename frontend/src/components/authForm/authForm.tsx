@@ -2,13 +2,17 @@ import React, { FC } from "react";
 import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { useDispatch } from "react-redux";
 import { fetchAsync } from "./action";
+import { useSignIn } from "./hooks/useSignIn";
 
 const layout = {};
 const tailLayout = {};
 
 export const AuthForm: FC = () => {
   const dispatch = useDispatch();
-
+  const { isFetching, data, error } = useSignIn();
+  const errorMessageJSX = error && <p>{error.message}</p>;
+  const loaderJSX = isFetching && <p>loading data from Api...</p>;
+  const AuthData = data && <pre>{data.user.email}</pre>;
   const onFinish = (values: any) => {
     dispatch(fetchAsync(values));
     console.log("Success:", values);
@@ -20,6 +24,9 @@ export const AuthForm: FC = () => {
 
   return (
     <Row justify="center">
+      {errorMessageJSX}
+      {loaderJSX}
+      { AuthData }
       <Col span={12}>
         <Form
           {...layout}
