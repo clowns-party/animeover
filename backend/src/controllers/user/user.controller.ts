@@ -31,7 +31,7 @@ export class UserController extends Controller {
     photoURL: "https://some.jpg",
   })
   @Put("/update")
-  public async signup(
+  public async userUpdate(
     @Query() token: string,
     @Query() displayName?: string,
     @Query() photoURL?: string

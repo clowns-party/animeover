@@ -354,7 +354,7 @@
 		},
 		"/user/update": {
 			"put": {
-				"operationId": "Signup",
+				"operationId": "UserUpdate",
 				"responses": {
 					"200": {
 						"description": "Ok",
