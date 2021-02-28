@@ -10,6 +10,7 @@ import * as swaggerUi from "swagger-ui-express";
 // Controllers
 import "./controllers/animedb/animedb.controller";
 import "./controllers/auth/auth.controller";
+import "./controllers/user/user.controller";
 
 import { RegisterRoutes } from "./routes/routes";
 
@@ -26,6 +27,5 @@ try {
 } catch (err) {
   console.log("Unable to load swagger.json", err);
 }
-
 
 export { app };

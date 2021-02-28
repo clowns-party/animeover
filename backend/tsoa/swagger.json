@@ -351,6 +351,60 @@
 					}
 				]
 			}
+		},
+		"/user/update": {
+			"put": {
+				"operationId": "Signup",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/UserSchema"
+								},
+								"examples": {
+									"Example 1": {
+										"value": {
+											"token": "token",
+											"displayName": "name",
+											"photoURL": "https://some.jpg"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"description": "User update fields",
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "token",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "displayName",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "photoURL",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
 		}
 	},
 	"servers": [
