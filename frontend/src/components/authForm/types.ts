@@ -1,19 +1,3 @@
-export interface UserSchema {
-  uid: string;
-  displayName: string;
-  photoURL: string;
-  email: string;
-  emailVerified: boolean;
-  phoneNumber: null | string;
-  isAnonymous: boolean;
-  tenantId: null | string;
-}
-
-export type User = {
-  token: string;
-  user: UserSchema;
-};
-
 export type AuthFormData = {
   email: string;
   password: string;
@@ -35,12 +19,6 @@ type AuthStopFechingAction = {
   type: typeof AUTH_STOP_FETCHING;
 };
 
-export const AUTH_SET = "AUTH_SET";
-export type AuthSetAction = {
-  type: typeof AUTH_SET;
-  payload: User;
-};
-
 export const AUTH_SET_FETCHING_ERROR = "AUTH_SET_FETCHING_ERROR";
 export type AuthSetError = {
   type: typeof AUTH_SET_FETCHING_ERROR;
@@ -56,9 +34,8 @@ export type AuthFecthAsync = {
   payload: AuthFormData;
 };
 
-export type AuthActionTypes =
+export type AuthFormActionTypes =
   | AuthStartFechingAction
   | AuthStopFechingAction
   | AuthFecthAsync
-  | AuthSetError
-  | AuthSetAction;
+  | AuthSetError;

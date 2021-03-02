@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 import { AppState } from "../../../init/rootReducer";
-import { AuthState } from "../reducer";
+import { AuthFormState } from "../reducer";
 
-export const useSignIn = (): AuthState => {
-  const { isFetching, data, error } = useSelector<AppState, AuthState>(
-    (state) => state.auth
+export const useSignIn = (): AuthFormState => {
+  const { isFetching, error } = useSelector<AppState, AuthFormState>(
+    (state) => state.authForm
   );
 
-  return { isFetching, data, error };
+  return { isFetching, error };
 };
