@@ -31,7 +31,7 @@ export function* authWorker(action: AuthFecthAsync): SagaIterator {
       );
     }
   } catch (error) {
-    yield put(setFetchingError(error));
+    yield put(setFetchingError(error?.response?.data ?? "Some error"));
   } finally {
     yield put(stopFetching());
   }
