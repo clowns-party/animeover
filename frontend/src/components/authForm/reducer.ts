@@ -1,24 +1,20 @@
 import {
   ErrorHttpAction,
-  User,
   AUTH_SET_FETCHING_ERROR,
   AUTH_FETCH_ASYNC,
-  AUTH_SET,
   AUTH_START_FETCHING,
   AUTH_STOP_FETCHING,
-  AuthActionTypes,
+  AuthFormActionTypes,
   AuthFormData,
 } from "./types";
 
-export type AuthState = {
-  data: User | null;
+export type AuthFormState = {
   formData?: AuthFormData;
   isFetching: boolean;
   error: ErrorHttpAction | false;
 };
 
-const initialState: AuthState = {
-  data: null,
+const initialState: AuthFormState = {
   formData: {
     email: "",
     password: "",
@@ -28,10 +24,10 @@ const initialState: AuthState = {
   error: false,
 };
 
-export const AuthReducer = (
+export const AuthFormReducer = (
   state = initialState,
-  action: AuthActionTypes
-): AuthState => {
+  action: AuthFormActionTypes
+): AuthFormState => {
   switch (action.type) {
     case AUTH_START_FETCHING:
       return {
@@ -48,14 +44,6 @@ export const AuthReducer = (
       return {
         ...state,
         error: action.payload,
-      };
-    case AUTH_SET:
-      return {
-        ...state,
-        data: {
-          ...action.payload,
-        },
-        error: false,
       };
     case AUTH_FETCH_ASYNC:
       return {
