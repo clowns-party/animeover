@@ -1,7 +1,11 @@
 import axios from "axios";
 import { SagaIterator } from "redux-saga";
 import { call, put } from "redux-saga/effects";
-import { setFetchingError, startFetching, stopFetching } from "../../../../authForm/action";
+import {
+  setFetchingError,
+  startFetching,
+  stopFetching,
+} from "../../../../authForm/action";
 import { AuthFecthAsync } from "../../../../authForm/types";
 import { set } from "../../actions";
 import { User } from "../../types";
