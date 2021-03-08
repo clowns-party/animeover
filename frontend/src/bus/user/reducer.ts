@@ -1,34 +1,42 @@
 import {
-  ErrorHttpAction,
-  AUTH_SET_FETCHING_ERROR,
-  AUTH_FETCH_ASYNC,
+  AuthActionTypes,
+  User,
+  AUTH_SET,
+  SIGN_IN_ASYNC,
   AUTH_START_FETCHING,
   AUTH_STOP_FETCHING,
-  AuthFormActionTypes,
-  AuthFormData,
+  AUTH_SET_FETCHING_ERROR,
+  ErrorHttpAction
 } from "./types";
 
-export type AuthFormState = {
-  formData?: AuthFormData;
-  isFetching: boolean;
-  error: ErrorHttpAction | false;
+export type AuthState = {
+  data: User | null;
+  isFetching: boolean
+  error: ErrorHttpAction | false
 };
 
-const initialState: AuthFormState = {
-  formData: {
-    email: "",
-    password: "",
-    repassword: "",
-  },
+const initialState: AuthState = {
+  data: null,
   isFetching: false,
   error: false,
 };
 
-export const AuthFormReducer = (
+export const AuthReducer = (
   state = initialState,
-  action: AuthFormActionTypes
-): AuthFormState => {
+  action: AuthActionTypes
+): AuthState => {
   switch (action.type) {
+    case AUTH_SET:
+      return {
+        ...state,
+        data: {
+          ...action.payload,
+        },
+      };
+    case SIGN_IN_ASYNC:
+      return {
+        ...state,
+      };
     case AUTH_START_FETCHING:
       return {
         ...state,
@@ -45,12 +53,8 @@ export const AuthFormReducer = (
         ...state,
         error: action.payload,
       };
-    case AUTH_FETCH_ASYNC:
-      return {
-        ...state,
-      };
+
     default:
-      // проверяем используются ли все экшены
       // eslint-disable-next-line no-case-declarations
       const x: never = action;
       return state;

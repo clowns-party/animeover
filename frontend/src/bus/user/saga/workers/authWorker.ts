@@ -1,16 +1,10 @@
 import axios from "axios";
 import { SagaIterator } from "redux-saga";
 import { call, put } from "redux-saga/effects";
-import {
-  setFetchingError,
-  startFetching,
-  stopFetching,
-} from "../../../../authForm/action";
-import { AuthFecthAsync } from "../../../../authForm/types";
-import { set } from "../../actions";
-import { User } from "../../types";
+import { set, setFetchingError, startFetching, stopFetching } from "../../actions";
+import { User, signInAsyncType } from "../../types";
 
-export function* authWorker(action: AuthFecthAsync): SagaIterator {
+export function* authWorker(action: signInAsyncType): SagaIterator {
   const { payload } = action;
   const fetchAuth = () => {
     return axios.post<User>("https://animeover-api.herokuapp.com/auth", null, {
