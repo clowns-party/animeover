@@ -1,6 +1,7 @@
 import axios from "axios";
 import { SagaIterator } from "redux-saga";
 import { call, put } from "redux-saga/effects";
+import Cookies from 'js-cookie';
 import { set, setFetchingError, startFetching, stopFetching } from "../../actions";
 import { User, signInAsyncType } from "../../types";
 
@@ -20,6 +21,7 @@ export function* authWorker(action: signInAsyncType): SagaIterator {
     const result = yield call(fetchAuth);
     if (result?.data) {
       yield put(set(result.data));
+      Cookies.set('token', result.data.token, { expires: 7 });
     } else {
       yield put(
         setFetchingError({

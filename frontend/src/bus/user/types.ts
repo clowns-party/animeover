@@ -56,6 +56,11 @@ export type signInAsyncType = {
   payload: AuthFormData;
 };
 
+export const INIT_AUTH_ASYNC = "INIT_AUTH_ASYNC";
+export type initAuthAsync = {
+  type: typeof INIT_AUTH_ASYNC
+}
+
 export type AuthActionTypes = signInAsyncType | setType |
   AuthStartFechingAction
   | AuthStopFechingAction
