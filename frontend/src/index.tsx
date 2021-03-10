@@ -1,19 +1,31 @@
 // core
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { ConnectedRouter } from "connected-react-router";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 // instruments
-import { store } from './init/store';
+import { store } from "./init/store";
+import history from "./init/history";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ConnectedRouter history={history}>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" render={() => <App />} />
+            <Route exact path="/test" render={() => <div>Match</div>} />
+            <Route exact path="/test2" render={() => <div>some</div>} />
+            <Route exact path="/test2/:id" render={() => <div>some</div>} />
+          </Switch>
+        </BrowserRouter>
+      </ConnectedRouter>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

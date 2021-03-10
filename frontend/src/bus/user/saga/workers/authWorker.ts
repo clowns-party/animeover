@@ -1,17 +1,13 @@
 import axios from "axios";
 import { SagaIterator } from "redux-saga";
 import { call, put } from "redux-saga/effects";
-import { AuthFecthAsync, User } from "../../types";
+import Cookies from 'js-cookie';
+import { push } from "connected-react-router";
+import { set, setFetchingError, startFetching, stopFetching } from "../../actions";
+import { User, signInAsyncType } from "../../types";
 
-import {
-  startFetching,
-  setFetchingError,
-  stopFetching,
-  set,
-} from "../../action";
-
-export function* authWorker(data: AuthFecthAsync): SagaIterator {
-  const { payload } = data;
+export function* authWorker(action: signInAsyncType): SagaIterator {
+  const { payload } = action;
   const fetchAuth = () => {
     return axios.post<User>("https://animeover-api.herokuapp.com/auth", null, {
       params: {
@@ -20,12 +16,13 @@ export function* authWorker(data: AuthFecthAsync): SagaIterator {
       },
     });
   };
-
   try {
     yield put(startFetching());
     const result = yield call(fetchAuth);
     if (result?.data) {
       yield put(set(result.data));
+      Cookies.set('token', result.data.token, { expires: 7 });
+      yield put(push('/home'));
     } else {
       yield put(
         setFetchingError({
