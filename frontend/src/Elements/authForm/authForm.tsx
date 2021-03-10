@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { useDispatch } from "react-redux";
-import { useAuth } from "../bus/user/hooks/useAuth";
-import { signInAsync } from "../bus/user/actions";
-import { AuthFormData } from "../bus/user/types";
+import { useAuth } from "../../bus/user/hooks/useAuth";
+import { AuthFormData } from "../../bus/user/types";
+import { signInAsync } from "../../bus/user/actions";
 
 const layout = {};
 const tailLayout = {};
