@@ -9,6 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 // instruments
 import { store } from "./init/store";
 import history from "./init/history";
+import { SignUpForm } from './Elements/signUpForm/signUpForm';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +18,7 @@ ReactDOM.render(
         <BrowserRouter>
           <Switch>
             <Route exact path="/" render={() => <App />} />
-            <Route exact path="/test" render={() => <div>Match</div>} />
+            <Route exact path="/signUp" render={() => <SignUpForm />} />
             <Route exact path="/test2" render={() => <div>some</div>} />
             <Route exact path="/test2/:id" render={() => <div>some</div>} />
           </Switch>

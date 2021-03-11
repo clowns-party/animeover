@@ -1,6 +1,6 @@
 // core
 import React from "react";
-import { AuthForm } from "./Elements/authForm/authForm";
+import { AuthForm } from "./Elements/signInForm/signInForm";
 import "antd/dist/antd.css";
 
 function App() {

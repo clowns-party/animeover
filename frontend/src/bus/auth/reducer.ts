@@ -3,16 +3,17 @@ import {
   User,
   AUTH_SET,
   SIGN_IN_ASYNC,
+  SIGN_UP_ASYNC,
   AUTH_START_FETCHING,
   AUTH_STOP_FETCHING,
   AUTH_SET_FETCHING_ERROR,
-  ErrorHttpAction
+  ErrorHttpAction,
 } from "./types";
 
 export type AuthState = {
   data: User | null;
-  isFetching: boolean
-  error: ErrorHttpAction | false
+  isFetching: boolean;
+  error: ErrorHttpAction | false;
 };
 
 const initialState: AuthState = {
@@ -52,6 +53,10 @@ export const AuthReducer = (
       return {
         ...state,
         error: action.payload,
+      };
+    case SIGN_UP_ASYNC:
+      return {
+        ...state,
       };
 
     default:

@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 import { Form, Input, Button, Checkbox, Row, Col } from "antd";
 import { useDispatch } from "react-redux";
-import { useAuth } from "../../bus/user/hooks/useAuth";
-import { AuthFormData } from "../../bus/user/types";
-import { signInAsync } from "../../bus/user/actions";
+import { NavLink } from "react-router-dom";
+import { useAuth } from "../../bus/auth/hooks/useAuth";
+import { AuthFormData } from "../../bus/auth/types";
+import { signInAsync } from "../../bus/auth/actions";
 
 const layout = {};
 const tailLayout = {};
@@ -18,6 +19,14 @@ export const AuthForm: FC = () => {
 
   const onFinish = (values: AuthFormData) => {
     dispatch(signInAsync(values));
+  };
+
+  /* eslint-disable no-template-curly-in-string */
+  const validateMessages = {
+    required: "${label} is reqired",
+    types: {
+      email: "${label} is not a valid email",
+    },
   };
 
   const onFinishFailed = (errorInfo: any) => {
@@ -36,11 +45,18 @@ export const AuthForm: FC = () => {
           initialValues={{ remember: true }}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
+          validateMessages={validateMessages}
         >
           <Form.Item
             label="email"
             name="email"
-            rules={[{ required: true, message: "Please input your username!" }]}
+            rules={[
+              {
+                type: "email",
+                required: true,
+                message: "Please input your email!",
+              },
+            ]}
           >
             <Input />
           </Form.Item>
@@ -56,12 +72,22 @@ export const AuthForm: FC = () => {
           <Form.Item {...tailLayout} name="remember" valuePropName="checked">
             <Checkbox>Remember me</Checkbox>
           </Form.Item>
-
-          <Form.Item {...tailLayout}>
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
-          </Form.Item>
+          <Row justify="space-between">
+            <Col span={6}>
+              <Form.Item {...tailLayout}>
+                <Button type="primary" htmlType="submit">
+                  SignIn
+                </Button>
+              </Form.Item>
+            </Col>
+            <Col span={6}>
+              <NavLink to="/signUp">
+                <Button type="primary" htmlType="button">
+                  SignUp
+                </Button>
+              </NavLink>
+            </Col>
+          </Row>
         </Form>
       </Col>
     </Row>

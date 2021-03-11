@@ -10,6 +10,6 @@ const sagaMiddleware = createSagaMiddleware();
 const devtools = window && (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
 const composeEnhancers = DEV && devtools ? devtools : compose;
 
-const middleware: Middleware[] = [sagaMiddleware, routerMiddleware(history)];
+const middleware: Middleware[] = [routerMiddleware(history), sagaMiddleware];
 
 export { composeEnhancers, middleware, sagaMiddleware };
