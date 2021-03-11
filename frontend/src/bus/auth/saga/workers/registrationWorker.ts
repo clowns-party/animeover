@@ -16,8 +16,8 @@ export function* signUpWorker(action: signUpAsyncType): SagaIterator {
     yield put(startFetching());
     const result = yield call(sendSignUpData, payload);
     if (result?.data) {
-      yield put(set(result.data));
-      yield put(push("/"));
+      // yield put(set({ user: result.data, token: '' }));
+      yield put(push("/signIn"));
     } else {
       yield put(
         setFetchingError({
