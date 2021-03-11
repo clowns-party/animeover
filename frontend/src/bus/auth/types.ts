@@ -56,12 +56,21 @@ export type signInAsyncType = {
   payload: AuthFormData;
 };
 
+export const SIGN_UP_ASYNC = "SIGN_UP_ASYNC";
+export type signUpAsyncType = {
+  type: typeof SIGN_UP_ASYNC;
+  payload: AuthFormData;
+};
+
+// сделать при перезугрке страницы подтягивание данных
 export const INIT_AUTH_ASYNC = "INIT_AUTH_ASYNC";
 export type initAuthAsync = {
-  type: typeof INIT_AUTH_ASYNC
-}
+  type: typeof INIT_AUTH_ASYNC;
+};
 
-export type AuthActionTypes = signInAsyncType | setType |
-  AuthStartFechingAction
+export type AuthActionTypes = signUpAsyncType
+  | signInAsyncType
+  | setType
+  | AuthStartFechingAction
   | AuthStopFechingAction
   | AuthSetError;

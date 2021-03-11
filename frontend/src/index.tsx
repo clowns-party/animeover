@@ -3,25 +3,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // instruments
 import { store } from "./init/store";
 import history from "./init/history";
+import { SignUpForm } from './Elements/signUpForm/signUpForm';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ConnectedRouter history={history}>
-        <BrowserRouter>
+        <>
           <Switch>
-            <Route exact path="/" render={() => <App />} />
-            <Route exact path="/test" render={() => <div>Match</div>} />
+            <Route exact path="/signIn" render={() => <App />} />
+            <Route exact path="/signUp" render={() => <SignUpForm />} />
             <Route exact path="/test2" render={() => <div>some</div>} />
             <Route exact path="/test2/:id" render={() => <div>some</div>} />
           </Switch>
-        </BrowserRouter>
+        </>
       </ConnectedRouter>
     </Provider>
   </React.StrictMode>,
