@@ -9,7 +9,7 @@ import { signInAsync } from "../../bus/auth/actions";
 const layout = {};
 const tailLayout = {};
 
-export const AuthForm: FC = () => {
+export const SignInForm: FC = () => {
   const dispatch = useDispatch();
   const { isFetching, error, data } = useAuth();
 

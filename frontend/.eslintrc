@@ -31,6 +31,7 @@
     "linebreak-style": "off",
     "react/jsx-props-no-spreading": 0,
     "import/prefer-default-export": 0,
+    "no-debugger": "warn",
     "react/jsx-one-expression-per-line": "off",
     "import/extensions": [
       1,

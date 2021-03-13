@@ -19,3 +19,7 @@ export const sendSignUpData = (authData: AuthFormData) => {
     },
   });
 };
+
+export const getAnime = () => {
+  return axios.get("https://animeover-api.herokuapp.com/animedb");
+};

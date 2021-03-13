@@ -1,12 +1,12 @@
 // core
 import React from "react";
-import { AuthForm } from "./Elements/signInForm/signInForm";
+import { SignInForm } from './Elements/signInForm/SignInForm';
 import "antd/dist/antd.css";
 
 function App() {
   return (
     <div className="App">
-      <AuthForm />
+      <SignInForm />
     </div>
   );
 }
