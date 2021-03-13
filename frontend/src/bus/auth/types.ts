@@ -33,7 +33,7 @@ export type ErrorHttpAction = {
 
 // Sync
 export const AUTH_START_FETCHING = "AUTH_START_FETCHING";
-type AuthStartFechingAction = {
+export type AuthStartFechingAction = {
   type: typeof AUTH_START_FETCHING;
 };
 

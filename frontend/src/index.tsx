@@ -9,7 +9,8 @@ import reportWebVitals from "./reportWebVitals";
 // instruments
 import { store } from "./init/store";
 import history from "./init/history";
-import { SignUpForm } from './Elements/signUpForm/signUpForm';
+import { SignUpForm } from './Elements/signUpForm/SignUpForm';
+import { HomePage } from "./Elements/HomePage/HomePage";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <ConnectedRouter history={history}>
         <>
           <Switch>
+            <Route exact path="/" render={() => <HomePage />} />
             <Route exact path="/signIn" render={() => <App />} />
             <Route exact path="/signUp" render={() => <SignUpForm />} />
             <Route exact path="/test2" render={() => <div>some</div>} />
