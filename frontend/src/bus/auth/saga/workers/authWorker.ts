@@ -9,12 +9,12 @@ import {
   stopFetching,
 } from "../../actions";
 import { signInAsyncType } from "../../types";
-import { fetchAuth } from "../../../../Services/api";
+import { service } from "../../../../Services";
 
 export function* authWorker(action: signInAsyncType): SagaIterator {
   try {
     yield put(startFetching());
-    const result = yield call(fetchAuth, action);
+    const result = yield call(service.auth, action.payload);
     if (result?.data) {
       yield put(set(result.data));
       Cookies.set("token", result.data.token, { expires: 7 });

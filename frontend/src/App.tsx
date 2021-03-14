@@ -1,6 +1,6 @@
 // core
 import React from "react";
-import { SignInForm } from './Elements/signInForm/SignInForm';
+import { SignInForm } from "./Elements/signInForm/signInForm";
 import "antd/dist/antd.css";
 
 function App() {

@@ -9,7 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 // instruments
 import { store } from "./init/store";
 import history from "./init/history";
-import { SignUpForm } from './Elements/signUpForm/SignUpForm';
+import { SignUpForm } from './Elements/signUpForm/signUpForm';
 import { HomePage } from "./Elements/HomePage/HomePage";
 
 ReactDOM.render(
