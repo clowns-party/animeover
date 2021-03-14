@@ -17,6 +17,7 @@ export function* authWorker(action: signInAsyncType): SagaIterator {
     const result = yield call(service.auth, action.payload);
     if (result?.data) {
       yield put(set(result.data));
+      // Пересмотри этот сеттер куки, будто иногда не отрабатывает
       Cookies.set("token", result.data.token, { expires: 7 });
       yield put(push("/home"));
     } else {

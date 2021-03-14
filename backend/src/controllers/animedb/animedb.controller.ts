@@ -9,7 +9,9 @@ import { AnimeDbService } from "./animedbService";
 @Route("/animedb")
 export class AnimeDbController extends Controller {
   @Get("/")
-  public async getAll(@Query() limit?: number): Promise<AnimeList> {
+  public async getAll(
+    @Query() limit?: number
+  ): Promise<AnimeList> {
     try {
       const docs = await new AnimeDbService().getAll(limit);
       if (docs && docs.length) {

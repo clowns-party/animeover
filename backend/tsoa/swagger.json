@@ -153,7 +153,13 @@
 				"additionalProperties": false
 			}
 		},
-		"securitySchemes": {}
+		"securitySchemes": {
+			"api_key": {
+				"type": "apiKey",
+				"name": "access_token",
+				"in": "query"
+			}
+		}
 	},
 	"info": {
 		"title": "backend-animeover",
@@ -327,24 +333,21 @@
 											"$ref": "#/components/schemas/ErrorSchema"
 										}
 									]
-								},
-								"examples": {
-									"Example 1": {
-										"value": {
-											"token": "sOmE.wOrDs-_TOken-By-SIGNiN-mEtHod"
-										}
-									}
 								}
 							}
 						}
 					}
 				},
-				"security": [],
+				"security": [
+					{
+						"api_key": []
+					}
+				],
 				"parameters": [
 					{
-						"in": "query",
-						"name": "token",
-						"required": true,
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
 						"schema": {
 							"type": "string"
 						}

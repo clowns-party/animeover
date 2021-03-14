@@ -14,6 +14,8 @@ export class Api {
     this.instance = axios.create({
       baseURL: this.baseUrl,
       headers: {
+        // идея не очень, инстанс создается один раз, не знает новых куки
+        //  хот апдейт придумать
         Authorization: Cookies.get("token") ?? "",
       },
     });
@@ -21,6 +23,10 @@ export class Api {
     this.animeList = this.animeList.bind(this);
     this.signUp = this.signUp.bind(this);
     this.auth = this.auth.bind(this);
+  }
+
+  me(): Promise<AxiosResponse<User>> {
+    return this.instance.post<User>("/auth/me");
   }
 
   auth(payload: AuthFormData): Promise<AxiosResponse<User>> {

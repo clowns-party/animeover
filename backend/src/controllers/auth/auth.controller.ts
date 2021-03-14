@@ -12,6 +12,9 @@ import {
   Example,
   Response,
   Query,
+  Header,
+  Request,
+  Security,
 } from "tsoa";
 
 // Services
@@ -78,13 +81,17 @@ export class AuthController extends Controller {
       return error;
     }
   }
-  @Example({
-    token: "sOmE.wOrDs-_TOken-By-SIGNiN-mEtHod",
-  })
+
+  @Security("api_key")
   @Post("/me")
-  public async me(@Query() token: string): Promise<UserSchema | ErrorSchema> {
+  public async me(
+    @Header("Authorization")
+    token?: string,
+    @Request() request?: any
+  ): Promise<UserSchema | ErrorSchema> {
     try {
-      const user = await new AuthService().me(token);
+      const access_token = token ?? request?.query?.access_token;
+      const user = await new AuthService().me(access_token);
       if (user) {
         this.setStatus(201);
         return user;

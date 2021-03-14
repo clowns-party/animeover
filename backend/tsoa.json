@@ -5,11 +5,19 @@
   "spec": {
     "outputDirectory": "./tsoa",
     "specVersion": 3,
-    "controllerPathGlobs": ["src/**/*controller.ts"]
+    "controllerPathGlobs": ["src/**/*controller.ts"],
+    "securityDefinitions": {
+      "api_key": {
+          "type": "apiKey",
+          "name": "access_token",
+          "in": "query"
+      }
+    }
   },
   "routes": {
     "basePath": "/",
     "entryFile": "./src/app.ts",
-    "routesDir": "./src/routes"
+    "routesDir": "./src/routes",
+    "authenticationModule": "./src/controllers/auth/authentication.ts"
   }
 }
