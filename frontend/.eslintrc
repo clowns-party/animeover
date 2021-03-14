@@ -29,6 +29,7 @@
     "comma-dangle": "off",
     "operator-linebreak": "off",
     "linebreak-style": "off",
+    "lines-between-class-members": "off",
     "react/jsx-props-no-spreading": 0,
     "import/prefer-default-export": 0,
     "no-debugger": "warn",

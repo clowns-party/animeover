@@ -8,13 +8,13 @@ import {
   set,
 } from "../../actions";
 import { signUpAsyncType } from "../../types";
-import { sendSignUpData } from "../../../../Services/api";
+import { service } from "../../../../Services";
 
 export function* signUpWorker(action: signUpAsyncType): SagaIterator {
   const { payload } = action;
   try {
     yield put(startFetching());
-    const result = yield call(sendSignUpData, payload);
+    const result = yield call(service.signUp, payload);
     if (result?.data) {
       // yield put(set({ user: result.data, token: '' }));
       yield put(push("/signIn"));
