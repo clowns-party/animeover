@@ -6,6 +6,87 @@
 		"requestBodies": {},
 		"responses": {},
 		"schemas": {
+			"AnimeTypes": {
+				"type": "string",
+				"enum": [
+					"Special",
+					"Movie",
+					"OVA",
+					"ONA",
+					"TV",
+					""
+				]
+			},
+			"AnimeStatuses": {
+				"type": "string",
+				"enum": [
+					"FINISHED",
+					"UPCOMING",
+					"UNKNOWN",
+					"CURRENTLY",
+					""
+				]
+			},
+			"AnimeSeason": {
+				"type": "string",
+				"enum": [
+					"SUMMER",
+					"UNDEFINED",
+					"WINTER",
+					"SPRING",
+					"FALL",
+					""
+				]
+			},
+			"AnimeTags": {
+				"type": "string",
+				"enum": [
+					"alternative present",
+					"amnesia",
+					"anti-hero",
+					"asia",
+					"based on a manga",
+					"contemporary fantasy",
+					"cops",
+					"crime",
+					"criminals",
+					"demons",
+					"detective",
+					"detectives",
+					"drama",
+					"earth",
+					"espionage",
+					"gods",
+					"japan",
+					"male protagonist",
+					"manga",
+					"mind games",
+					"mystery",
+					"overpowered main characters",
+					"philosophy",
+					"plot continuity",
+					"police",
+					"present",
+					"primarily adult cast",
+					"primarily male cast",
+					"psychological",
+					"psychopaths",
+					"revenge",
+					"rivalries",
+					"secret identity",
+					"serial killers",
+					"shinigami",
+					"shounen",
+					"supernatural",
+					"thriller",
+					"time skip",
+					"tragedy",
+					"urban",
+					"urban fantasy",
+					"vigilantes",
+					"work"
+				]
+			},
 			"AnimeItem": {
 				"properties": {
 					"_id": {
@@ -21,14 +102,14 @@
 						"type": "string"
 					},
 					"type": {
-						"type": "string"
+						"$ref": "#/components/schemas/AnimeTypes"
 					},
 					"episodes": {
 						"type": "number",
 						"format": "double"
 					},
 					"status": {
-						"type": "string"
+						"$ref": "#/components/schemas/AnimeStatuses"
 					},
 					"animeSeason": {
 						"properties": {
@@ -37,7 +118,7 @@
 								"format": "double"
 							},
 							"season": {
-								"type": "string"
+								"$ref": "#/components/schemas/AnimeSeason"
 							}
 						},
 						"required": [
@@ -66,7 +147,7 @@
 					},
 					"tags": {
 						"items": {
-							"type": "string"
+							"$ref": "#/components/schemas/AnimeTags"
 						},
 						"type": "array"
 					}
@@ -198,6 +279,56 @@
 						}
 					}
 				]
+			}
+		},
+		"/animedb/anime/{animeId}": {
+			"get": {
+				"operationId": "GetOne",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/AnimeItem"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "animeId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/animedb/tags": {
+			"get": {
+				"operationId": "GetAnimeTags",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"type": "string"
+									},
+									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
 			}
 		},
 		"/auth/signup": {
