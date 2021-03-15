@@ -23,6 +23,7 @@ export class Api {
     this.animeList = this.animeList.bind(this);
     this.signUp = this.signUp.bind(this);
     this.auth = this.auth.bind(this);
+    this.me = this.me.bind(this);
   }
 
   me(): Promise<AxiosResponse<User>> {

@@ -1,12 +1,7 @@
 import { SagaIterator } from "redux-saga";
 import { put, call } from "redux-saga/effects";
 import { push } from "connected-react-router";
-import {
-  startFetching,
-  stopFetching,
-  setFetchingError,
-  set,
-} from "../../actions";
+import { startFetching, stopFetching, setFetchingError } from "../../actions";
 import { signUpAsyncType } from "../../types";
 import { service } from "../../../../Services";
 
