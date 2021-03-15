@@ -28,7 +28,7 @@ export type AuthFormData = {
 
 export type ErrorHttpAction = {
   message: string;
-  code: string;
+  code: string | number;
 };
 
 // Sync
