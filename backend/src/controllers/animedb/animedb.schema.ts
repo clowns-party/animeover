@@ -1,3 +1,7 @@
+import firebase from "firebase/app";
+export type QueryDocumentData = firebase.firestore.Query<firebase.firestore.DocumentData>;
+export type WhereFilterOp = firebase.firestore.WhereFilterOp;
+
 export type AnimeList = Array<AnimeItem>;
 
 export interface AnimeItem {
@@ -15,7 +19,7 @@ export interface AnimeItem {
   thumbnail: string;
   synonyms: Array<string>;
   relations: Array<string>;
-  tags: Array<AnimeTags>;
+  tags: AnimeTags;
 }
 
 export type AnimeTypes = "Special" | "Movie" | "OVA" | "ONA" | "TV" | "";
@@ -32,51 +36,7 @@ export type AnimeSeason =
   | "SPRING"
   | "FALL"
   | "";
-export type AnimeTags =
-  | "alternative present"
-  | "amnesia"
-  | "anti-hero"
-  | "asia"
-  | "based on a manga"
-  | "contemporary fantasy"
-  | "cops"
-  | "crime"
-  | "criminals"
-  | "demons"
-  | "detective"
-  | "detectives"
-  | "drama"
-  | "earth"
-  | "espionage"
-  | "gods"
-  | "japan"
-  | "male protagonist"
-  | "manga"
-  | "mind games"
-  | "mystery"
-  | "overpowered main characters"
-  | "philosophy"
-  | "plot continuity"
-  | "police"
-  | "present"
-  | "primarily adult cast"
-  | "primarily male cast"
-  | "psychological"
-  | "psychopaths"
-  | "revenge"
-  | "rivalries"
-  | "secret identity"
-  | "serial killers"
-  | "shinigami"
-  | "shounen"
-  | "supernatural"
-  | "thriller"
-  | "time skip"
-  | "tragedy"
-  | "urban"
-  | "urban fantasy"
-  | "vigilantes"
-  | "work";
+export type AnimeTags = Array<String>;
 
 export const animetypes = ["Special", "Movie", "OVA", "ONA", "TV"];
 export const animeStatuses = ["FINISHED", "UPCOMING", "UNKNOWN", "CURRENTLY"];
@@ -127,5 +87,3 @@ export const animeTags = [
   "vigilantes",
   "work",
 ];
-
-export const animebanTags = ["hentai"];

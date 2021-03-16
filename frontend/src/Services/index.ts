@@ -49,7 +49,16 @@ export class Api {
   }
 
   animeList(): Promise<AxiosResponse<Anime>> {
-    return this.instance.get<Anime>("/animedb");
+    return this.instance.get<Anime>("/animedb", {
+      params: {
+        limit: 5,
+        // If you need hard filter
+        // tags: JSON.stringify(["drama", "adventure"]),
+        // You not need hard filter
+        tags: JSON.stringify(["drama"]),
+        season: "SUMMER",
+      },
+    });
   }
 }
 

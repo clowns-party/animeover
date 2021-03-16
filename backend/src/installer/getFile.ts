@@ -9,7 +9,7 @@ interface AnimeJsonDB {
 export const getFile = async (): Promise<AnimeJsonDB> => {
   return new Promise((resolve, reject) => {
     fs.readFile(
-      path.join(__dirname, "dummy", "./anime-offline-database_v2.json"),
+      path.join(__dirname, "dummy", "./anime-offline-database.json"),
       "utf8",
       function read(err, data) {
         if (err) {

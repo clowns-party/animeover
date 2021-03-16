@@ -1,20 +1,38 @@
-import { animebanTags, AnimeItem } from "./animedb.schema";
+import { AnimeItem } from "./animedb.schema";
 // Firebase
 import { firestoreDB } from "./../../firebase/index";
 //types
-import { AnimeList } from "./animedb.schema";
+import { AnimeList, QueryDocumentData } from "./animedb.schema";
 
-export const FetchAnimeDB = (_limit?: number): Promise<AnimeList> => {
+export const FetchAnimeDB = (
+  dbRef: QueryDocumentData,
+  limit: number,
+  tags?: string
+): Promise<AnimeList> => {
   return new Promise(async (resolve, reject) => {
     try {
-      const limit = _limit ? (_limit <= 30 ? _limit : 30) : 10;
-
-      const animeRef = await censorshipAnimeFilter();
-      const snapshot = await animeRef.limit(limit).get();
+      const hardFilter =
+        tags && tags.length >= 2 ? JSON.parse(tags) : undefined;
+      const snapshot = await dbRef.limit(limit).get();
 
       const docs = [];
       snapshot.forEach((doc) => {
-        docs.push(doc.data());
+        const document = doc.data();
+        if (hardFilter) {
+          console.log("HARD FILTER ACTIVE");
+
+          const isHardExact = hardFilter.reduce((exact, filter) => {
+            if (!document.tags.includes(filter)) {
+              exact = false;
+            }
+            return exact;
+          }, true);
+          if (isHardExact) {
+            docs.push(document);
+          }
+        } else {
+          docs.push(document);
+        }
       });
       resolve(docs);
     } catch (error) {
@@ -26,12 +44,6 @@ export const FetchAnimeDB = (_limit?: number): Promise<AnimeList> => {
       });
     }
   });
-};
-// Blocked tags filter
-const censorshipAnimeFilter = async () => {
-  return await firestoreDB
-    .collection("animedb")
-    .where("tags", "not-in", animebanTags);
 };
 
 export const FetchAnimeById = (animeId: string): Promise<AnimeItem> => {
