@@ -31,7 +31,7 @@ const models: TsoaRoute.Models = {
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "AnimeTags": {
         "dataType": "refAlias",
-        "type": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":["alternative present"]},{"dataType":"enum","enums":["amnesia"]},{"dataType":"enum","enums":["anti-hero"]},{"dataType":"enum","enums":["asia"]},{"dataType":"enum","enums":["based on a manga"]},{"dataType":"enum","enums":["contemporary fantasy"]},{"dataType":"enum","enums":["cops"]},{"dataType":"enum","enums":["crime"]},{"dataType":"enum","enums":["criminals"]},{"dataType":"enum","enums":["demons"]},{"dataType":"enum","enums":["detective"]},{"dataType":"enum","enums":["detectives"]},{"dataType":"enum","enums":["drama"]},{"dataType":"enum","enums":["earth"]},{"dataType":"enum","enums":["espionage"]},{"dataType":"enum","enums":["gods"]},{"dataType":"enum","enums":["japan"]},{"dataType":"enum","enums":["male protagonist"]},{"dataType":"enum","enums":["manga"]},{"dataType":"enum","enums":["mind games"]},{"dataType":"enum","enums":["mystery"]},{"dataType":"enum","enums":["overpowered main characters"]},{"dataType":"enum","enums":["philosophy"]},{"dataType":"enum","enums":["plot continuity"]},{"dataType":"enum","enums":["police"]},{"dataType":"enum","enums":["present"]},{"dataType":"enum","enums":["primarily adult cast"]},{"dataType":"enum","enums":["primarily male cast"]},{"dataType":"enum","enums":["psychological"]},{"dataType":"enum","enums":["psychopaths"]},{"dataType":"enum","enums":["revenge"]},{"dataType":"enum","enums":["rivalries"]},{"dataType":"enum","enums":["secret identity"]},{"dataType":"enum","enums":["serial killers"]},{"dataType":"enum","enums":["shinigami"]},{"dataType":"enum","enums":["shounen"]},{"dataType":"enum","enums":["supernatural"]},{"dataType":"enum","enums":["thriller"]},{"dataType":"enum","enums":["time skip"]},{"dataType":"enum","enums":["tragedy"]},{"dataType":"enum","enums":["urban"]},{"dataType":"enum","enums":["urban fantasy"]},{"dataType":"enum","enums":["vigilantes"]},{"dataType":"enum","enums":["work"]}],"validators":{}},
+        "type": {"dataType":"array","array":{"dataType":"string"},"validators":{}},
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "AnimeItem": {
@@ -48,7 +48,7 @@ const models: TsoaRoute.Models = {
             "thumbnail": {"dataType":"string","required":true},
             "synonyms": {"dataType":"array","array":{"dataType":"string"},"required":true},
             "relations": {"dataType":"array","array":{"dataType":"string"},"required":true},
-            "tags": {"dataType":"array","array":{"dataType":"refAlias","ref":"AnimeTags"},"required":true},
+            "tags": {"ref":"AnimeTags","required":true},
         },
         "additionalProperties": false,
     },
@@ -96,6 +96,8 @@ export function RegisterRoutes(app: express.Router) {
             function (request: any, response: any, next: any) {
             const args = {
                     limit: {"in":"query","name":"limit","dataType":"double"},
+                    tags: {"in":"query","name":"tags","dataType":"string"},
+                    season: {"in":"query","name":"season","ref":"AnimeSeason"},
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

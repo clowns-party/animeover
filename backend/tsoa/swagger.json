@@ -39,53 +39,10 @@
 				]
 			},
 			"AnimeTags": {
-				"type": "string",
-				"enum": [
-					"alternative present",
-					"amnesia",
-					"anti-hero",
-					"asia",
-					"based on a manga",
-					"contemporary fantasy",
-					"cops",
-					"crime",
-					"criminals",
-					"demons",
-					"detective",
-					"detectives",
-					"drama",
-					"earth",
-					"espionage",
-					"gods",
-					"japan",
-					"male protagonist",
-					"manga",
-					"mind games",
-					"mystery",
-					"overpowered main characters",
-					"philosophy",
-					"plot continuity",
-					"police",
-					"present",
-					"primarily adult cast",
-					"primarily male cast",
-					"psychological",
-					"psychopaths",
-					"revenge",
-					"rivalries",
-					"secret identity",
-					"serial killers",
-					"shinigami",
-					"shounen",
-					"supernatural",
-					"thriller",
-					"time skip",
-					"tragedy",
-					"urban",
-					"urban fantasy",
-					"vigilantes",
-					"work"
-				]
+				"items": {
+					"type": "string"
+				},
+				"type": "array"
 			},
 			"AnimeItem": {
 				"properties": {
@@ -146,10 +103,7 @@
 						"type": "array"
 					},
 					"tags": {
-						"items": {
-							"$ref": "#/components/schemas/AnimeTags"
-						},
-						"type": "array"
+						"$ref": "#/components/schemas/AnimeTags"
 					}
 				},
 				"required": [
@@ -276,6 +230,22 @@
 						"schema": {
 							"format": "double",
 							"type": "number"
+						}
+					},
+					{
+						"in": "query",
+						"name": "tags",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "season",
+						"required": false,
+						"schema": {
+							"$ref": "#/components/schemas/AnimeSeason"
 						}
 					}
 				]

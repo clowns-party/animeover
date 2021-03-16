@@ -1,7 +1,7 @@
 import { Route, Get, Controller, Query, Path } from "tsoa";
 
 // type
-import { AnimeItem, AnimeList, animeTags } from "./animedb.schema";
+import { AnimeItem, AnimeList, animeTags, AnimeSeason } from "./animedb.schema";
 
 // Service
 import { AnimeDbService } from "./animedbService";
@@ -9,14 +9,19 @@ import { AnimeDbService } from "./animedbService";
 @Route("/animedb")
 export class AnimeDbController extends Controller {
   @Get("/")
-  public async getAll(@Query() limit?: number): Promise<AnimeList> {
+  public async getAll(
+    @Query() limit?: number,
+    @Query() tags?: string,
+    @Query() season?: AnimeSeason
+  ): Promise<AnimeList> {
     try {
-      const docs = await new AnimeDbService().getAll(limit);
+      const docs = await new AnimeDbService().getAll(limit, tags, season);
       if (docs && docs.length) {
         this.setStatus(200);
         return docs;
       } else {
-        this.setStatus(500);
+        this.setStatus(200);
+        return [];
       }
     } catch (error) {
       this.setStatus(500);
