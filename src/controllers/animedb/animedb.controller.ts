@@ -59,4 +59,15 @@ export class AnimeDbController extends Controller {
       return error;
     }
   }
+  @Get("/ongoing")
+  public async getOngoing(): Promise<AnimeList> {
+    try {
+      const ongoing = await new AnimeDbService().getOngoing();
+      this.setStatus(200);
+      return ongoing;
+    } catch (error) {
+      this.setStatus(400);
+      return error;
+    }
+  }
 }
