@@ -301,6 +301,25 @@
 				"parameters": []
 			}
 		},
+		"/animedb/ongoing": {
+			"get": {
+				"operationId": "GetOngoing",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/AnimeList"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		},
 		"/auth/signup": {
 			"post": {
 				"operationId": "Signup",

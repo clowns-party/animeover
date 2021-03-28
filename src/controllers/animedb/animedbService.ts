@@ -7,7 +7,7 @@ import {
   WhereFilterOp,
 } from "./animedb.schema";
 // Functions
-import { FetchAnimeDB, FetchAnimeById } from "./animedb.function";
+import { FetchAnimeDB, FetchAnimeById, FetchOngoing } from "./animedb.function";
 
 type FilterParams = Array<{
   by: string;
@@ -24,6 +24,10 @@ export class AnimeDbService {
   }
   public async getOne(animeId: string) {
     return await FetchAnimeById(animeId);
+  }
+  public async getOngoing() {
+    const ref = await this.censorshipAnimeFilter();
+    return await FetchOngoing(ref);
   }
 
   private async censorshipAnimeFilter() {
