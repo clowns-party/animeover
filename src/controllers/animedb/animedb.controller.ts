@@ -12,10 +12,11 @@ export class AnimeDbController extends Controller {
   public async getAll(
     @Query() limit?: number,
     @Query() tags?: string,
-    @Query() season?: AnimeSeason
+    @Query() season?: AnimeSeason,
+    @Query() page?: number
   ): Promise<AnimeList> {
     try {
-      const docs = await new AnimeDbService().getAll(limit, tags, season);
+      const docs = await new AnimeDbService().getAll(limit, tags, season, page);
       if (docs && docs.length) {
         this.setStatus(200);
         return docs;
