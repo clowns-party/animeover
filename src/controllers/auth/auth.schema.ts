@@ -13,3 +13,11 @@ export interface UserSchema {
   isAnonymous: boolean;
   tenantId: null | string;
 }
+
+export type RequstAuth =
+  | {
+      query?: {
+        access_token?: string;
+      };
+    }
+  | undefined;

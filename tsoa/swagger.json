@@ -329,6 +329,36 @@
 				"parameters": []
 			}
 		},
+		"/animelist": {
+			"get": {
+				"operationId": "UserAnimelist",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"api_key": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
 		"/auth/signup": {
 			"post": {
 				"operationId": "Signup",
