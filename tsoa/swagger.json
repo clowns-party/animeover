@@ -129,6 +129,59 @@
 				},
 				"type": "array"
 			},
+			"UserAnimeStatuses": {
+				"type": "string",
+				"enum": [
+					"viewed",
+					"abandoned",
+					"postponed",
+					"planned",
+					"reviewing",
+					"look"
+				]
+			},
+			"UserAnimeStars": {
+				"type": "string",
+				"enum": [
+					"0",
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10"
+				]
+			},
+			"UserAnimeValues": {
+				"properties": {
+					"star": {
+						"$ref": "#/components/schemas/UserAnimeStars"
+					},
+					"review": {
+						"type": "string"
+					},
+					"status": {
+						"$ref": "#/components/schemas/UserAnimeStatuses"
+					}
+				},
+				"required": [
+					"star",
+					"review",
+					"status"
+				],
+				"type": "object"
+			},
+			"UserAnime": {
+				"properties": {},
+				"additionalProperties": {
+					"$ref": "#/components/schemas/UserAnimeValues"
+				},
+				"type": "object"
+			},
 			"UserSchema": {
 				"properties": {
 					"uid": {
@@ -327,6 +380,144 @@
 				},
 				"security": [],
 				"parameters": []
+			}
+		},
+		"/user/animelist": {
+			"get": {
+				"operationId": "UserAnimelist",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"api_key": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"patch": {
+				"operationId": "SetAnime",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/UserAnime"
+								},
+								"examples": {
+									"Example 1": {
+										"value": {
+											"animeId": "animeid not be check of exist!",
+											"status": "viewed",
+											"review": "awesome!",
+											"star": "1-10"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"api_key": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "animeId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "status",
+						"required": true,
+						"schema": {
+							"$ref": "#/components/schemas/UserAnimeStatuses"
+						}
+					},
+					{
+						"in": "query",
+						"name": "review",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "star",
+						"required": false,
+						"schema": {
+							"$ref": "#/components/schemas/UserAnimeStars"
+						}
+					},
+					{
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"delete": {
+				"operationId": "DeleteAnime",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"api_key": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "animeId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
 			}
 		},
 		"/auth/signup": {

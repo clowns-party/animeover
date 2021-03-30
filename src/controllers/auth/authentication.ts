@@ -11,8 +11,6 @@ export function expressAuthentication(
     if (request.query && request.query.access_token) {
       token = request.query.access_token;
     }
-    return token
-      ? Promise.resolve({ token })
-      : Promise.resolve({ status: "Token not found" });
+    return token ? Promise.resolve({ token }) : Promise.resolve(undefined);
   }
 }
