@@ -27,3 +27,24 @@ export const setAnimeList = (
     }
   });
 };
+
+export const deleteAnimeItem = (
+  animeId: string,
+  ref: DocumentReference,
+  refData: UserAnimeList
+): Promise<UserAnime> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const data = refData;
+      if (data) {
+        delete data[animeId];
+      } else {
+        reject({ code: 404, message: "Anime not found in list!" });
+      }
+      await ref.set(data);
+      resolve(data);
+    } catch (error) {
+      reject(error);
+    }
+  });
+};

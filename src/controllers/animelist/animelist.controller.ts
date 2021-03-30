@@ -10,6 +10,7 @@ import {
   Query,
   Example,
   Patch,
+  Delete,
 } from "tsoa";
 // Types
 import {
@@ -19,7 +20,7 @@ import {
   UserAnime,
 } from "./animelist.schema";
 
-@Route("/animelist")
+@Route("/user/animelist")
 export class AnimeListController extends Controller {
   @Security("api_key")
   @Get("/")
@@ -40,10 +41,12 @@ export class AnimeListController extends Controller {
 
   @Example({
     animeId: "animeid not be check of exist!",
-    data: '{"review": "test","status":"view","star":"8"}',
+    status: "viewed",
+    review: "awesome!",
+    star: "1-10",
   })
   @Security("api_key")
-  @Patch("/setanime")
+  @Patch("/")
   public async setAnime(
     @Query() animeId: string,
     @Query() status: UserAnimeStatuses,
@@ -68,6 +71,26 @@ export class AnimeListController extends Controller {
       return res;
     } catch (error) {
       this.setStatus(401);
+      return error;
+    }
+  }
+
+  @Security("api_key")
+  @Delete("/")
+  public async deleteAnime(
+    @Query() animeId: string,
+    @Header("Authorization")
+    token?: string,
+    @Request() request?: any
+  ) {
+    try {
+      const res = await new AnimeListService(token, request).deleteAnime(
+        animeId
+      );
+      this.setStatus(200);
+      return res;
+    } catch (error) {
+      this.setStatus(404);
       return error;
     }
   }

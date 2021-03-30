@@ -382,7 +382,7 @@
 				"parameters": []
 			}
 		},
-		"/animelist": {
+		"/user/animelist": {
 			"get": {
 				"operationId": "UserAnimelist",
 				"responses": {
@@ -410,9 +410,7 @@
 						}
 					}
 				]
-			}
-		},
-		"/animelist/setanime": {
+			},
 			"patch": {
 				"operationId": "SetAnime",
 				"responses": {
@@ -427,7 +425,9 @@
 									"Example 1": {
 										"value": {
 											"animeId": "animeid not be check of exist!",
-											"data": "{\"review\": \"test\",\"status\":\"view\",\"star\":\"8\"}"
+											"status": "viewed",
+											"review": "awesome!",
+											"star": "1-10"
 										}
 									}
 								}
@@ -471,6 +471,42 @@
 						"required": false,
 						"schema": {
 							"$ref": "#/components/schemas/UserAnimeStars"
+						}
+					},
+					{
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"delete": {
+				"operationId": "DeleteAnime",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"api_key": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "animeId",
+						"required": true,
+						"schema": {
+							"type": "string"
 						}
 					},
 					{

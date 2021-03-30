@@ -203,7 +203,7 @@ export function RegisterRoutes(app: express.Router) {
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-        app.get('/animelist',
+        app.get('/user/animelist',
             authenticateMiddleware([{"api_key":[]}]),
             function (request: any, response: any, next: any) {
             const args = {
@@ -227,7 +227,7 @@ export function RegisterRoutes(app: express.Router) {
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-        app.patch('/animelist/setanime',
+        app.patch('/user/animelist',
             authenticateMiddleware([{"api_key":[]}]),
             function (request: any, response: any, next: any) {
             const args = {
@@ -252,6 +252,31 @@ export function RegisterRoutes(app: express.Router) {
 
 
             const promise = controller.setAnime.apply(controller, validatedArgs as any);
+            promiseHandler(controller, promise, response, undefined, next);
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.delete('/user/animelist',
+            authenticateMiddleware([{"api_key":[]}]),
+            function (request: any, response: any, next: any) {
+            const args = {
+                    animeId: {"in":"query","name":"animeId","required":true,"dataType":"string"},
+                    token: {"in":"header","name":"Authorization","dataType":"string"},
+                    request: {"in":"request","name":"request","dataType":"object"},
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+            } catch (err) {
+                return next(err);
+            }
+
+            const controller = new AnimeListController();
+
+
+            const promise = controller.deleteAnime.apply(controller, validatedArgs as any);
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

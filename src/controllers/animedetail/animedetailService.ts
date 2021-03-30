@@ -1,5 +1,5 @@
 import { firestoreDB } from "./../../firebase";
-import { setAnimeDetail } from "./animedetail.functions";
+import { setAnimeDetail, deleteAnimeDetail } from "./animedetail.functions";
 // Types
 import {
   RefPromise,
@@ -26,6 +26,19 @@ export class AnimeDetailService {
         if (res) {
           resolve(true);
         }
+      } catch (error) {
+        reject(error);
+      }
+    });
+  }
+
+  public async deleteDetail(userId: string, animeId: string) {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const ref = await this.refByUserId(animeId, userId);
+        const refData = await this.refDataByUserId(ref);
+        const res = await deleteAnimeDetail(animeId, ref, refData);
+        resolve(res);
       } catch (error) {
         reject(error);
       }

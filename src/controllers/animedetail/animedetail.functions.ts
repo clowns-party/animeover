@@ -22,3 +22,23 @@ export const setAnimeDetail = (
     }
   });
 };
+
+export const deleteAnimeDetail = (
+  animeId: string,
+  ref: DocumentReference,
+  refData: UserAnimeList
+): Promise<boolean> => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const data = refData;
+      if (data) {
+        await ref.delete();
+      } else {
+        reject({ code: 404, message: "User review in detail not found" });
+      }
+      resolve(true);
+    } catch (error) {
+      reject(error);
+    }
+  });
+};

@@ -1,5 +1,5 @@
 import { AnimeDetailService } from "./../animedetail/animedetailService";
-import { setAnimeList } from "./animelist.functions";
+import { deleteAnimeItem, setAnimeList } from "./animelist.functions";
 import { AuthService } from "./../auth/authService";
 import { RequstAuth } from "./../auth/auth.schema";
 // Firebase
@@ -77,6 +77,24 @@ export class AnimeListService {
         if (responseAnimeList && responseAnimeDetail) {
           resolve(responseAnimeList);
         }
+      } catch (error) {
+        reject(error);
+      }
+    });
+  }
+
+  public async deleteAnime(animeId: string) {
+    return new Promise(async (resolve, reject) => {
+      try {
+        await this.secure();
+        const ref = await this.ref();
+        const refData = await this.refData(ref);
+        const resultAnimeDetail = await new AnimeDetailService().deleteDetail(
+          this.user?.uid,
+          animeId
+        );
+        const resultAnimeList = await deleteAnimeItem(animeId, ref, refData);
+        resolve(resultAnimeList);
       } catch (error) {
         reject(error);
       }
