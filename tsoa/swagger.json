@@ -129,6 +129,59 @@
 				},
 				"type": "array"
 			},
+			"UserAnimeStatuses": {
+				"type": "string",
+				"enum": [
+					"viewed",
+					"abandoned",
+					"postponed",
+					"planned",
+					"reviewing",
+					"look"
+				]
+			},
+			"UserAnimeStars": {
+				"type": "string",
+				"enum": [
+					"0",
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8",
+					"9",
+					"10"
+				]
+			},
+			"UserAnimeValues": {
+				"properties": {
+					"star": {
+						"$ref": "#/components/schemas/UserAnimeStars"
+					},
+					"review": {
+						"type": "string"
+					},
+					"status": {
+						"$ref": "#/components/schemas/UserAnimeStatuses"
+					}
+				},
+				"required": [
+					"star",
+					"review",
+					"status"
+				],
+				"type": "object"
+			},
+			"UserAnime": {
+				"properties": {},
+				"additionalProperties": {
+					"$ref": "#/components/schemas/UserAnimeValues"
+				},
+				"type": "object"
+			},
 			"UserSchema": {
 				"properties": {
 					"uid": {
@@ -360,14 +413,16 @@
 			}
 		},
 		"/animelist/setanime": {
-			"post": {
+			"patch": {
 				"operationId": "SetAnime",
 				"responses": {
 					"200": {
 						"description": "Ok",
 						"content": {
 							"application/json": {
-								"schema": {},
+								"schema": {
+									"$ref": "#/components/schemas/UserAnime"
+								},
 								"examples": {
 									"Example 1": {
 										"value": {
@@ -396,10 +451,26 @@
 					},
 					{
 						"in": "query",
-						"name": "data",
+						"name": "status",
 						"required": true,
 						"schema": {
+							"$ref": "#/components/schemas/UserAnimeStatuses"
+						}
+					},
+					{
+						"in": "query",
+						"name": "review",
+						"required": false,
+						"schema": {
 							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "star",
+						"required": false,
+						"schema": {
+							"$ref": "#/components/schemas/UserAnimeStars"
 						}
 					},
 					{

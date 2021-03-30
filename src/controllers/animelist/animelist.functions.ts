@@ -7,7 +7,7 @@ export const setAnimeList = (
   data: UserAnime,
   ref: DocumentReference,
   refData: UserAnimeList
-) => {
+): Promise<UserAnime> => {
   return new Promise(async (resolve, reject) => {
     try {
       if (!refData) {
@@ -18,7 +18,10 @@ export const setAnimeList = (
           ...data,
         });
       }
-      resolve(true);
+      resolve({
+        ...refData,
+        ...data,
+      });
     } catch (error) {
       reject(error);
     }

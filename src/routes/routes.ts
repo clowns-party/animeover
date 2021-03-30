@@ -60,6 +60,26 @@ const models: TsoaRoute.Models = {
         "type": {"dataType":"array","array":{"ref":"AnimeItem"},"validators":{}},
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "UserAnimeStatuses": {
+        "dataType": "refAlias",
+        "type": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":["viewed"]},{"dataType":"enum","enums":["abandoned"]},{"dataType":"enum","enums":["postponed"]},{"dataType":"enum","enums":["planned"]},{"dataType":"enum","enums":["reviewing"]},{"dataType":"enum","enums":["look"]}],"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "UserAnimeStars": {
+        "dataType": "refAlias",
+        "type": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":["0"]},{"dataType":"enum","enums":["1"]},{"dataType":"enum","enums":["2"]},{"dataType":"enum","enums":["3"]},{"dataType":"enum","enums":["4"]},{"dataType":"enum","enums":["5"]},{"dataType":"enum","enums":["6"]},{"dataType":"enum","enums":["7"]},{"dataType":"enum","enums":["8"]},{"dataType":"enum","enums":["9"]},{"dataType":"enum","enums":["10"]}],"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "UserAnimeValues": {
+        "dataType": "refAlias",
+        "type": {"dataType":"nestedObjectLiteral","nestedProperties":{"star":{"ref":"UserAnimeStars","required":true},"review":{"dataType":"string","required":true},"status":{"ref":"UserAnimeStatuses","required":true}},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "UserAnime": {
+        "dataType": "refAlias",
+        "type": {"dataType":"nestedObjectLiteral","nestedProperties":{},"additionalProperties":{"ref":"UserAnimeValues"},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "UserSchema": {
         "dataType": "refObject",
         "properties": {
@@ -207,12 +227,14 @@ export function RegisterRoutes(app: express.Router) {
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-        app.post('/animelist/setanime',
+        app.patch('/animelist/setanime',
             authenticateMiddleware([{"api_key":[]}]),
             function (request: any, response: any, next: any) {
             const args = {
                     animeId: {"in":"query","name":"animeId","required":true,"dataType":"string"},
-                    data: {"in":"query","name":"data","required":true,"dataType":"string"},
+                    status: {"in":"query","name":"status","required":true,"ref":"UserAnimeStatuses"},
+                    review: {"in":"query","name":"review","dataType":"string"},
+                    star: {"in":"query","name":"star","ref":"UserAnimeStars"},
                     token: {"in":"header","name":"Authorization","dataType":"string"},
                     request: {"in":"request","name":"request","dataType":"object"},
             };

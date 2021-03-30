@@ -54,7 +54,7 @@ export class AnimeListService {
   public async setAnime(
     animeId: string,
     data: UserAnimeValues
-  ): Promise<boolean> {
+  ): Promise<UserAnime> {
     return new Promise(async (resolve, reject) => {
       try {
         await this.secure();
@@ -75,7 +75,7 @@ export class AnimeListService {
         );
 
         if (responseAnimeList && responseAnimeDetail) {
-          resolve(true);
+          resolve(responseAnimeList);
         }
       } catch (error) {
         reject(error);

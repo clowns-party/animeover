@@ -9,7 +9,15 @@ import {
   Post,
   Query,
   Example,
+  Patch,
 } from "tsoa";
+// Types
+import {
+  UserAnimeStatuses,
+  UserAnimeStars,
+  UserAnimeValues,
+  UserAnime,
+} from "./animelist.schema";
 
 @Route("/animelist")
 export class AnimeListController extends Controller {
@@ -35,20 +43,28 @@ export class AnimeListController extends Controller {
     data: '{"review": "test","status":"view","star":"8"}',
   })
   @Security("api_key")
-  @Post("/setanime")
+  @Patch("/setanime")
   public async setAnime(
     @Query() animeId: string,
-    @Query() data: string,
+    @Query() status: UserAnimeStatuses,
+    @Query() review?: string,
+    @Query() star?: UserAnimeStars,
     @Header("Authorization")
     token?: string,
     @Request() request?: any
-  ): Promise<any> {
+  ): Promise<UserAnime> {
     try {
+      const data: UserAnimeValues = {
+        status,
+        review: review ?? "",
+        star: star ?? "0",
+      };
+
       const res = await new AnimeListService(token, request).setAnime(
         animeId,
-        JSON.parse(data)
+        data
       );
-      this.setStatus(201);
+      this.setStatus(200);
       return res;
     } catch (error) {
       this.setStatus(401);
