@@ -1,9 +1,17 @@
-import { setDataInCollection } from "./animelist.functions";
+import { AnimeDetailService } from "./../animedetail/animedetailService";
+import { setAnimeList } from "./animelist.functions";
 import { AuthService } from "./../auth/authService";
 import { RequstAuth } from "./../auth/auth.schema";
 // Firebase
 import { firestoreDB, User } from "./../../firebase";
-
+// Types
+import {
+  RefPromise,
+  DocumentReference,
+  UserAnimeList,
+  UserAnimeValues,
+  UserAnime,
+} from "./animelist.schema";
 export class AnimeListService {
   token: string;
   request: RequstAuth;
@@ -34,14 +42,52 @@ export class AnimeListService {
     return new Promise(async (resolve, reject) => {
       try {
         await this.secure();
-        await setDataInCollection(
-          this.user.uid,
-          "0010beea-25f0-427e-b833-34c38f92d4fe"
-        );
-        resolve({ data: "all good!" });
+        const ref = await this.ref();
+        const data = await this.refData(ref);
+        resolve(data);
       } catch (error) {
         reject(error);
       }
     });
+  }
+
+  public async setAnime(
+    animeId: string,
+    data: UserAnimeValues
+  ): Promise<boolean> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        await this.secure();
+        const dataForAnimeList: UserAnime = {
+          [animeId]: data,
+        };
+        const ref = await this.ref();
+        const refData = await this.refData(ref);
+        const responseAnimeList = await setAnimeList(
+          dataForAnimeList,
+          ref,
+          refData
+        );
+        const responseAnimeDetail = await new AnimeDetailService().setDetail(
+          this.user?.uid,
+          animeId,
+          data
+        );
+
+        if (responseAnimeList && responseAnimeDetail) {
+          resolve(true);
+        }
+      } catch (error) {
+        reject(error);
+      }
+    });
+  }
+
+  private async ref(): RefPromise {
+    return await firestoreDB.collection("animelist").doc(this.user?.uid);
+  }
+  private async refData(ref: DocumentReference): Promise<UserAnimeList> {
+    const referenceGet = await ref.get();
+    return (await referenceGet.data()) as UserAnimeList;
   }
 }

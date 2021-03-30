@@ -2,8 +2,9 @@ import {
   DocumentReference,
   UserAnime,
   UserAnimeList,
-} from "./animelist.schema";
-export const setAnimeList = (
+} from "./../animelist/animelist.schema";
+
+export const setAnimeDetail = (
   data: UserAnime,
   ref: DocumentReference,
   refData: UserAnimeList
@@ -13,10 +14,7 @@ export const setAnimeList = (
       if (!refData) {
         await ref.set(data);
       } else {
-        await ref.update({
-          ...refData,
-          ...data,
-        });
+        await ref.update(data);
       }
       resolve(true);
     } catch (error) {
