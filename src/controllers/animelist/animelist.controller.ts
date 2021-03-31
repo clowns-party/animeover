@@ -1,3 +1,4 @@
+import { AnimeDbService } from "./../animedb/animedbService";
 import { AnimeListService } from "./animelistService";
 import {
   Route,
@@ -6,7 +7,6 @@ import {
   Security,
   Header,
   Request,
-  Post,
   Query,
   Example,
   Patch,
@@ -62,13 +62,17 @@ export class AnimeListController extends Controller {
         review: review ?? "",
         star: star ?? "0",
       };
-
-      const res = await new AnimeListService(token, request).setAnime(
-        animeId,
-        data
-      );
-      this.setStatus(200);
-      return res;
+      const doc = await new AnimeDbService().getOne(animeId);
+      if (doc) {
+        const res = await new AnimeListService(token, request).setAnime(
+          animeId,
+          data
+        );
+        this.setStatus(200);
+        return res;
+      } else {
+        this.setStatus(404);
+      }
     } catch (error) {
       this.setStatus(401);
       return error;
