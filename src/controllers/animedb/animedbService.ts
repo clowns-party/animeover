@@ -1,11 +1,11 @@
 // Firebase
 import { firestoreDB } from "./../../firebase";
 // Schemas
+import { AnimeSeason } from "./animedb.schema";
 import {
-  AnimeSeason,
-  QueryDocumentData,
   WhereFilterOp,
-} from "./animedb.schema";
+  QueryDocumentData,
+} from "../../firebase/firebase.schemas";
 // Functions
 import { FetchAnimeDB, FetchAnimeById, FetchOngoing } from "./animedb.function";
 
@@ -40,7 +40,7 @@ export class AnimeDbService {
   public async paginate(page: number, limit: number) {
     const _limit = page === 1 ? page * limit : Number(page * limit) - limit;
     const currentPage = await firestoreDB.collection("animedb").limit(_limit);
-    
+
     const snapshot = await currentPage.get();
     // Step 2
     const lastDocumentSnapshot = snapshot.docs[snapshot.docs.length - 1];

@@ -2,7 +2,8 @@ import { AnimeItem } from "./animedb.schema";
 // Firebase
 import { firestoreDB } from "./../../firebase/index";
 //types
-import { AnimeList, QueryDocumentData } from "./animedb.schema";
+import { AnimeList } from "./animedb.schema";
+import { QueryDocumentData } from "../../firebase/firebase.schemas";
 
 export const FetchAnimeDB = (
   dbRef: QueryDocumentData,

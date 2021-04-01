@@ -1,9 +1,7 @@
-import firebase from "firebase/app";
+import { DocumentReference } from "../../firebase/firebase.schemas";
 
-export type RefPromise = Promise<
-  firebase.firestore.DocumentReference<firebase.firestore.DocumentData>
->;
-export type DocumentReference = firebase.firestore.DocumentReference<firebase.firestore.DocumentData>;
+export type RefPromise = Promise<DocumentReference>;
+
 export type UserAnimeStatuses =
   | "viewed"
   | "abandoned"

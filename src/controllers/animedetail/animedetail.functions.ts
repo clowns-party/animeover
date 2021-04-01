@@ -1,8 +1,5 @@
-import {
-  DocumentReference,
-  UserAnime,
-  UserAnimeList,
-} from "./../animelist/animelist.schema";
+import { DocumentReference } from "../../firebase/firebase.schemas";
+import { UserAnime, UserAnimeList } from "./../animelist/animelist.schema";
 
 export const setAnimeDetail = (
   data: UserAnime,

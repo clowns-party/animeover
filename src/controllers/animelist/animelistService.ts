@@ -7,11 +7,11 @@ import { firestoreDB, User } from "./../../firebase";
 // Types
 import {
   RefPromise,
-  DocumentReference,
   UserAnimeList,
   UserAnimeValues,
   UserAnime,
 } from "./animelist.schema";
+import { DocumentReference } from "../../firebase/firebase.schemas";
 export class AnimeListService {
   token: string;
   request: RequstAuth;
