@@ -1,15 +1,33 @@
 import { firestoreDB } from "./../../firebase";
 import { setAnimeDetail, deleteAnimeDetail } from "./animedetail.functions";
-// Types
+// Schemas
 import {
   RefPromise,
   UserAnime,
-  DocumentReference,
   UserAnimeList,
   UserAnimeValues,
 } from "./../animelist/animelist.schema";
-
+import { AnimeDetailList } from "./animedetail.schema";
+import {
+  CollectionDocumentData,
+  DocumentReference,
+} from "./../../firebase/firebase.schemas";
 export class AnimeDetailService {
+  public async getOne(animeId: string): Promise<AnimeDetailList> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const ref = await this.ref(animeId);
+        const data = await this.refData(ref);
+        const result = [];
+        data.forEach((doc) => {
+          result.push(doc.data());
+        });
+        result?.length ? resolve(result) : resolve([]);
+      } catch (error) {
+        reject(error);
+      }
+    });
+  }
   public async setDetail(
     userId: string,
     animeId: string,
@@ -43,6 +61,17 @@ export class AnimeDetailService {
         reject(error);
       }
     });
+  }
+
+  private async ref(animeId: string) {
+    return await firestoreDB
+      .collection("animedetail")
+      .doc(animeId)
+      .collection("users");
+  }
+  private async refData(ref: CollectionDocumentData) {
+    const referenceGet = await ref.get();
+    return await referenceGet.docs;
   }
 
   private async refByUserId(animeId: string, userId: string): RefPromise {

@@ -1,7 +1,3 @@
-import firebase from "firebase/app";
-export type QueryDocumentData = firebase.firestore.Query<firebase.firestore.DocumentData>;
-export type WhereFilterOp = firebase.firestore.WhereFilterOp;
-
 export type AnimeList = Array<AnimeItem>;
 
 export interface AnimeItem {

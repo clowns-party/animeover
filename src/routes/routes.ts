@@ -5,6 +5,8 @@ import { Controller, ValidationService, FieldErrors, ValidateError, TsoaRoute, H
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AnimeDbController } from './../controllers/animedb/animedb.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+import { AnimedetailController } from './../controllers/animedetail/animedetail.controller';
+// WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AnimeListController } from './../controllers/animelist/animelist.controller';
 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 import { AuthController } from './../controllers/auth/auth.controller';
@@ -78,6 +80,16 @@ const models: TsoaRoute.Models = {
     "UserAnime": {
         "dataType": "refAlias",
         "type": {"dataType":"nestedObjectLiteral","nestedProperties":{},"additionalProperties":{"ref":"UserAnimeValues"},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "AnimeDetail": {
+        "dataType": "refAlias",
+        "type": {"ref":"UserAnime","validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "AnimeDetailList": {
+        "dataType": "refAlias",
+        "type": {"dataType":"array","array":{"dataType":"refAlias","ref":"AnimeDetail"},"validators":{}},
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "UserSchema": {
@@ -200,6 +212,28 @@ export function RegisterRoutes(app: express.Router) {
 
 
             const promise = controller.getOngoing.apply(controller, validatedArgs as any);
+            promiseHandler(controller, promise, response, undefined, next);
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.get('/animedetail/:animeId',
+            function (request: any, response: any, next: any) {
+            const args = {
+                    animeId: {"in":"path","name":"animeId","required":true,"dataType":"string"},
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+            } catch (err) {
+                return next(err);
+            }
+
+            const controller = new AnimedetailController();
+
+
+            const promise = controller.getOneDetail.apply(controller, validatedArgs as any);
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
