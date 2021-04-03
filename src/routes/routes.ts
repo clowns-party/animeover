@@ -50,6 +50,7 @@ const models: TsoaRoute.Models = {
             "episodes": {"dataType":"double","required":true},
             "status": {"ref":"AnimeStatuses","required":true},
             "animeSeason": {"dataType":"nestedObjectLiteral","nestedProperties":{"year":{"dataType":"double","required":true},"season":{"ref":"AnimeSeason","required":true}},"required":true},
+            "unacceptable": {"dataType":"boolean","required":true},
             "picture": {"dataType":"string","required":true},
             "thumbnail": {"dataType":"string","required":true},
             "synonyms": {"dataType":"array","array":{"dataType":"string"},"required":true},

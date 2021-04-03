@@ -11,9 +11,11 @@ export class SearchService {
         const ref = await this.ref();
         const resultSearchRef = await ref
           .where("title", ">=", queryText)
-          .where("title", "<=", queryText + "\uf8ff");
-        const data = await this.refDocsData(resultSearchRef);
-        resolve(data);
+          .where("title", "<=", queryText + "\uf8ff")
+          .limit(20);
+        const data: AnimeList = await this.refDocsData(resultSearchRef);
+        const censoredFilter = data.filter((anime) => !anime.unacceptable);
+        resolve(censoredFilter);
       } catch (error) {
         reject(error);
       }

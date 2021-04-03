@@ -11,6 +11,7 @@ export interface AnimeItem {
     season: AnimeSeason;
     year: number;
   };
+  unacceptable: boolean,
   picture: string;
   thumbnail: string;
   synonyms: Array<string>;
