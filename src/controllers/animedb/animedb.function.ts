@@ -70,19 +70,3 @@ export const FetchAnimeById = (animeId: string): Promise<AnimeItem> => {
     }
   });
 };
-
-export const FetchOngoing = async (
-  dbRef: QueryDocumentData
-): Promise<AnimeList> => {
-  const snapshot = await dbRef
-    .where("status", "==", "CURRENTLY")
-    .where("animeSeason.year", "==", 2021)
-    .limit(10)
-    .get();
-  const docs = [];
-  snapshot.forEach((doc) => {
-    const document = doc.data();
-    docs.push(document);
-  });
-  return docs;
-};
