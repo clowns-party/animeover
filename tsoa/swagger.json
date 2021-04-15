@@ -716,6 +716,32 @@
 				"parameters": []
 			}
 		},
+		"/ongoing/{ongoingId}": {
+			"get": {
+				"operationId": "GetOneDetail",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "path",
+						"name": "ongoingId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
 		"/search": {
 			"get": {
 				"operationId": "SearchByQuery",
