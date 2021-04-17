@@ -19,15 +19,24 @@ export class OngoingService {
       }
     });
   }
-  public async getOngoingById(id: string): Promise<AnimeItem> {
+  public async getOngoingById(
+    id: string,
+    inFirebase?: boolean
+  ): Promise<AnimeItem> {
     return new Promise(async (resolve, reject) => {
       try {
-        const fbData = await this.existOngoingInFB(id);
-        const data = !fbData
-          ? await this.shikimoriService.getShikimoriOngoingById(id)
-          : fbData;
-        console.log("FIND IN", fbData ? "FIREBASE" : "SHIKI");
-        resolve(data);
+        if (!inFirebase) {
+          const fbData = await this.existOngoingInFB(id);
+          const data = !fbData
+            ? await this.shikimoriService.getShikimoriOngoingById(id)
+            : fbData;
+          console.log("FIND IN", fbData ? "FIREBASE" : "SHIKI");
+          resolve(data);
+        } else {
+          console.log("SEARCH IN FIREBASE");
+          const data = await this.existOngoingInFB(id);
+          data ? resolve(data) : reject(undefined);
+        }
       } catch (error) {
         reject(error);
       }
