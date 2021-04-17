@@ -8,6 +8,11 @@ import { AnimeDbService } from "./animedbService";
 
 @Route("/animedb")
 export class AnimeDbController extends Controller {
+  service: AnimeDbService;
+  constructor() {
+    super();
+    this.service = new AnimeDbService();
+  }
   @Get("/")
   public async getAll(
     @Query() limit?: number,
@@ -16,7 +21,7 @@ export class AnimeDbController extends Controller {
     @Query() page?: number
   ): Promise<AnimeList> {
     try {
-      const docs = await new AnimeDbService().getAll(limit, tags, season, page);
+      const docs = await this.service.getAll(limit, tags, season, page);
       if (docs && docs.length) {
         this.setStatus(200);
         return docs;
@@ -33,7 +38,7 @@ export class AnimeDbController extends Controller {
   @Get("/anime/{animeId}")
   public async getOne(@Path() animeId: string): Promise<AnimeItem> {
     try {
-      const doc = await new AnimeDbService().getOne(animeId);
+      const doc = await this.service.getOne(animeId);
       if (doc) {
         this.setStatus(200);
         return doc;

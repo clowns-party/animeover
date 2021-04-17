@@ -22,15 +22,15 @@ export class OngoingController extends Controller {
       return error;
     }
   }
-  @Get("{ongoingId}")
-  public async getOneDetail(@Path() ongoingId: string) {
-    try {
-      const ongoing = await this.service.getOngoingById(ongoingId);
-      this.setStatus(200);
-      return ongoing;
-    } catch (error) {
-      this.setStatus(400);
-      return error;
-    }
-  }
+  // @Get("{ongoingId}")
+  // public async getOneDetail(@Path() ongoingId: string) {
+  //   try {
+  //     const ongoing = await this.service.getOngoingById(ongoingId);
+  //     this.setStatus(200);
+  //     return ongoing;
+  //   } catch (error) {
+  //     this.setStatus(400);
+  //     return error;
+  //   }
+  // }
 }

@@ -1,13 +1,15 @@
 // Firebase
 import { firestoreDB } from "./../../firebase";
 // Schemas
-import { AnimeSeason } from "./animedb.schema";
+import { AnimeItem, AnimeSeason } from "./animedb.schema";
 import {
   WhereFilterOp,
   QueryDocumentData,
 } from "../../firebase/firebase.schemas";
 // Functions
 import { FetchAnimeDB, FetchAnimeById } from "./animedb.function";
+// Services
+import { OngoingService } from "./../ongoing/ongoingService";
 
 type FilterParams = Array<{
   by: string;
@@ -16,6 +18,10 @@ type FilterParams = Array<{
 }>;
 
 export class AnimeDbService {
+  private readonly ongoingService: OngoingService;
+  constructor() {
+    this.ongoingService = new OngoingService();
+  }
   public async getAll(
     limit?: number,
     tags?: string,
@@ -29,8 +35,20 @@ export class AnimeDbService {
 
     return await FetchAnimeDB(refFiltered, limitter, tags);
   }
-  public async getOne(animeId: string) {
-    return await FetchAnimeById(animeId);
+  public async getOne(animeId: string): Promise<AnimeItem> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const anime = await FetchAnimeById(animeId);
+        anime && resolve(anime);
+      } catch (error) {
+        try {
+          const ongoing = await this.ongoingService.getOngoingById(animeId, true);
+          ongoing && resolve(ongoing);
+        } catch (error) {
+          reject("Anime not found");
+        }
+      }
+    });
   }
 
   public async paginate(page: number, limit: number) {
