@@ -282,6 +282,16 @@
 							"application/json": {
 								"schema": {
 									"$ref": "#/components/schemas/AnimeList"
+								},
+								"examples": {
+									"Example 1": {
+										"value": {
+											"limit": "1",
+											"tags": "[\"comedy\"]",
+											"season": "WINTER",
+											"page": "1"
+										}
+									}
 								}
 							}
 						}

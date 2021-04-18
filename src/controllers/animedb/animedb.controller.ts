@@ -1,4 +1,4 @@
-import { Route, Get, Controller, Query, Path } from "tsoa";
+import { Route, Get, Controller, Query, Path, Example } from "tsoa";
 
 // type
 import { AnimeItem, AnimeList, animeTags, AnimeSeason } from "./animedb.schema";
@@ -13,6 +13,12 @@ export class AnimeDbController extends Controller {
     super();
     this.service = new AnimeDbService();
   }
+  @Example({
+    limit: "1",
+    tags: '["comedy"]',
+    season: "WINTER",
+    page: "1",
+  })
   @Get("/")
   public async getAll(
     @Query() limit?: number,

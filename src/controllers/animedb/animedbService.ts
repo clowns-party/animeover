@@ -42,7 +42,10 @@ export class AnimeDbService {
         anime && resolve(anime);
       } catch (error) {
         try {
-          const ongoing = await this.ongoingService.getOngoingById(animeId, true);
+          const ongoing = await this.ongoingService.getOngoingById(
+            animeId,
+            true
+          );
           ongoing && resolve(ongoing);
         } catch (error) {
           reject("Anime not found");
@@ -77,21 +80,31 @@ export class AnimeDbService {
     dbRef: QueryDocumentData,
     tags?: string,
     season?: AnimeSeason
-  ) {
-    const filters: FilterParams = [
-      tags && {
-        by: "tags",
-        entry: "array-contains-any",
-        dependencies: JSON.parse(tags),
-      },
-      season && { by: "animeSeason.season", entry: "==", dependencies: season },
-    ];
-
-    return await filters.reduce((ref, filter) => {
-      if (filter) {
-        ref = ref.where(filter.by, filter.entry, filter.dependencies);
+  ): Promise<QueryDocumentData> {
+    return new Promise(async (resolve, reject) => {
+      try {
+        const filters: FilterParams = [
+          tags && {
+            by: "tags",
+            entry: "array-contains-any",
+            dependencies: JSON.parse(tags),
+          },
+          season && {
+            by: "animeSeason.season",
+            entry: "==",
+            dependencies: season,
+          },
+        ];
+        const result = await filters.reduce((ref, filter) => {
+          if (filter) {
+            ref = ref.where(filter.by, filter.entry, filter.dependencies);
+          }
+          return ref;
+        }, dbRef);
+        resolve(result);
+      } catch (error) {
+        reject({ message: `Bad JSON or firebase error [${error}]`, code: 400 });
       }
-      return ref;
-    }, dbRef);
+    });
   }
 }
