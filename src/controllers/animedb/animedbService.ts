@@ -28,6 +28,7 @@ export class AnimeDbService {
     season?: AnimeSeason,
     page?: number
   ) {
+    await this.getCountAnimes();
     const limitter = limit ? (limit <= 30 ? limit : 30) : 10;
     const paginatedRef = await this.paginate(page ? page : 1, limitter);
     const animeDbRef = await this.censorshipAnimeFilter(paginatedRef);
@@ -106,5 +107,29 @@ export class AnimeDbService {
         reject({ message: `Bad JSON or firebase error [${error}]`, code: 400 });
       }
     });
+  }
+
+  public async getCountAnimes() {
+    const ref = await firestoreDB.collection("animedb").doc("count");
+    const count = await (await ref.get()).data();
+    return count?.total;
+  }
+  private async addAnime(prevCount: number) {
+    const res =
+      prevCount &&
+      prevCount > 0 &&
+      (await firestoreDB
+        .collection("animedb")
+        .doc("count")
+        .set({ total: prevCount + 1 }));
+  }
+  private async removeAnime(prevCount: number) {
+    const res =
+      prevCount &&
+      prevCount > 0 &&
+      (await firestoreDB
+        .collection("animedb")
+        .doc("count")
+        .set({ total: prevCount - 1 }));
   }
 }

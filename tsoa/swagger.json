@@ -281,7 +281,20 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/AnimeList"
+									"properties": {
+										"count": {
+											"type": "number",
+											"format": "double"
+										},
+										"animeList": {
+											"$ref": "#/components/schemas/AnimeList"
+										}
+									},
+									"required": [
+										"count",
+										"animeList"
+									],
+									"type": "object"
 								},
 								"examples": {
 									"Example 1": {
