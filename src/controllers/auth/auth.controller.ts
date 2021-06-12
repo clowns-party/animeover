@@ -39,7 +39,7 @@ export class AuthController extends Controller {
     @Query() password: string
   ): Promise<UserSchema | ErrorSchema> {
     try {
-      const user = new AuthService().signup(email, password);
+      const user = await new AuthService().signup(email, password);
       if (user) {
         this.setStatus(201);
         return user;
