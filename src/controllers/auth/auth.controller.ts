@@ -94,12 +94,23 @@ export class AuthController extends Controller {
     try {
       const accessToken = access_token ?? request?.query?.access_token;
       const refreshToken = refresh_token ?? request?.query?.refresh_token;
+      if (!accessToken || !refreshToken) {
+        this.setStatus(400);
+        return {
+          message: "access or refresh token not provided",
+          code: "400",
+        };
+      }
       const user = await new AuthService().me(accessToken, refreshToken);
       if (user) {
-        this.setStatus(201);
+        this.setStatus(200);
         return user;
       } else {
         this.setStatus(500);
+        return {
+          message: "unresolved",
+          code: "500",
+        };
       }
     } catch (error) {
       this.setStatus(400);

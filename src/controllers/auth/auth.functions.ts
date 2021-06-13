@@ -88,8 +88,7 @@ export const FirebaseMe = (
   return new Promise(async (resolve, reject) => {
     let refreshVerify;
     try {
-      refreshVerify =
-        refreshToken && (await FirebaseRefreshToken(refreshToken));
+      refreshVerify = await FirebaseRefreshToken(refreshToken);
     } catch (error) {
       reject({
         message: "Refresh token not provided or wrong!",
