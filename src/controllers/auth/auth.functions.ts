@@ -86,7 +86,17 @@ export const FirebaseMe = (
   refreshToken: string
 ): Promise<User> => {
   return new Promise(async (resolve, reject) => {
-    const refreshVerify = await FirebaseRefreshToken(refreshToken);
+    let refreshVerify;
+    try {
+      refreshVerify =
+        refreshToken && (await FirebaseRefreshToken(refreshToken));
+    } catch (error) {
+      reject({
+        message: "Refresh token not provided or wrong!",
+        code: 400,
+      });
+    }
+
     try {
       const user = await signWithCustomToken(accessToken);
       resolve(user);
@@ -102,7 +112,6 @@ export const FirebaseMe = (
 };
 
 const signWithCustomToken = async (token: string): Promise<User> => {
-  console.log("call----signWithCustomToken");
   return new Promise(async (resolve, reject) => {
     try {
       const userCredential = await firebaseAuth.signInWithCustomToken(token);
