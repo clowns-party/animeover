@@ -225,7 +225,8 @@ export function RegisterRoutes(app: express.Router) {
             authenticateMiddleware([{"api_key":[]}]),
             function (request: any, response: any, next: any) {
             const args = {
-                    token: {"in":"header","name":"Authorization","dataType":"string"},
+                    access_token: {"in":"header","name":"Authorization","dataType":"string"},
+                    refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
                     request: {"in":"request","name":"request","dataType":"object"},
             };
 
@@ -253,7 +254,8 @@ export function RegisterRoutes(app: express.Router) {
                     status: {"in":"query","name":"status","required":true,"ref":"UserAnimeStatuses"},
                     review: {"in":"query","name":"review","dataType":"string"},
                     star: {"in":"query","name":"star","ref":"UserAnimeStars"},
-                    token: {"in":"header","name":"Authorization","dataType":"string"},
+                    access_token: {"in":"header","name":"Authorization","dataType":"string"},
+                    refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
                     request: {"in":"request","name":"request","dataType":"object"},
             };
 
@@ -278,7 +280,8 @@ export function RegisterRoutes(app: express.Router) {
             function (request: any, response: any, next: any) {
             const args = {
                     animeId: {"in":"query","name":"animeId","required":true,"dataType":"string"},
-                    token: {"in":"header","name":"Authorization","dataType":"string"},
+                    access_token: {"in":"header","name":"Authorization","dataType":"string"},
+                    refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
                     request: {"in":"request","name":"request","dataType":"object"},
             };
 
@@ -348,7 +351,8 @@ export function RegisterRoutes(app: express.Router) {
             authenticateMiddleware([{"api_key":[]}]),
             function (request: any, response: any, next: any) {
             const args = {
-                    token: {"in":"header","name":"Authorization","dataType":"string"},
+                    access_token: {"in":"header","name":"Authorization","dataType":"string"},
+                    refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
                     request: {"in":"request","name":"request","dataType":"object"},
             };
 
@@ -365,6 +369,30 @@ export function RegisterRoutes(app: express.Router) {
 
 
             const promise = controller.me.apply(controller, validatedArgs as any);
+            promiseHandler(controller, promise, response, undefined, next);
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.post('/auth/refresh',
+            authenticateMiddleware([{"api_key":[]}]),
+            function (request: any, response: any, next: any) {
+            const args = {
+                    token: {"in":"header","name":"Refreshtoken","dataType":"string"},
+                    request: {"in":"request","name":"request","dataType":"object"},
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+            } catch (err) {
+                return next(err);
+            }
+
+            const controller = new AuthController();
+
+
+            const promise = controller.refresh.apply(controller, validatedArgs as any);
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -412,9 +440,11 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.put('/user/update',
+            authenticateMiddleware([{"api_key":[]}]),
             function (request: any, response: any, next: any) {
             const args = {
-                    token: {"in":"query","name":"token","required":true,"dataType":"string"},
+                    access_token: {"in":"header","name":"Authorization","dataType":"string"},
+                    refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
                     displayName: {"in":"query","name":"displayName","dataType":"string"},
                     photoURL: {"in":"query","name":"photoURL","dataType":"string"},
             };

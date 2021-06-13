@@ -1,17 +1,11 @@
 import {
   Route,
-  Get,
   Controller,
-  Post,
-  BodyProp,
   Put,
-  Delete,
-  SuccessResponse,
-  Path,
-  Body,
   Example,
-  Response,
   Query,
+  Security,
+  Header,
 } from "tsoa";
 import { UserSchema } from "../auth/auth.schema";
 
@@ -26,13 +20,16 @@ export class UserController extends Controller {
    *
    */
   @Example({
-    token: "token",
     displayName: "name",
     photoURL: "https://some.jpg",
   })
+  @Security("api_key")
   @Put("/update")
   public async userUpdate(
-    @Query() token: string,
+    @Header("Authorization")
+    access_token?: string,
+    @Header("Refreshtoken")
+    refresh_token?: string,
     @Query() displayName?: string,
     @Query() photoURL?: string
   ): Promise<UserSchema> {
@@ -41,7 +38,11 @@ export class UserController extends Controller {
         displayName,
         photoURL,
       };
-      const user = await new UserService().update(token, fields);
+      const user = await new UserService().update(
+        access_token,
+        refresh_token,
+        fields
+      );
       if (user) {
         this.setStatus(201);
         return user;

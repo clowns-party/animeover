@@ -26,11 +26,17 @@ export class AnimeListController extends Controller {
   @Get("/")
   public async userAnimelist(
     @Header("Authorization")
-    token?: string,
+    access_token?: string,
+    @Header("Refreshtoken")
+    refresh_token?: string,
     @Request() request?: any
   ): Promise<any> {
     try {
-      const animelist = await new AnimeListService(token, request).getAll();
+      const animelist = await new AnimeListService(
+        access_token,
+        refresh_token,
+        request
+      ).getAll();
       this.setStatus(200);
       return animelist;
     } catch (error) {
@@ -53,7 +59,9 @@ export class AnimeListController extends Controller {
     @Query() review?: string,
     @Query() star?: UserAnimeStars,
     @Header("Authorization")
-    token?: string,
+    access_token?: string,
+    @Header("Refreshtoken")
+    refresh_token?: string,
     @Request() request?: any
   ): Promise<UserAnime> {
     try {
@@ -64,10 +72,11 @@ export class AnimeListController extends Controller {
       };
       const doc = await new AnimeDbService().getOne(animeId);
       if (doc) {
-        const res = await new AnimeListService(token, request).setAnime(
-          animeId,
-          data
-        );
+        const res = await new AnimeListService(
+          access_token,
+          refresh_token,
+          request
+        ).setAnime(animeId, data);
         this.setStatus(200);
         return res;
       } else {
@@ -84,13 +93,17 @@ export class AnimeListController extends Controller {
   public async deleteAnime(
     @Query() animeId: string,
     @Header("Authorization")
-    token?: string,
+    access_token?: string,
+    @Header("Refreshtoken")
+    refresh_token?: string,
     @Request() request?: any
   ) {
     try {
-      const res = await new AnimeListService(token, request).deleteAnime(
-        animeId
-      );
+      const res = await new AnimeListService(
+        access_token,
+        refresh_token,
+        request
+      ).deleteAnime(animeId);
       this.setStatus(200);
       return res;
     } catch (error) {

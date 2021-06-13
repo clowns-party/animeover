@@ -453,6 +453,14 @@
 						"schema": {
 							"type": "string"
 						}
+					},
+					{
+						"in": "header",
+						"name": "Refreshtoken",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
 					}
 				]
 			},
@@ -525,6 +533,14 @@
 						"schema": {
 							"type": "string"
 						}
+					},
+					{
+						"in": "header",
+						"name": "Refreshtoken",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
 					}
 				]
 			},
@@ -557,6 +573,14 @@
 					{
 						"in": "header",
 						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "header",
+						"name": "Refreshtoken",
 						"required": false,
 						"schema": {
 							"type": "string"
@@ -716,6 +740,46 @@
 						"schema": {
 							"type": "string"
 						}
+					},
+					{
+						"in": "header",
+						"name": "Refreshtoken",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/auth/refresh": {
+			"post": {
+				"operationId": "Refresh",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"security": [
+					{
+						"api_key": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "header",
+						"name": "Refreshtoken",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
 					}
 				]
 			}
@@ -781,7 +845,6 @@
 								"examples": {
 									"Example 1": {
 										"value": {
-											"token": "token",
 											"displayName": "name",
 											"photoURL": "https://some.jpg"
 										}
@@ -792,12 +855,24 @@
 					}
 				},
 				"description": "User update fields",
-				"security": [],
+				"security": [
+					{
+						"api_key": []
+					}
+				],
 				"parameters": [
 					{
-						"in": "query",
-						"name": "token",
-						"required": true,
+						"in": "header",
+						"name": "Authorization",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "header",
+						"name": "Refreshtoken",
+						"required": false,
 						"schema": {
 							"type": "string"
 						}

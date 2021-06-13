@@ -5,7 +5,6 @@ import * as admin from "firebase-admin";
 import "firebase/auth";
 import "firebase/database";
 import "firebase/firestore";
-import "firebase/auth";
 //ADMIN-FB
 const serviceAccount = require("./../../keys/firebase/admin.json");
 admin.initializeApp({

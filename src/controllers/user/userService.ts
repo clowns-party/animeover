@@ -7,9 +7,13 @@ import { AuthService } from "./../auth/authService";
 import { FirebaseUserUpdate } from "./user.function";
 
 export class UserService {
-  public async update(token: string, fields?: FieldsUser): Promise<User> {
+  public async update(
+    access_token: string,
+    refresh_token: string,
+    fields?: FieldsUser
+  ): Promise<User> {
     try {
-      const isAuth = await new AuthService().me(token);
+      const isAuth = await new AuthService().me(access_token, refresh_token);
       return await FirebaseUserUpdate(isAuth, fields);
     } catch (error) {
       return error;

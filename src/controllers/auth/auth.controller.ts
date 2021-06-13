@@ -86,12 +86,15 @@ export class AuthController extends Controller {
   @Post("/me")
   public async me(
     @Header("Authorization")
-    token?: string,
+    access_token?: string,
+    @Header("Refreshtoken")
+    refresh_token?: string,
     @Request() request?: any
   ): Promise<UserSchema | ErrorSchema> {
     try {
-      const access_token = token ?? request?.query?.access_token;
-      const user = await new AuthService().me(access_token);
+      const accessToken = access_token ?? request?.query?.access_token;
+      const refreshToken = refresh_token ?? request?.query?.refresh_token;
+      const user = await new AuthService().me(accessToken, refreshToken);
       if (user) {
         this.setStatus(201);
         return user;
@@ -100,6 +103,28 @@ export class AuthController extends Controller {
       }
     } catch (error) {
       this.setStatus(400);
+      return error;
+    }
+  }
+
+  @Security("api_key")
+  @Post("/refresh")
+  public async refresh(
+    @Header("Refreshtoken")
+    token?: string,
+    @Request() request?: any
+  ): Promise<string> {
+    try {
+      const access_token = token ?? request?.query?.refresh_token;
+      const newToken = await new AuthService().refresh(access_token);
+      if (newToken) {
+        this.setStatus(200);
+        return newToken;
+      } else {
+        this.setStatus(500);
+      }
+    } catch (error) {
+      this.setStatus(401);
       return error;
     }
   }

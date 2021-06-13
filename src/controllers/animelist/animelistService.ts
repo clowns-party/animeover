@@ -13,22 +13,33 @@ import {
 } from "./animelist.schema";
 import { DocumentReference } from "../../firebase/firebase.schemas";
 export class AnimeListService {
-  token: string;
+  access_token: string;
+  refresh_token: string;
   request: RequstAuth;
   user: User;
-  constructor(token: string, request: RequstAuth) {
-    this.token = token;
+  constructor(
+    access_token: string,
+    refresh_token: string,
+    request: RequstAuth
+  ) {
+    this.access_token = access_token;
+    this.refresh_token = refresh_token;
     this.request = request;
   }
   private clear() {
-    this.token = null;
+    this.access_token = null;
+    this.refresh_token = null;
     this.request = null;
     this.user = null;
   }
   private async secure() {
     return new Promise(async (resolve, reject) => {
       try {
-        const user = await new AuthService().isAuth(this.token, this.request);
+        const user = await new AuthService().isAuth(
+          this.access_token,
+          this.refresh_token,
+          this.request
+        );
         this.user = user;
         resolve(user);
       } catch (error) {
