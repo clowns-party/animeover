@@ -15,6 +15,7 @@ export const FirebaseUserUpdate = (
         displayName: fields.displayName ?? isAuth.displayName,
         photoURL: fields.photoURL ?? isAuth.photoURL,
       });
+
       resolve(userRecord.toJSON() as User);
     } catch (error) {
       reject(error);

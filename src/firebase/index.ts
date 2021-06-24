@@ -29,3 +29,10 @@ export const AdminFBAuth = admin.auth();
 
 // Types
 export type User = firebase.User;
+export type FormattedUser = Pick<
+  User,
+  "displayName" | "photoURL" | "email" | "emailVerified"
+> & {
+  accessToken: string;
+  refreshToken: string;
+};

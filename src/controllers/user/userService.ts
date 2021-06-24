@@ -12,11 +12,21 @@ export class UserService {
     refresh_token: string,
     fields?: FieldsUser
   ): Promise<User> {
-    try {
-      const isAuth = await new AuthService().me(access_token, refresh_token);
-      return await FirebaseUserUpdate(isAuth, fields);
-    } catch (error) {
-      return error;
-    }
+    return new Promise(async (resolve, reject) => {
+      try {
+        const user = await new AuthService().me(access_token, refresh_token);
+        if (user) {
+          const updated = await FirebaseUserUpdate(user, fields);
+          resolve(updated);
+        } else {
+          reject({
+            code: 401,
+            message: "Error with data or auth",
+          });
+        }
+      } catch (error) {
+        reject(error);
+      }
+    });
   }
 }

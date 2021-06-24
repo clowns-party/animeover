@@ -1,16 +1,8 @@
 import {
   Route,
-  Get,
   Controller,
   Post,
-  BodyProp,
-  Put,
-  Delete,
-  SuccessResponse,
-  Path,
-  Body,
   Example,
-  Response,
   Query,
   Header,
   Request,
@@ -21,7 +13,9 @@ import {
 import { AuthService } from "./authService";
 
 // Types
-import { ErrorSchema, UserSchema } from "./auth.schema";
+import { ErrorSchema } from "./auth.schema";
+import { FormattedUser } from "../../firebase";
+import { userFormatter } from "../../utils/user.formatter";
 // Utils
 @Route("auth")
 export class AuthController extends Controller {
@@ -37,12 +31,12 @@ export class AuthController extends Controller {
   public async signup(
     @Query() email: string,
     @Query() password: string
-  ): Promise<UserSchema | ErrorSchema> {
+  ): Promise<FormattedUser> {
     try {
       const user = await new AuthService().signup(email, password);
       if (user) {
         this.setStatus(201);
-        return user;
+        return userFormatter(user);
       } else {
         this.setStatus(500);
       }
@@ -64,14 +58,14 @@ export class AuthController extends Controller {
   public async signin(
     @Query() email: string,
     @Query() password: string
-  ): Promise<{ user: UserSchema; token: string } | ErrorSchema> {
+  ): Promise<FormattedUser> {
     try {
       const { user, token } = await new AuthService().signin(email, password);
       if (user && token) {
         this.setStatus(201);
         return {
-          user,
-          token,
+          ...userFormatter(user),
+          accessToken: token,
         };
       } else {
         this.setStatus(500);
@@ -90,7 +84,7 @@ export class AuthController extends Controller {
     @Header("Refreshtoken")
     refresh_token?: string,
     @Request() request?: any
-  ): Promise<UserSchema | ErrorSchema> {
+  ): Promise<FormattedUser | ErrorSchema> {
     try {
       const accessToken = access_token ?? request?.query?.access_token;
       const refreshToken = refresh_token ?? request?.query?.refresh_token;
@@ -102,9 +96,10 @@ export class AuthController extends Controller {
         };
       }
       const user = await new AuthService().me(accessToken, refreshToken);
+
       if (user) {
         this.setStatus(200);
-        return user;
+        return userFormatter(user);
       } else {
         this.setStatus(500);
         return {

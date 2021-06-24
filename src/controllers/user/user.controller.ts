@@ -1,13 +1,6 @@
-import {
-  Route,
-  Controller,
-  Put,
-  Example,
-  Query,
-  Security,
-  Header,
-} from "tsoa";
-import { UserSchema } from "../auth/auth.schema";
+import { Route, Controller, Put, Example, Query, Security, Header } from "tsoa";
+import { FormattedUser } from "../../firebase";
+import { userFormatter } from "../../utils/user.formatter";
 
 // Services
 import { UserService } from "./userService";
@@ -32,7 +25,7 @@ export class UserController extends Controller {
     refresh_token?: string,
     @Query() displayName?: string,
     @Query() photoURL?: string
-  ): Promise<UserSchema> {
+  ): Promise<FormattedUser> {
     try {
       const fields = {
         displayName,
@@ -44,8 +37,12 @@ export class UserController extends Controller {
         fields
       );
       if (user) {
-        this.setStatus(201);
-        return user;
+        this.setStatus(200);
+        return {
+          ...userFormatter(user),
+          accessToken: access_token,
+          refreshToken: refresh_token,
+        };
       } else {
         this.setStatus(500);
       }

@@ -195,47 +195,54 @@
 				},
 				"type": "array"
 			},
-			"UserSchema": {
+			"Pick_User.displayName-or-photoURL-or-email-or-emailVerified_": {
 				"properties": {
-					"uid": {
-						"type": "string"
-					},
 					"displayName": {
-						"type": "string"
+						"type": "string",
+						"nullable": true
 					},
 					"photoURL": {
-						"type": "string"
+						"type": "string",
+						"nullable": true
 					},
 					"email": {
-						"type": "string"
+						"type": "string",
+						"nullable": true
 					},
 					"emailVerified": {
 						"type": "boolean"
-					},
-					"phoneNumber": {
-						"type": "string",
-						"nullable": true
-					},
-					"isAnonymous": {
-						"type": "boolean"
-					},
-					"tenantId": {
-						"type": "string",
-						"nullable": true
 					}
 				},
 				"required": [
-					"uid",
 					"displayName",
 					"photoURL",
 					"email",
-					"emailVerified",
-					"phoneNumber",
-					"isAnonymous",
-					"tenantId"
+					"emailVerified"
 				],
 				"type": "object",
-				"additionalProperties": false
+				"description": "From T, pick a set of properties whose keys are in the union K"
+			},
+			"FormattedUser": {
+				"allOf": [
+					{
+						"$ref": "#/components/schemas/Pick_User.displayName-or-photoURL-or-email-or-emailVerified_"
+					},
+					{
+						"properties": {
+							"refreshToken": {
+								"type": "string"
+							},
+							"accessToken": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"refreshToken",
+							"accessToken"
+						],
+						"type": "object"
+					}
+				]
 			},
 			"ErrorSchema": {
 				"properties": {
@@ -598,14 +605,7 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"anyOf": [
-										{
-											"$ref": "#/components/schemas/UserSchema"
-										},
-										{
-											"$ref": "#/components/schemas/ErrorSchema"
-										}
-									]
+									"$ref": "#/components/schemas/FormattedUser"
 								},
 								"examples": {
 									"Example 1": {
@@ -650,26 +650,7 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"anyOf": [
-										{
-											"properties": {
-												"token": {
-													"type": "string"
-												},
-												"user": {
-													"$ref": "#/components/schemas/UserSchema"
-												}
-											},
-											"required": [
-												"token",
-												"user"
-											],
-											"type": "object"
-										},
-										{
-											"$ref": "#/components/schemas/ErrorSchema"
-										}
-									]
+									"$ref": "#/components/schemas/FormattedUser"
 								},
 								"examples": {
 									"Example 1": {
@@ -716,7 +697,7 @@
 								"schema": {
 									"anyOf": [
 										{
-											"$ref": "#/components/schemas/UserSchema"
+											"$ref": "#/components/schemas/FormattedUser"
 										},
 										{
 											"$ref": "#/components/schemas/ErrorSchema"
@@ -840,7 +821,7 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/UserSchema"
+									"$ref": "#/components/schemas/FormattedUser"
 								},
 								"examples": {
 									"Example 1": {

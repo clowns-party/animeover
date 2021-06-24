@@ -97,19 +97,14 @@ const models: TsoaRoute.Models = {
         "type": {"dataType":"array","array":{"dataType":"refAlias","ref":"AnimeDetail"},"validators":{}},
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
-    "UserSchema": {
-        "dataType": "refObject",
-        "properties": {
-            "uid": {"dataType":"string","required":true},
-            "displayName": {"dataType":"string","required":true},
-            "photoURL": {"dataType":"string","required":true},
-            "email": {"dataType":"string","required":true},
-            "emailVerified": {"dataType":"boolean","required":true},
-            "phoneNumber": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":[null]},{"dataType":"string"}],"required":true},
-            "isAnonymous": {"dataType":"boolean","required":true},
-            "tenantId": {"dataType":"union","subSchemas":[{"dataType":"enum","enums":[null]},{"dataType":"string"}],"required":true},
-        },
-        "additionalProperties": false,
+    "Pick_User.displayName-or-photoURL-or-email-or-emailVerified_": {
+        "dataType": "refAlias",
+        "type": {"dataType":"nestedObjectLiteral","nestedProperties":{"displayName":{"dataType":"union","subSchemas":[{"dataType":"string"},{"dataType":"enum","enums":[null]}],"required":true},"photoURL":{"dataType":"union","subSchemas":[{"dataType":"string"},{"dataType":"enum","enums":[null]}],"required":true},"email":{"dataType":"union","subSchemas":[{"dataType":"string"},{"dataType":"enum","enums":[null]}],"required":true},"emailVerified":{"dataType":"boolean","required":true}},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "FormattedUser": {
+        "dataType": "refAlias",
+        "type": {"dataType":"intersection","subSchemas":[{"ref":"Pick_User.displayName-or-photoURL-or-email-or-emailVerified_"},{"dataType":"nestedObjectLiteral","nestedProperties":{"refreshToken":{"dataType":"string","required":true},"accessToken":{"dataType":"string","required":true}}}],"validators":{}},
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "ErrorSchema": {
