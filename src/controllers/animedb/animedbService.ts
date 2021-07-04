@@ -31,10 +31,15 @@ export class AnimeDbService {
     await this.getCountAnimes();
     const limitter = limit ? (limit <= 30 ? limit : 30) : 10;
     const paginatedRef = await this.paginate(page ? page : 1, limitter);
-    const animeDbRef = await this.censorshipAnimeFilter(paginatedRef);
-    const refFiltered = await this.applyFilters(animeDbRef, tags, season);
+    const refFiltered = await this.applyFilters(paginatedRef, tags, season);
+    const filteredPaginate = await this.paginate(
+      page ? page : 1,
+      limitter,
+      refFiltered
+    );
+    const animeDbRef = await this.censorshipAnimeFilter(filteredPaginate);
 
-    return await FetchAnimeDB(refFiltered, limitter, tags);
+    return await FetchAnimeDB(animeDbRef, limitter, tags);
   }
   public async getOne(animeId: string): Promise<AnimeItem> {
     return new Promise(async (resolve, reject) => {
@@ -55,9 +60,10 @@ export class AnimeDbService {
     });
   }
 
-  public async paginate(page: number, limit: number) {
+  public async paginate(page: number, limit: number, ref?: QueryDocumentData) {
     const _limit = page === 1 ? page * limit : Number(page * limit) - limit;
-    const currentPage = await firestoreDB.collection("animedb").limit(_limit);
+    const currentPage =
+      ref || (await firestoreDB.collection("animedb").limit(_limit));
 
     const snapshot = await currentPage.get();
     // Step 2
