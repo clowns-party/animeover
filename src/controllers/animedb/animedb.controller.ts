@@ -27,14 +27,19 @@ export class AnimeDbController extends Controller {
     @Query() page?: number
   ): Promise<{ animeList: AnimeList; count: number }> {
     try {
-      const docs = await this.service.getAll(limit, tags, season, page);
+      const { animeList: docs, count: animeCount } = await this.service.getAll(
+        limit,
+        tags,
+        season,
+        page
+      );
       const count = await this.service.getCountAnimes();
       if (docs && docs.length) {
         this.setStatus(200);
-        return { animeList: docs, count };
+        return { animeList: docs, count: animeCount || count };
       } else {
         this.setStatus(200);
-        return { animeList: [], count };
+        return { animeList: [], count: animeCount || count };
       }
     } catch (error) {
       this.setStatus(500);

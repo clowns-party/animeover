@@ -30,16 +30,17 @@ export class AnimeDbService {
   ) {
     await this.getCountAnimes();
     const limitter = limit ? (limit <= 30 ? limit : 30) : 10;
-    const paginatedRef = await this.paginate(page ? page : 1, limitter);
-    const refFiltered = await this.applyFilters(paginatedRef, tags, season);
-    const filteredPaginate = await this.paginate(
-      page ? page : 1,
-      limitter,
-      refFiltered
-    );
-    const animeDbRef = await this.censorshipAnimeFilter(filteredPaginate);
+    const { pageRef, count } = await this.paginate(page ? page : 1, limitter, {
+      tags,
+      season,
+    });
+    const animeDbRef = await this.censorshipAnimeFilter(pageRef);
 
-    return await FetchAnimeDB(animeDbRef, limitter, tags);
+    const animeList = await FetchAnimeDB(animeDbRef, limitter, tags);
+    return {
+      animeList,
+      count,
+    };
   }
   public async getOne(animeId: string): Promise<AnimeItem> {
     return new Promise(async (resolve, reject) => {
@@ -60,22 +61,41 @@ export class AnimeDbService {
     });
   }
 
-  public async paginate(page: number, limit: number, ref?: QueryDocumentData) {
+  public async paginate(
+    page: number,
+    limit: number,
+    withFilters?: {
+      tags?: string;
+      season?: AnimeSeason;
+    }
+  ) {
+    const db = async (withCount: boolean) => {
+      let count = 0;
+      const doc = await this.applyFilters(
+        firestoreDB.collection("animedb"),
+        withFilters.tags,
+        withFilters.season
+      );
+      if ((withFilters.season || withFilters.tags) && withCount) {
+        count = (await doc.get()).docs.length;
+      }
+
+      return { doc, count };
+    };
     const _limit = page === 1 ? page * limit : Number(page * limit) - limit;
-    const currentPage =
-      ref || (await firestoreDB.collection("animedb").limit(_limit));
+    const { doc: docCurrent } = await db(false);
+    const currentPage = docCurrent.limit(_limit);
 
     const snapshot = await currentPage.get();
     // Step 2
     const lastDocumentSnapshot = snapshot.docs[snapshot.docs.length - 1];
 
     // Step 3
-    const nextPage = await firestoreDB
-      .collection("animedb")
-      .limit(_limit)
-      .startAfter(lastDocumentSnapshot);
+    const { doc: docNext, count } = await db(true);
+    const nextPage = docNext.limit(_limit).startAfter(lastDocumentSnapshot);
 
-    return page === 1 ? currentPage : nextPage;
+    const pageRef = page === 1 ? currentPage : nextPage;
+    return { pageRef, count };
   }
 
   private async censorshipAnimeFilter(dbRef?: QueryDocumentData) {
