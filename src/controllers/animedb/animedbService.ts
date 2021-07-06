@@ -70,15 +70,15 @@ export class AnimeDbService {
     }
   ) {
     const db = async (withCount: boolean) => {
-      let count = 0;
+      let count = undefined;
       const doc = await this.applyFilters(
         firestoreDB.collection("animedb"),
         withFilters.tags,
         withFilters.season
       );
-      if ((withFilters.season || withFilters.tags) && withCount) {
-        count = (await doc.get()).docs.length;
-      }
+      // if ((withFilters.season || withFilters.tags) && withCount) {
+      //   count = (await doc.get()).docs.length;
+      // }
 
       return { doc, count };
     };
