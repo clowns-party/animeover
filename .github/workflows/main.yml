@@ -1,0 +1,30 @@
+name: Publish Docker
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Publish to registy
+        uses: elgohr/Publish-Docker-Github-Action@master
+        env: 
+          FB_APIKEY: ${{ secrets.FB_APIKEY }}
+          FB_AUTHDOMAIN: ${{ secrets.FB_AUTHDOMAIN }}
+          FB_PROJECTID: ${{ secrets.FB_PROJECTID }}
+          FB_STORAGEBUCKET: ${{ secrets.FB_STORAGEBUCKET }}
+          FB_SENDERID: ${{ secrets.FB_SENDERID }}
+          FB_APPID: ${{ secrets.FB_APPID }}
+          FB_MEASUREMENTID: ${{ secrets.FB_MEASUREMENTID }}
+          PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        with:
+          registry: docker.pkg.github.com
+          name: docker.pkg.github.com/sieugene/nest_top_api/top-api
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_GITHUB_ACCESS }}
+          dockerfile: DockerFile
+          tags: "develop"
