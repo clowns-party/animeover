@@ -23,8 +23,8 @@ jobs:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         with:
           registry: docker.pkg.github.com
-          name: docker.pkg.github.com/sieugene/nest_top_api/top-api
+          name: docker.pkg.github.com/clowns-party/animeover/animeover
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_GITHUB_ACCESS }}
           dockerfile: DockerFile
-          tags: "develop"
+          tags: "production"
