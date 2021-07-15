@@ -1,4 +1,5 @@
 import { Route, Get, Controller, Query, Path, Example } from "tsoa";
+import { CollectionDataSchedule } from "../../services/subsplease/subsplease.schemas";
 
 // type
 import { AnimeItem, AnimeList, animeTags, AnimeSeason } from "./animedb.schema";
@@ -74,6 +75,18 @@ export class AnimeDbController extends Controller {
       }
     } catch (error) {
       this.setStatus(404);
+      return error;
+    }
+  }
+
+  @Get("/schedule")
+  public async getSchedule(): Promise<CollectionDataSchedule> {
+    try {
+      const list = await this.service.getSchedule();
+      this.setStatus(200);
+      return list;
+    } catch (error) {
+      this.setStatus(400);
       return error;
     }
   }

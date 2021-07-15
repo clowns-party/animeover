@@ -10,6 +10,7 @@ import {
 import { FetchAnimeDB, FetchAnimeById } from "./animedb.function";
 // Services
 import { OngoingService } from "./../ongoing/ongoingService";
+import { Subsplease } from "../../services/subsplease/subsplease.service";
 
 type FilterParams = Array<{
   by: string;
@@ -19,8 +20,10 @@ type FilterParams = Array<{
 
 export class AnimeDbService {
   private readonly ongoingService: OngoingService;
+  private readonly subspleaseService: Subsplease;
   constructor() {
     this.ongoingService = new OngoingService();
+    this.subspleaseService = new Subsplease("schedule");
   }
   public async getAll(
     limit?: number,
@@ -96,6 +99,10 @@ export class AnimeDbService {
 
     const pageRef = page === 1 ? currentPage : nextPage;
     return { pageRef, count };
+  }
+
+  public async getSchedule() {
+    return await this.subspleaseService.getScheduleFromFB();
   }
 
   private async censorshipAnimeFilter(dbRef?: QueryDocumentData) {

@@ -133,6 +133,137 @@
 				},
 				"type": "array"
 			},
+			"AnimeItemExtended": {
+				"properties": {
+					"_id": {
+						"type": "string"
+					},
+					"sources": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"title": {
+						"type": "string"
+					},
+					"type": {
+						"$ref": "#/components/schemas/AnimeTypes"
+					},
+					"episodes": {
+						"type": "number",
+						"format": "double"
+					},
+					"status": {
+						"$ref": "#/components/schemas/AnimeStatuses"
+					},
+					"animeSeason": {
+						"properties": {
+							"year": {
+								"type": "number",
+								"format": "double"
+							},
+							"season": {
+								"$ref": "#/components/schemas/AnimeSeason"
+							}
+						},
+						"required": [
+							"year",
+							"season"
+						],
+						"type": "object"
+					},
+					"unacceptable": {
+						"type": "boolean"
+					},
+					"picture": {
+						"type": "string"
+					},
+					"thumbnail": {
+						"type": "string"
+					},
+					"synonyms": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"relations": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"tags": {
+						"$ref": "#/components/schemas/AnimeTags"
+					},
+					"date": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"_id",
+					"sources",
+					"title",
+					"type",
+					"episodes",
+					"status",
+					"animeSeason",
+					"unacceptable",
+					"picture",
+					"thumbnail",
+					"synonyms",
+					"relations",
+					"tags",
+					"date"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ScheduleAnimeItemFormatted": {
+				"items": {
+					"$ref": "#/components/schemas/AnimeItemExtended"
+				},
+				"type": "array"
+			},
+			"ScheduleDateItemsFormatted": {
+				"properties": {
+					"Wednesday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					},
+					"Tuesday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					},
+					"Thursday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					},
+					"Sunday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					},
+					"Saturday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					},
+					"Monday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					},
+					"Friday": {
+						"$ref": "#/components/schemas/ScheduleAnimeItemFormatted"
+					}
+				},
+				"required": [
+					"Wednesday",
+					"Tuesday",
+					"Thursday",
+					"Sunday",
+					"Saturday",
+					"Monday",
+					"Friday"
+				],
+				"type": "object"
+			},
+			"CollectionDataSchedule": {
+				"$ref": "#/components/schemas/ScheduleDateItemsFormatted"
+			},
 			"UserAnimeStatuses": {
 				"type": "string",
 				"enum": [
@@ -397,6 +528,25 @@
 										"type": "string"
 									},
 									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		},
+		"/animedb/schedule": {
+			"get": {
+				"operationId": "GetSchedule",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/CollectionDataSchedule"
 								}
 							}
 						}

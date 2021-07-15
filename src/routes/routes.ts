@@ -64,7 +64,43 @@ const models: TsoaRoute.Models = {
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "AnimeList": {
         "dataType": "refAlias",
-        "type": {"dataType":"array","array":{"ref":"AnimeItem"},"validators":{}},
+        "type": {"dataType":"array","array":{"dataType":"refObject","ref":"AnimeItem"},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "AnimeItemExtended": {
+        "dataType": "refObject",
+        "properties": {
+            "_id": {"dataType":"string","required":true},
+            "sources": {"dataType":"array","array":{"dataType":"string"},"required":true},
+            "title": {"dataType":"string","required":true},
+            "type": {"ref":"AnimeTypes","required":true},
+            "episodes": {"dataType":"double","required":true},
+            "status": {"ref":"AnimeStatuses","required":true},
+            "animeSeason": {"dataType":"nestedObjectLiteral","nestedProperties":{"year":{"dataType":"double","required":true},"season":{"ref":"AnimeSeason","required":true}},"required":true},
+            "unacceptable": {"dataType":"boolean","required":true},
+            "picture": {"dataType":"string","required":true},
+            "thumbnail": {"dataType":"string","required":true},
+            "synonyms": {"dataType":"array","array":{"dataType":"string"},"required":true},
+            "relations": {"dataType":"array","array":{"dataType":"string"},"required":true},
+            "tags": {"ref":"AnimeTags","required":true},
+            "date": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "ScheduleAnimeItemFormatted": {
+        "dataType": "refAlias",
+        "type": {"dataType":"array","array":{"dataType":"refObject","ref":"AnimeItemExtended"},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "ScheduleDateItemsFormatted": {
+        "dataType": "refAlias",
+        "type": {"dataType":"nestedObjectLiteral","nestedProperties":{"Wednesday":{"ref":"ScheduleAnimeItemFormatted","required":true},"Tuesday":{"ref":"ScheduleAnimeItemFormatted","required":true},"Thursday":{"ref":"ScheduleAnimeItemFormatted","required":true},"Sunday":{"ref":"ScheduleAnimeItemFormatted","required":true},"Saturday":{"ref":"ScheduleAnimeItemFormatted","required":true},"Monday":{"ref":"ScheduleAnimeItemFormatted","required":true},"Friday":{"ref":"ScheduleAnimeItemFormatted","required":true}},"validators":{}},
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "CollectionDataSchedule": {
+        "dataType": "refAlias",
+        "type": {"ref":"ScheduleDateItemsFormatted","validators":{}},
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
     "UserAnimeStatuses": {
@@ -127,7 +163,7 @@ export function RegisterRoutes(app: express.Router) {
     //      Please look into the "controllerPathGlobs" config option described in the readme: https://github.com/lukeautry/tsoa
     // ###########################################################################################################
         app.get('/animedb',
-            function (request: any, response: any, next: any) {
+            function AnimeDbController_getAll(request: any, response: any, next: any) {
             const args = {
                     limit: {"in":"query","name":"limit","dataType":"double"},
                     tags: {"in":"query","name":"tags","dataType":"string"},
@@ -152,7 +188,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/animedb/anime/:animeId',
-            function (request: any, response: any, next: any) {
+            function AnimeDbController_getOne(request: any, response: any, next: any) {
             const args = {
                     animeId: {"in":"path","name":"animeId","required":true,"dataType":"string"},
             };
@@ -174,7 +210,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/animedb/tags',
-            function (request: any, response: any, next: any) {
+            function AnimeDbController_getAnimeTags(request: any, response: any, next: any) {
             const args = {
             };
 
@@ -194,8 +230,29 @@ export function RegisterRoutes(app: express.Router) {
             promiseHandler(controller, promise, response, undefined, next);
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+        app.get('/animedb/schedule',
+            function AnimeDbController_getSchedule(request: any, response: any, next: any) {
+            const args = {
+            };
+
+            // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+
+            let validatedArgs: any[] = [];
+            try {
+                validatedArgs = getValidatedArgs(args, request, response);
+            } catch (err) {
+                return next(err);
+            }
+
+            const controller = new AnimeDbController();
+
+
+            const promise = controller.getSchedule.apply(controller, validatedArgs as any);
+            promiseHandler(controller, promise, response, undefined, next);
+        });
+        // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/animedetail/:animeId',
-            function (request: any, response: any, next: any) {
+            function AnimedetailController_getOneDetail(request: any, response: any, next: any) {
             const args = {
                     animeId: {"in":"path","name":"animeId","required":true,"dataType":"string"},
             };
@@ -218,7 +275,7 @@ export function RegisterRoutes(app: express.Router) {
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/user/animelist',
             authenticateMiddleware([{"api_key":[]}]),
-            function (request: any, response: any, next: any) {
+            function AnimeListController_userAnimelist(request: any, response: any, next: any) {
             const args = {
                     access_token: {"in":"header","name":"Authorization","dataType":"string"},
                     refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
@@ -243,7 +300,7 @@ export function RegisterRoutes(app: express.Router) {
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.patch('/user/animelist',
             authenticateMiddleware([{"api_key":[]}]),
-            function (request: any, response: any, next: any) {
+            function AnimeListController_setAnime(request: any, response: any, next: any) {
             const args = {
                     animeId: {"in":"query","name":"animeId","required":true,"dataType":"string"},
                     status: {"in":"query","name":"status","required":true,"ref":"UserAnimeStatuses"},
@@ -272,7 +329,7 @@ export function RegisterRoutes(app: express.Router) {
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.delete('/user/animelist',
             authenticateMiddleware([{"api_key":[]}]),
-            function (request: any, response: any, next: any) {
+            function AnimeListController_deleteAnime(request: any, response: any, next: any) {
             const args = {
                     animeId: {"in":"query","name":"animeId","required":true,"dataType":"string"},
                     access_token: {"in":"header","name":"Authorization","dataType":"string"},
@@ -297,7 +354,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.post('/auth/signup',
-            function (request: any, response: any, next: any) {
+            function AuthController_signup(request: any, response: any, next: any) {
             const args = {
                     email: {"in":"query","name":"email","required":true,"dataType":"string"},
                     password: {"in":"query","name":"password","required":true,"dataType":"string"},
@@ -320,7 +377,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.post('/auth',
-            function (request: any, response: any, next: any) {
+            function AuthController_signin(request: any, response: any, next: any) {
             const args = {
                     email: {"in":"query","name":"email","required":true,"dataType":"string"},
                     password: {"in":"query","name":"password","required":true,"dataType":"string"},
@@ -344,7 +401,7 @@ export function RegisterRoutes(app: express.Router) {
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.post('/auth/me',
             authenticateMiddleware([{"api_key":[]}]),
-            function (request: any, response: any, next: any) {
+            function AuthController_me(request: any, response: any, next: any) {
             const args = {
                     access_token: {"in":"header","name":"Authorization","dataType":"string"},
                     refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
@@ -369,7 +426,7 @@ export function RegisterRoutes(app: express.Router) {
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.post('/auth/refresh',
             authenticateMiddleware([{"api_key":[]}]),
-            function (request: any, response: any, next: any) {
+            function AuthController_refresh(request: any, response: any, next: any) {
             const args = {
                     token: {"in":"header","name":"Refreshtoken","dataType":"string"},
                     request: {"in":"request","name":"request","dataType":"object"},
@@ -392,7 +449,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/ongoing',
-            function (request: any, response: any, next: any) {
+            function OngoingController_getOngoing(request: any, response: any, next: any) {
             const args = {
             };
 
@@ -413,7 +470,7 @@ export function RegisterRoutes(app: express.Router) {
         });
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.get('/search',
-            function (request: any, response: any, next: any) {
+            function SearchController_searchByQuery(request: any, response: any, next: any) {
             const args = {
                     queryText: {"in":"query","name":"queryText","required":true,"dataType":"string"},
             };
@@ -436,7 +493,7 @@ export function RegisterRoutes(app: express.Router) {
         // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
         app.put('/user/update',
             authenticateMiddleware([{"api_key":[]}]),
-            function (request: any, response: any, next: any) {
+            function UserController_userUpdate(request: any, response: any, next: any) {
             const args = {
                     access_token: {"in":"header","name":"Authorization","dataType":"string"},
                     refresh_token: {"in":"header","name":"Refreshtoken","dataType":"string"},
@@ -464,7 +521,7 @@ export function RegisterRoutes(app: express.Router) {
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
     function authenticateMiddleware(security: TsoaRoute.Security[] = []) {
-        return (request: any, _response: any, next: any) => {
+        return function runAuthenticationMiddleware(request: any, _response: any, next: any) {
             let responded = 0;
             let success = false;
 
@@ -524,7 +581,7 @@ export function RegisterRoutes(app: express.Router) {
                 let headers;
                 if (isController(controllerObj)) {
                     headers = controllerObj.getHeaders();
-                    statusCode = controllerObj.getStatus();
+                    statusCode = controllerObj.getStatus() || statusCode;
                 }
 
                 // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
@@ -537,6 +594,9 @@ export function RegisterRoutes(app: express.Router) {
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
     function returnHandler(response: any, statusCode?: number, data?: any, headers: any = {}) {
+        if (response.headersSent) {
+            return;
+        }
         Object.keys(headers).forEach((name: string) => {
             response.set(name, headers[name]);
         });
@@ -548,7 +608,7 @@ export function RegisterRoutes(app: express.Router) {
             response.status(statusCode || 204).end();
         }
     }
-    
+
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 
     function responder(response: any): TsoaResponse<HttpStatusCodeLiteral, unknown>  {
@@ -576,6 +636,14 @@ export function RegisterRoutes(app: express.Router) {
                     return validationService.ValidateParam(args[key], request.body, name, fieldErrors, undefined, {"noImplicitAdditionalProperties":"throw-on-extras"});
                 case 'body-prop':
                     return validationService.ValidateParam(args[key], request.body[name], name, fieldErrors, 'body.', {"noImplicitAdditionalProperties":"throw-on-extras"});
+                case 'formData':
+                    if (args[key].dataType === 'file') {
+                        return validationService.ValidateParam(args[key], request.file, name, fieldErrors, undefined, {"noImplicitAdditionalProperties":"throw-on-extras"});
+                    } else if (args[key].dataType === 'array' && args[key].array.dataType === 'file') {
+                        return validationService.ValidateParam(args[key], request.files, name, fieldErrors, undefined, {"noImplicitAdditionalProperties":"throw-on-extras"});
+                    } else {
+                        return validationService.ValidateParam(args[key], request.body[name], name, fieldErrors, undefined, {"noImplicitAdditionalProperties":"throw-on-extras"});
+                    }
                 case 'res':
                     return responder(response);
             }
