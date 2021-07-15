@@ -11,6 +11,10 @@ import { FetchAnimeDB, FetchAnimeById } from "./animedb.function";
 // Services
 import { OngoingService } from "./../ongoing/ongoingService";
 import { Subsplease } from "../../services/subsplease/subsplease.service";
+import {
+  CollectionDataSchedule,
+  ScheduleSubspleaseResponse,
+} from "../../services/subsplease/subsplease.schemas";
 
 type FilterParams = Array<{
   by: string;
@@ -102,7 +106,10 @@ export class AnimeDbService {
   }
 
   public async getSchedule() {
-    return await this.subspleaseService.getScheduleFromFB();
+    return await this.subspleaseService.getServiceData<
+      CollectionDataSchedule,
+      ScheduleSubspleaseResponse
+    >("calendar");
   }
 
   private async censorshipAnimeFilter(dbRef?: QueryDocumentData) {

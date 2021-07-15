@@ -19,6 +19,7 @@ export class OngoingService {
       }
     });
   }
+
   public async getOngoingById(
     id: string,
     inFirebase?: boolean

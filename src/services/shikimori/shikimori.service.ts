@@ -10,79 +10,31 @@ import { setOngoingList, singleAnimeFormatter } from "./shikimori.functions";
 import { ShikimoriAnimeItem } from "./shikimori.schemas";
 // Schemas
 import { ShikimoriAnimeList } from "./shikimori.schemas";
+import { AbstractIntegrate } from "../AbstractIntegrate";
 // Utils
 var fetch = require("node-fetch");
 
-export class ShikimoriService {
+export class ShikimoriService extends AbstractIntegrate {
   private shikimoriURL: string = "https://shikimori.one/api/";
   private ongoing = "animes?status=ongoing&season=2021&order=ranked&limit=10";
   private animes = "animes/";
   private season: AnimeSeason = "SPRING";
   private year: number = 2021;
-  private interval = 86400000;
-  private collection: string;
   constructor(collection: string) {
-    this.collection = collection;
-  }
-
-  // Обновление списков
-  public async update(): Promise<boolean> {
-    return new Promise(async (resolve, reject) => {
-      try {
-        const triggerResult = await this.triggerUpdate();
-        if (triggerResult) {
-          const data = await this.getShikimoriOngoing();
-          await this.setOngoingByShikimori(data);
-        }
-      } catch (error) {
-        reject(error);
-      } finally {
-        resolve(true);
-      }
+    super({
+      collectionName: collection,
+      baseUrl: "https://shikimori.one/api/",
     });
   }
 
-  // Нужно ли обновить списки?
-  private async triggerUpdate() {
-    return new Promise(async (resolve) => {
-      const ref = await this.firebaseService("date");
-      const data = (await ref.get()).data();
-      if (data?.nextUpdate) {
-        const next = new Date(data.nextUpdate);
-        resolve(new Date() >= next);
-      } else {
-        resolve(true);
-      }
-    });
-  }
-  // Логирование последнего обновления
-  private async dateLogger() {
-    return new Promise(async (resolve, reject) => {
-      try {
-        const now = new Date();
-        const nextUpdate = new Date(
-          now.valueOf() + this.interval
-        ).toISOString();
-        const updateIn = now.toISOString();
-        const ref = await this.firebaseService("date");
-        await ref.set({ nextUpdate, updateIn });
-        console.log("---------ONGOING LOGGER END WORK-----------");
-        resolve(true);
-      } catch (error) {
-        reject(false);
-      }
-    });
-  }
   // Форматированные аниме от шикимори, добавляем их в fb коллекцию
-  private async setOngoingByShikimori(
-    ongoing: AnimeList
-  ): Promise<AnimeItem[]> {
+  async firebaseSetter(ongoing: AnimeList): Promise<boolean> {
     return new Promise(async (resolve, reject) => {
       try {
         const result = await setOngoingList(ongoing);
         if (result?.length) {
           await this.dateLogger();
-          resolve(result);
+          resolve(true);
         } else {
           reject("cant't be set shikimori ongoing");
         }
@@ -92,7 +44,7 @@ export class ShikimoriService {
     });
   }
   // Форматирование
-  private async toSingleFormat(
+  async toSingleFormat(
     shikimoriAnimeList: ShikimoriAnimeList
   ): Promise<AnimeList> {
     return shikimoriAnimeList.reduce(
@@ -116,7 +68,7 @@ export class ShikimoriService {
     });
   }
   // API SHIKIMORI
-  private async getShikimoriOngoing(uri?: string): Promise<AnimeList> {
+  async callEndpoint(uri?: string): Promise<AnimeList> {
     return new Promise(async (resolve, reject) => {
       try {
         const url = !uri ? this.shikimoriURL + this.ongoing : uri;
@@ -143,18 +95,5 @@ export class ShikimoriService {
         reject(error);
       }
     });
-  }
-  // Utils
-  private async fetching(url: string) {
-    const jsondata = await fetch(url);
-    const text: string = await jsondata.text();
-    return text && JSON.parse(text);
-  }
-  protected async refCollection() {
-    return await firestoreDB.collection(this.collection);
-  }
-  private async firebaseService(doc: string) {
-    const ref = await this.refCollection();
-    return await ref.doc(doc);
   }
 }
