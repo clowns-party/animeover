@@ -103,6 +103,14 @@ Generate are firebase config and start nodemon.
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
 
+## ➤ FAQ
+### Why is the service not available?
+
+Most likely, the firebase quota has run out, try waiting one day and trying again, since we use the basic plan.	  
+	
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+	  
+	  
 
 ## ➤ Contributors
 
