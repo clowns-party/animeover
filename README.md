@@ -92,12 +92,12 @@ Generate are firebase config and start nodemon.
 - Search
 - User anime list
 - Filters
-- Ongoing integrate from shikimori
+- Ongoing "integrate with [shikimori](https://shikimori.one/)"
 - Anime list based on anime-offline-database.json
 - Authorization, generate custom token by firebase-admin, generate refresh-token
 - Pagination
 - Rate and review for anime
-
+- Calendar "integrate with [subsplease](https://subsplease.org/schedule/)"
 <br/>
 
 
