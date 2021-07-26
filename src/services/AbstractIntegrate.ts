@@ -16,12 +16,11 @@ export abstract class AbstractIntegrate {
   }
 
   public async getServiceData<CollectionData, CallResult>(
-    doc: string,
-    withUpdate?: boolean
+    doc: string
   ): Promise<CollectionData> {
     return new Promise(async (resolve, reject) => {
       try {
-        withUpdate && (await this.update<CallResult>());
+        await this.update<CallResult>();
         const ref = await this.firebaseService(doc);
         const data = (await ref.get()).data();
         resolve(data as CollectionData);

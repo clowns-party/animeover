@@ -109,7 +109,7 @@ export class AnimeDbService {
     return await this.subspleaseService.getServiceData<
       CollectionDataSchedule,
       ScheduleSubspleaseResponse
-    >("calendar", false);
+    >("calendar");
   }
 
   private async censorshipAnimeFilter(dbRef?: QueryDocumentData) {

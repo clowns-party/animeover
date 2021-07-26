@@ -1,5 +1,6 @@
 import { setSchedule, subspleaseSingleFormatter } from "./subsplease.functions";
 import {
+  JikanScheduleMultipleResponse,
   ScheduleSubspleaseResponse,
   ScheduleSubspleaseType,
 } from "./subsplease.schemas";
@@ -9,18 +10,43 @@ export class Subsplease extends AbstractIntegrate {
   private scheduleUri = `${this.baseUrl}api/?f=schedule&tz=Europe/Moscow`;
 
   constructor(collection: string) {
-    super({ collectionName: collection, baseUrl: "https://subsplease.org/" });
+    super({
+      collectionName: collection,
+      baseUrl: "https://api.jikan.moe/v3/schedule/",
+    });
   }
 
   async callEndpoint(): Promise<ScheduleSubspleaseType> {
     return new Promise(async (resolve, reject) => {
       try {
-        const url = this.scheduleUri;
-        const data: ScheduleSubspleaseResponse = await this.fetching(url);
+        const data = await this.multipleFetch();
         resolve(this.toSingleFormat(data));
       } catch (error) {
         reject(error);
       }
+    });
+  }
+
+  async multipleFetch(): Promise<JikanScheduleMultipleResponse> {
+    const dates = [
+      this.wait(this.baseUrl + "monday"),
+      this.wait(this.baseUrl + "tuesday"),
+      this.wait(this.baseUrl + "wednesday"),
+      this.wait(this.baseUrl + "thursday"),
+      this.wait(this.baseUrl + "friday"),
+      this.wait(this.baseUrl + "saturday"),
+      this.wait(this.baseUrl + "sunday"),
+    ];
+    return Promise.all(dates).then((results) => {
+      return results;
+    });
+  }
+
+  async wait(endpoint: string, ms = 2500): Promise<any> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        this.fetching(endpoint).then((res) => resolve(res));
+      }, ms);
     });
   }
 
@@ -41,7 +67,7 @@ export class Subsplease extends AbstractIntegrate {
     });
   }
   // Форматирование
-  toSingleFormat(schedule: ScheduleSubspleaseResponse) {
+  toSingleFormat(schedule: JikanScheduleMultipleResponse) {
     return subspleaseSingleFormatter(schedule);
   }
 }

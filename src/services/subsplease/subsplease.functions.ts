@@ -1,5 +1,8 @@
 import {
   AnimeItemExtended,
+  JikanScheduleAnimeItem,
+  JikanScheduleDatesItem,
+  JikanScheduleMultipleResponse,
   ScheduleAnimeItem,
   ScheduleAnimeItemFormatted,
   ScheduleDateItemsFormatted,
@@ -10,47 +13,84 @@ import {
 import { v4 as uuidv4 } from "uuid";
 import { firestoreDB } from "../../firebase";
 
+const dates = [
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+  "sunday",
+];
+
 export const subspleaseSingleFormatter = (
-  scheduleResponse: ScheduleSubspleaseResponse
+  scheduleResponse: JikanScheduleMultipleResponse
 ): ScheduleSubspleaseType => {
-  const schedule = scheduleResponse?.schedule;
-  if (schedule) {
-    const dates = Object.keys(schedule);
-    const formatted = dates.reduce((schelude, date) => {
-      const items: AnimeItemExtended[] = schedule[date].map(
-        (current: ScheduleAnimeItem): AnimeItemExtended => ({
-          ...current,
-          _id: uuidv4(),
-          sources: ["subsplease"],
-          title: current.title,
-          type: "Special",
-          episodes: 0,
-          status: "CURRENTLY",
-          animeSeason: {
-            season: "",
-            year: 0,
-          },
-          date: current.time,
-          unacceptable: false,
-          picture: `https://subsplease.org${current.image_url}`,
-          thumbnail: `https://subsplease.org${current.image_url}`,
-          synonyms: [current.title],
-          relations: [""],
-          tags: [current.title],
-        })
-      );
-      schelude = {
-        ...schelude,
-        [date]: [...items],
+  try {
+    const schedules: JikanScheduleDatesItem = scheduleResponse.reduce(
+      (schedules: JikanScheduleDatesItem, current) => {
+        const keys = Object.keys(current);
+        const day = keys?.length ? keys[keys.length - 1] : "monday";
+        const schedule = {
+          [day]: current[day],
+        };
+        schedules = {
+          ...schedules,
+          ...schedule,
+        };
+        return schedules as JikanScheduleDatesItem;
+      },
+      // @ts-ignore
+      {}
+    );
+
+    if (scheduleResponse?.length) {
+      const formatted = dates.reduce((schelude, date) => {
+        const items: AnimeItemExtended[] =
+          schedules[date] &&
+          schedules[date]?.length &&
+          schedules[date].map(
+            (current: JikanScheduleAnimeItem): AnimeItemExtended => {
+              return {
+                // ...current,
+                _id: current?.mal_id || uuidv4(),
+                sources: ["jikan"],
+                title: current?.title,
+                type: "Special",
+                episodes: 0,
+                status: "CURRENTLY",
+                animeSeason: {
+                  season: "",
+                  year: 0,
+                },
+                date: current?.airing_start,
+                unacceptable: false,
+                picture: current?.image_url,
+                thumbnail: current?.image_url,
+                synonyms: [current?.title, current?.synopsis],
+                relations: [""],
+                tags: [current?.title],
+              };
+            }
+          );
+
+        schelude = {
+          ...schelude,
+          [date.toUpperCase()]: items?.length ? [...items] : [],
+        };
+
+        return schelude;
+      }, {});
+
+      return {
+        schedule: formatted as ScheduleDateItemsFormatted,
+        tz: "Europe/Moscow",
       };
-      return schelude;
-    }, {});
-    return {
-      schedule: formatted as ScheduleDateItemsFormatted,
-      tz: scheduleResponse.tz,
-    };
+    }
+    return undefined;
+  } catch (error) {
+    console.log(error);
   }
-  return undefined;
 };
 
 export const setSchedule = async (
