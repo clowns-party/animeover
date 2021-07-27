@@ -1,4 +1,8 @@
-import { setSchedule, subspleaseSingleFormatter } from "./subsplease.functions";
+import {
+  dates,
+  setSchedule,
+  subspleaseSingleFormatter,
+} from "./subsplease.functions";
 import {
   JikanScheduleMultipleResponse,
   ScheduleSubspleaseResponse,
@@ -28,26 +32,16 @@ export class Subsplease extends AbstractIntegrate {
   }
 
   async multipleFetch(): Promise<JikanScheduleMultipleResponse> {
-    const dates = [
-      this.wait(this.baseUrl + "monday"),
-      this.wait(this.baseUrl + "tuesday"),
-      this.wait(this.baseUrl + "wednesday"),
-      this.wait(this.baseUrl + "thursday"),
-      this.wait(this.baseUrl + "friday"),
-      this.wait(this.baseUrl + "saturday"),
-      this.wait(this.baseUrl + "sunday"),
-    ];
-    return Promise.all(dates).then((results) => {
-      return results;
-    });
-  }
+    const datesEndpont = dates.map((date) => this.baseUrl + date);
 
-  async wait(endpoint: string, ms = 2500): Promise<any> {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        this.fetching(endpoint).then((res) => resolve(res));
-      }, ms);
-    });
+    const responses = await datesEndpont.reduce(async (lastPromise, url) => {
+      const accum = await lastPromise;
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      const response = await this.fetching(url);
+      return [...accum, response];
+    }, Promise.resolve([]));
+
+    return responses;
   }
 
   // Форматированные аниме от subsplease, добавляем их в fb коллекцию

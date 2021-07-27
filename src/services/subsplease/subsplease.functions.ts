@@ -13,7 +13,7 @@ import {
 import { v4 as uuidv4 } from "uuid";
 import { firestoreDB } from "../../firebase";
 
-const dates = [
+export const dates = [
   "monday",
   "tuesday",
   "wednesday",
