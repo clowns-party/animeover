@@ -53,7 +53,7 @@ export const subspleaseSingleFormatter = (
             (current: JikanScheduleAnimeItem): AnimeItemExtended => {
               return {
                 // ...current,
-                _id: current?.mal_id || uuidv4(),
+                _id: uuidv4(),
                 sources: ["jikan"],
                 title: current?.title,
                 type: "Special",
