@@ -97,7 +97,7 @@ Generate are firebase config and start nodemon.
 - Authorization, generate custom token by firebase-admin, generate refresh-token
 - Pagination
 - Rate and review for anime
-- Calendar "integrate with [subsplease](https://subsplease.org/schedule/)"
+- Calendar "integrate with [jikan](https://jikan.docs.apiary.io/#reference/0/schedule)"
 <br/>
 
 
