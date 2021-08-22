@@ -54,7 +54,7 @@ Go to the directory where your projects are stored, and run the following comman
 
 ### 3. Install project dependencies
 
-Now, go to alium-frontend project folder, and execute in the console:
+Now, go to project folder, and execute in the console:
 
 `$ yarn install `
 
