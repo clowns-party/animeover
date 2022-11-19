@@ -16,7 +16,7 @@ export class Subsplease extends AbstractIntegrate {
   constructor(collection: string) {
     super({
       collectionName: collection,
-      baseUrl: "https://api.jikan.moe/v3/schedule/",
+      baseUrl: "https://api.jikan.moe/v4/schedules",
     });
   }
 
