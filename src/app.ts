@@ -28,4 +28,4 @@ try {
   console.log("Unable to load swagger.json", err);
 }
 
-export { app };
+export default app;
