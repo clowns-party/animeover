@@ -10,7 +10,8 @@
     "generate": "tsoa swagger && tsoa routes",
     "fb:init": "node ./keys/firebase/init.js",
     "build": "npm run fb:init && tsc --build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "vercel-build": "npm run fb:init && echo was deployed"
   },
   "author": "",
   "license": "ISC",
