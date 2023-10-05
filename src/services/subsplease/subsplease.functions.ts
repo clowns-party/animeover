@@ -23,36 +23,33 @@ export const dates = [
   "sunday",
 ];
 
+type DateKeys = keyof JikanScheduleDatesItem
+
 export const subspleaseSingleFormatter = (
   scheduleResponse: JikanScheduleMultipleResponse
 ): ScheduleSubspleaseType => {
+  console.log(JSON.stringify(scheduleResponse))
   try {
-    const schedules: JikanScheduleDatesItem = scheduleResponse.reduce(
-      (schedules: JikanScheduleDatesItem, current) => {
-        const keys = Object.keys(current);
-        const day = keys?.length ? keys[keys.length - 1] : "monday";
-        const schedule = {
-          [day]: current[day],
-        };
-        schedules = {
+    const schedules = scheduleResponse.reduce(
+      (schedules, current, index) => {
+        const day = dates[index] as DateKeys
+        const nextData: JikanScheduleDatesItem = {
           ...schedules,
-          ...schedule,
+          [day]: current?.data,
         };
-        return schedules as JikanScheduleDatesItem;
+        return nextData;
       },
-      // @ts-ignore
-      {}
+      {} as JikanScheduleDatesItem
     );
 
     if (scheduleResponse?.length) {
-      const formatted = dates.reduce((schelude, date) => {
+      const formatted = dates.reduce((schelude, date: DateKeys) => {
         const items: AnimeItemExtended[] =
           schedules[date] &&
           schedules[date]?.length &&
           schedules[date].map(
-            (current: JikanScheduleAnimeItem): AnimeItemExtended => {
+            (current): AnimeItemExtended => {
               return {
-                // ...current,
                 _id: uuidv4(),
                 sources: ["jikan"],
                 title: current?.title,
@@ -63,10 +60,10 @@ export const subspleaseSingleFormatter = (
                   season: "",
                   year: 0,
                 },
-                date: current?.airing_start,
+                date: current?.aired?.from,
                 unacceptable: false,
-                picture: current?.image_url,
-                thumbnail: current?.image_url,
+                picture: current?.images?.jpg?.large_image_url,
+                thumbnail: current?.images?.jpg?.small_image_url,
                 synonyms: [current?.title, current?.synopsis],
                 relations: [""],
                 tags: [current?.title],

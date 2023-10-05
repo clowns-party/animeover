@@ -32,8 +32,8 @@ export class Subsplease extends AbstractIntegrate {
   }
 
   async multipleFetch(): Promise<JikanScheduleMultipleResponse> {
-    const datesEndpont = dates.map((date) => this.baseUrl + date);
-
+    const datesEndpont = dates.map((date) => `${this.baseUrl}/${date}`);
+  
     const responses = await datesEndpont.reduce(async (lastPromise, url) => {
       const accum = await lastPromise;
       await new Promise((resolve) => setTimeout(resolve, 1500));
